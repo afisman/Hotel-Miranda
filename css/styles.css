@@ -1,0 +1,151 @@
+@import url("https://fonts.googleapis.com/css2?family=Archivo:wght@200;300;400;500;600;700;800;900&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;500;700;900&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Old+Standard+TT:wght@400;700&display=swap");
+html,
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  min-width: 320px;
+}
+
+.header {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+}
+.header a {
+  text-decoration: none;
+}
+.header__left {
+  display: flex;
+  align-items: center;
+}
+.header__left h1 {
+  color: #111111;
+  font-weight: 700;
+  font-size: 3rem;
+  line-height: 3.2rem;
+  padding: 2rem;
+  font-family: "Archivo", sans-serif;
+  box-shadow: 0px 14px 24px 0px rgba(139, 139, 139, 0.2509803922);
+}
+.header__left h2 {
+  padding: 2rem;
+  color: #111111;
+  font-family: "Archivo", sans-serif;
+  font-weight: 400;
+}
+.header__center {
+  display: flex;
+  justify-content: space-between;
+}
+.header__center a {
+  padding: 2rem;
+  color: #111111;
+  font-weight: 600;
+  font-size: 1.2rem;
+  line-height: 1.3rem;
+  font-family: "Archivo", sans-serif;
+}
+.header__right__button {
+  padding: 0.5rem;
+  margin-right: 1rem;
+  background-color: #fff;
+  border: 2px solid rgba(133, 133, 133, 0.3019607843);
+}
+.header__right__button:hover {
+  cursor: pointer;
+}
+.header__right__button img {
+  width: 2rem;
+  height: 2rem;
+}
+
+.footer {
+  padding-top: 2rem;
+  background-color: #F8F8F8;
+  position: fixed;
+  bottom: 0;
+  display: flex;
+  justify-content: center;
+}
+.footer__sections {
+  margin: 0 auto;
+  padding: 0 8rem;
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 3rem;
+}
+.footer__sections__left {
+  padding: 1rem;
+}
+.footer__sections__left__title {
+  display: flex;
+  align-items: center;
+  padding-bottom: 2rem;
+}
+.footer__sections__left__title h2 {
+  width: 5rem;
+  height: 5rem;
+  padding: 1rem;
+  text-align: center;
+  background-color: #BEAD8E;
+  color: #FFF;
+  font-family: "Archivo", sans-serif;
+  font-weight: 700;
+  font-size: 3rem;
+  line-height: 3.2rem;
+}
+.footer__sections__left__title h3 {
+  font-size: 2rem;
+  font-family: "Archivo", sans-serif;
+  font-weight: 400;
+  letter-spacing: 0.1rem;
+  color: #111;
+  padding-left: 2rem;
+}
+.footer__sections__left__text {
+  font-family: "Archivo", sans-serif;
+  font-size: 1rem;
+  line-height: 1.5rem;
+  font-weight: 400;
+  color: #777;
+}
+.footer__sections__right {
+  padding: 1rem;
+}
+.footer__sections__right h2 {
+  padding-bottom: 1rem;
+}
+.footer__sections__right__item {
+  display: flex;
+  padding: 1rem 1rem 1rem 0;
+}
+.footer__sections__right__item__number {
+  padding-left: 1.5rem;
+}
+.footer__sections__right__item__number h3 {
+  color: #222;
+  font-family: "Old Standard TT", sans-serif;
+  font-weight: 400;
+}
+.footer__sections__right__item__number h4 {
+  color: #777;
+  font-family: "Roboto", sans-serif;
+  font-weight: 400;
+}
+.footer__sections__center {
+  padding: 1rem;
+}
+.footer__sections__center__columns {
+  padding-top: 1rem;
+  display: flex;
+}
+.footer__sections__center li {
+  list-style: none;
+  padding: 0.5rem 0.5rem 0.5rem 0;
+}/*# sourceMappingURL=styles.css.map */

@@ -1,0 +1,101 @@
+.footer {
+    padding-top: 2rem;
+    background-color: #F8F8F8;
+    position: fixed;
+    bottom: 0;
+    display: flex;
+    justify-content: center;
+
+    &__sections {
+        margin: 0 auto;
+        padding: 0 8rem;
+        display: grid;
+        grid-template-columns: repeat(3, 1fr);
+        gap: 3rem;
+
+        &__left {
+            padding: 1rem;
+
+            &__title {
+                display: flex;
+                align-items: center;
+                padding-bottom: 2rem;
+
+                h2 {
+                    width: 5rem;
+                    height: 5rem;
+                    padding: 1rem;
+                    text-align: center;
+                    background-color: #BEAD8E;
+                    color: #FFF;
+                    font-family: 'Archivo', sans-serif;
+                    font-weight: 700;
+                    font-size: 3rem;
+                    line-height: 3.2rem;
+                }
+
+                h3 {
+                    font-size: 2rem;
+                    font-family: 'Archivo', sans-serif;
+                    font-weight: 400;
+                    letter-spacing: .1rem;
+                    color: #111;
+                    padding-left: 2rem;
+                }
+            }
+
+            &__text {
+                font-family: 'Archivo', sans-serif;
+                font-size: 1rem;
+                line-height: 1.5rem;
+                font-weight: 400;
+                color: #777;
+            }
+        }
+
+        &__right {
+            padding: 1rem;
+
+            h2 {
+                padding-bottom: 1rem;
+            }
+
+            &__item {
+
+                display: flex;
+                padding: 1rem 1rem 1rem 0;
+
+
+                &__number {
+                    padding-left: 1.5rem;
+
+                    h3 {
+                        color: #222;
+                        font-family: 'Old Standard TT', sans-serif;
+                        font-weight: 400;
+                    }
+
+                    h4 {
+                        color: #777;
+                        font-family: 'Roboto', sans-serif;
+                        font-weight: 400;
+                    }
+                }
+            }
+        }
+
+        &__center {
+            padding: 1rem;
+
+            &__columns {
+                padding-top: 1rem;
+                display: flex;
+            }
+
+            li {
+                list-style: none;
+                padding: .5rem .5rem .5rem 0;
+            }
+        }
+    }
+}
