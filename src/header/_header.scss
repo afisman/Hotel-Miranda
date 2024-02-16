@@ -1,7 +1,42 @@
 .header {
+    width: 100%;
+    background-color: #111111;
+    margin: 0;
+    height: 7rem;
+
+    &__nav {
+
+        p {
+            padding: .5rem 5rem;
+            color: #fff;
+        }
+    }
+}
+
+.navbar {
     display: flex;
     justify-content: space-around;
     align-items: center;
+    margin: 0 5rem;
+    background-color: #fff;
+    transform: translateY(10%);
+
+    &__burger {
+
+        padding: .5rem;
+        margin-right: 1rem;
+        background-color: #fff;
+        border: 2px solid #8585854D;
+
+        &:hover {
+            cursor: pointer;
+        }
+
+        img {
+            width: 2rem;
+            height: 2rem;
+        }
+    }
 
     a {
         text-decoration: none;
