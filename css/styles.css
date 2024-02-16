@@ -30,6 +30,7 @@ body {
   margin: 0 5rem;
   background-color: #fff;
   transform: translateY(10%);
+  padding: 0.5rem;
 }
 .navbar__burger {
   padding: 0.5rem;
@@ -56,7 +57,7 @@ body {
   font-weight: 700;
   font-size: 3rem;
   line-height: 3.2rem;
-  padding: 2rem;
+  padding: 1.5rem;
   font-family: "Archivo", sans-serif;
   box-shadow: 0px 14px 24px 0px rgba(139, 139, 139, 0.2509803922);
 }
@@ -208,7 +209,7 @@ body {
 
 .bannerSection {
   background-color: #333;
-  padding: 3rem 8rem;
+  padding: 8rem 12rem;
 }
 .bannerSection p {
   color: #fff;
@@ -227,4 +228,79 @@ body {
   line-height: 9rem;
   letter-spacing: -0.1rem;
   padding: 1rem 0;
+}
+.bannerSection__buttons button {
+  padding: 1rem 2rem;
+  color: #fff;
+  cursor: pointer;
+  font-family: "Archivo", sans-serif;
+  font-weight: 700;
+  font-size: 1rem;
+  line-height: 1.1rem;
+  letter-spacing: 0.1rem;
+}
+.bannerSection__buttons--tour {
+  background-color: #BEAD8E;
+}
+.bannerSection__buttons--tour:hover {
+  background-color: transparent;
+  border: 1px solid #BEAD8E;
+}
+.bannerSection__buttons--learn {
+  background-color: transparent;
+  border: 1px solid #BEAD8E;
+}
+.bannerSection__buttons--learn:hover {
+  background-color: #BEAD8E;
+}
+
+.calendarSection {
+  width: 100%;
+  background-color: #222;
+  padding: 2rem;
+}
+.calendarSection__form {
+  display: flex;
+  justify-content: space-around;
+}
+.calendarSection__form__date {
+  display: flex;
+  flex-direction: column;
+}
+.calendarSection__form__date label {
+  color: #fff;
+  font-family: "Roboto", sans-serif;
+  font-weight: 700;
+  font-size: 1rem;
+  line-height: 1.2rem;
+  border-bottom: 0.0625rem solid #BEAD8E;
+  display: flex;
+  flex-direction: column;
+}
+.calendarSection__form__date input {
+  background-color: transparent;
+  margin-top: 0.5rem;
+  border: none;
+  color: #BEAD8E;
+}
+.calendarSection__form__button {
+  padding: 1rem 1.5rem;
+  background-color: #BEAD8E;
+  color: #fff;
+  font-family: "Archivo", sans-serif;
+  font-weight: 700;
+  font-size: 1rem;
+  line-height: 1.2rem;
+  letter-spacing: 0.2rem;
+}
+
+input[type=date]::-webkit-calendar-picker-indicator {
+  filter: brightness(0) saturate(100%) invert(78%) sepia(3%) saturate(2671%) hue-rotate(2deg) brightness(89%) contrast(91%);
+  position: relative;
+  right: 85%;
+}
+
+input[type=date]::placeholder {
+  position: relative;
+  left: 35%;
 }/*# sourceMappingURL=styles.css.map */

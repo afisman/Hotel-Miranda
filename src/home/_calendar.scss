@@ -1,0 +1,56 @@
+.calendarSection {
+    width: 100%;
+    background-color: #222;
+    padding: 2rem;
+
+    &__form {
+        display: flex;
+        justify-content: space-around;
+
+        &__date {
+            display: flex;
+            flex-direction: column;
+
+            label {
+                color: #fff;
+                font-family: 'Roboto', sans-serif;
+                font-weight: 700;
+                font-size: 1rem;
+                line-height: 1.2rem;
+                border-bottom: .0625rem solid #BEAD8E;
+                display: flex;
+                flex-direction: column;
+            }
+
+            input {
+                background-color: transparent;
+                margin-top: .5rem;
+                border: none;
+                color: #BEAD8E;
+
+            }
+        }
+
+        &__button {
+            padding: 1rem 1.5rem;
+            background-color: #BEAD8E;
+            color: #fff;
+            font-family: 'Archivo', sans-serif;
+            font-weight: 700;
+            font-size: 1rem;
+            line-height: 1.2rem;
+            letter-spacing: .2rem;
+        }
+    }
+}
+
+input[type="date"]::-webkit-calendar-picker-indicator {
+    filter: brightness(0) saturate(100%) invert(78%) sepia(3%) saturate(2671%) hue-rotate(2deg) brightness(89%) contrast(91%);
+    position: relative;
+    right: 85%;
+}
+
+input[type="date"]::placeholder {
+    position: relative;
+    left: 35%;
+}
