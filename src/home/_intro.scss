@@ -1,0 +1,64 @@
+.introSection {
+    background: linear-gradient(to right,
+            #222 0%,
+            #222 70%,
+            #AD9D82 70%,
+            #AD9D82 100%);
+    display: flex;
+    padding: 5rem 10rem;
+
+    &__left {
+        flex: 1 1 0;
+        padding-right: 3rem;
+
+        h5 {
+            font-family: 'Archivo', sans-serif;
+            font-weight: 700;
+            font-size: 1rem;
+            line-height: 1.1rem;
+            letter-spacing: 0.2rem;
+            color: #BDAC8D;
+            margin-bottom: 1rem;
+        }
+
+        h2 {
+            font-family: 'Old Standard TT', sans-serif;
+            font-weight: 400;
+            font-size: 5rem;
+            line-height: 5.3rem;
+            letter-spacing: -0.16rem;
+            color: #fff;
+        }
+
+        p {
+            margin-top: 1rem;
+            font-family: 'Archivo', sans-serif;
+            font-weight: 400;
+            font-size: 1rem;
+            line-height: 1.6rem;
+            color: #C2C2C2;
+        }
+
+        button {
+            margin-top: 1rem;
+            color: #fff;
+            background-color: #BDAC8D;
+            padding: 1rem 3rem;
+            font-size: 1rem;
+            line-height: 1.1rem;
+            letter-spacing: 0.2rem;
+
+        }
+    }
+
+    &__right {
+
+        flex: 1 1 0;
+
+        iframe {
+            width: 35rem;
+            height: 25rem;
+            border-radius: .2rem;
+        }
+    }
+}
