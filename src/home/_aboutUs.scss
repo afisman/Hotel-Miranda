@@ -1,0 +1,137 @@
+.aboutUsSection {
+    display: flex;
+    padding: 4rem 0 4rem 20rem;
+
+    &__left {
+        display: flex;
+        flex-direction: column;
+
+        &__strong {
+            display: flex;
+
+            &__left {
+                width: 16rem;
+                height: 18rem;
+                margin: .5rem;
+                text-align: center;
+                padding: 1rem;
+
+                h3 {
+                    font-family: 'Old Standard TT', sans-serif;
+                    font-weight: 400;
+                    font-size: 2rem;
+                    line-height: 2rem;
+                    letter-spacing: -0.08rem;
+                    color: #111;
+                }
+
+                p {
+                    font-family: 'Roboto', sans-serif;
+                    font-weight: 400;
+                    font-size: 1rem;
+                    line-height: 1.4rem;
+                }
+            }
+
+            &__img {
+                width: 16rem;
+                height: 18rem;
+                margin: .5rem;
+            }
+        }
+
+        &__luxury {
+            display: flex;
+
+            &__img {
+                width: 16rem;
+                height: 18rem;
+                margin: .5rem;
+            }
+
+            &__right {
+                padding: 1rem;
+                text-align: center;
+                width: 16rem;
+                height: 18rem;
+                margin: .5rem;
+                background-color: #222;
+                display: flex;
+                flex-direction: column;
+                justify-content: center;
+                align-items: center;
+
+                img {
+                    width: 6rem;
+                    height: 6rem;
+                    margin-bottom: .5rem;
+                }
+
+                h3 {
+                    color: #fff;
+                    font-size: 2rem;
+                    font-family: 'Old Standard TT', sans-serif;
+                    line-height: 2rem;
+                    letter-spacing: -0.08rem;
+                    font-weight: 400;
+                    margin: .5rem;
+                }
+
+                p {
+                    color: #fff;
+                    font-family: 'Roboto', sans-serif;
+                    font-size: 1rem;
+                    font-weight: 400;
+                    margin: .5rem;
+                }
+            }
+        }
+    }
+
+    &__right {
+        padding: 5rem 3rem;
+
+        h5 {
+            font-family: 'Archivo', sans-serif;
+            font-weight: 700;
+            letter-spacing: .2rem;
+            font-size: 1rem;
+            line-height: 1.1rem;
+            color: #777;
+            margin: 1rem;
+        }
+
+        h2 {
+            font-family: 'Old Standard TT', sans-serif;
+            font-weight: 400;
+            font-size: 5rem;
+            line-height: 5.8rem;
+            letter-spacing: -0.12rem;
+            color: #111;
+            margin: 1rem;
+        }
+
+        p {
+            font-size: 1rem;
+            font-family: 'Archivo', sans-serif;
+            line-height: 1.5rem;
+            font-weight: 400;
+            color: #777;
+            margin: 1rem;
+        }
+
+        button {
+            padding: 1rem 3rem;
+            color: #fff;
+            background-color: #BDAC8D;
+            border: none;
+            margin: 1rem;
+            font-family: 'Archivo', sans-serif;
+            font-weight: 700;
+            font-size: 1rem;
+            line-height: 1.1rem;
+            letter-spacing: .2rem;
+            cursor: pointer;
+        }
+    }
+}

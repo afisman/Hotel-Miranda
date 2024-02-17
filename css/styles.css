@@ -295,12 +295,126 @@ body {
 }
 
 input[type=date]::-webkit-calendar-picker-indicator {
-  filter: brightness(0) saturate(100%) invert(78%) sepia(3%) saturate(2671%) hue-rotate(2deg) brightness(89%) contrast(91%);
-  position: relative;
-  right: 85%;
+  filter: brightness(0) saturate(100%) invert(74%) sepia(5%) saturate(2587%) brightness(87%) contrast(90%);
 }
 
-input[type=date]::placeholder {
-  position: relative;
-  left: 35%;
+.aboutUsSection {
+  display: flex;
+  padding: 4rem 0 4rem 20rem;
+}
+.aboutUsSection__left {
+  display: flex;
+  flex-direction: column;
+}
+.aboutUsSection__left__strong {
+  display: flex;
+}
+.aboutUsSection__left__strong__left {
+  width: 16rem;
+  height: 18rem;
+  margin: 0.5rem;
+  text-align: center;
+  padding: 1rem;
+}
+.aboutUsSection__left__strong__left h3 {
+  font-family: "Old Standard TT", sans-serif;
+  font-weight: 400;
+  font-size: 2rem;
+  line-height: 2rem;
+  letter-spacing: -0.08rem;
+  color: #111;
+}
+.aboutUsSection__left__strong__left p {
+  font-family: "Roboto", sans-serif;
+  font-weight: 400;
+  font-size: 1rem;
+  line-height: 1.4rem;
+}
+.aboutUsSection__left__strong__img {
+  width: 16rem;
+  height: 18rem;
+  margin: 0.5rem;
+}
+.aboutUsSection__left__luxury {
+  display: flex;
+}
+.aboutUsSection__left__luxury__img {
+  width: 16rem;
+  height: 18rem;
+  margin: 0.5rem;
+}
+.aboutUsSection__left__luxury__right {
+  padding: 1rem;
+  text-align: center;
+  width: 16rem;
+  height: 18rem;
+  margin: 0.5rem;
+  background-color: #222;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+.aboutUsSection__left__luxury__right img {
+  width: 6rem;
+  height: 6rem;
+  margin-bottom: 0.5rem;
+}
+.aboutUsSection__left__luxury__right h3 {
+  color: #fff;
+  font-size: 2rem;
+  font-family: "Old Standard TT", sans-serif;
+  line-height: 2rem;
+  letter-spacing: -0.08rem;
+  font-weight: 400;
+  margin: 0.5rem;
+}
+.aboutUsSection__left__luxury__right p {
+  color: #fff;
+  font-family: "Roboto", sans-serif;
+  font-size: 1rem;
+  font-weight: 400;
+  margin: 0.5rem;
+}
+.aboutUsSection__right {
+  padding: 5rem 3rem;
+}
+.aboutUsSection__right h5 {
+  font-family: "Archivo", sans-serif;
+  font-weight: 700;
+  letter-spacing: 0.2rem;
+  font-size: 1rem;
+  line-height: 1.1rem;
+  color: #777;
+  margin: 1rem;
+}
+.aboutUsSection__right h2 {
+  font-family: "Old Standard TT", sans-serif;
+  font-weight: 400;
+  font-size: 5rem;
+  line-height: 5.8rem;
+  letter-spacing: -0.12rem;
+  color: #111;
+  margin: 1rem;
+}
+.aboutUsSection__right p {
+  font-size: 1rem;
+  font-family: "Archivo", sans-serif;
+  line-height: 1.5rem;
+  font-weight: 400;
+  color: #777;
+  margin: 1rem;
+}
+.aboutUsSection__right button {
+  padding: 1rem 3rem;
+  color: #fff;
+  background-color: #BDAC8D;
+  border: none;
+  margin: 1rem;
+  font-family: "Archivo", sans-serif;
+  font-weight: 700;
+  font-size: 1rem;
+  line-height: 1.1rem;
+  letter-spacing: 0.2rem;
+  cursor: pointer;
 }/*# sourceMappingURL=styles.css.map */

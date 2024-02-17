@@ -45,12 +45,6 @@
 }
 
 input[type="date"]::-webkit-calendar-picker-indicator {
-    filter: brightness(0) saturate(100%) invert(78%) sepia(3%) saturate(2671%) hue-rotate(2deg) brightness(89%) contrast(91%);
-    position: relative;
-    right: 85%;
-}
+    filter: brightness(0) saturate(100%) invert(74%) sepia(5%) saturate(2587%) brightness(87%) contrast(90%);
 
-input[type="date"]::placeholder {
-    position: relative;
-    left: 35%;
 }
