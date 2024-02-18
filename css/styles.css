@@ -420,7 +420,7 @@ input[type=date]::-webkit-calendar-picker-indicator {
 }
 
 .introSection {
-  background: linear-gradient(to right, #222 0%, #222 70%, #AD9D82 70%, #AD9D82 100%);
+  background: linear-gradient(to right, #222 0%, #222 75%, #AD9D82 75%, #AD9D82 100%);
   display: flex;
   padding: 5rem 10rem;
 }
@@ -469,4 +469,65 @@ input[type=date]::-webkit-calendar-picker-indicator {
   width: 35rem;
   height: 25rem;
   border-radius: 0.2rem;
+}
+
+.featuresSection {
+  padding: 2rem 4rem;
+}
+.featuresSection__title {
+  text-align: center;
+}
+.featuresSection__title h5 {
+  font-family: "Archivo", sans-serif;
+  font-weight: 700;
+  font-size: 1rem;
+  line-height: 1.1rem;
+  letter-spacing: 0.2rem;
+  color: #777;
+  padding: 1rem;
+}
+.featuresSection__title h2 {
+  padding: 1rem;
+  font-family: "Old Standard TT", sans-serif;
+  font-weight: 400;
+  font-size: 5rem;
+  line-height: 5rem;
+  letter-spacing: -0.2rem;
+  color: #222;
+}
+.featuresSection__grid {
+  padding: 2rem 12rem;
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 3rem;
+}
+.featuresSection__grid__item {
+  padding: 2rem;
+}
+.featuresSection__grid__item__title {
+  display: flex;
+  justify-content: space-between;
+}
+.featuresSection__grid__item__title h2 {
+  font-size: 7.5rem;
+  font-weight: 700;
+  font-family: "Archivo", sans-serif;
+  color: rgba(34, 34, 34, 0.0392156863);
+  transform: translateY(-30%);
+}
+.featuresSection__grid__item h4 {
+  font-family: "Old Standard TT", sans-serif;
+  font-size: 2rem;
+  line-height: 2rem;
+  letter-spacing: -0.07rem;
+  color: #222;
+  font-weight: 400;
+}
+.featuresSection__grid__item p {
+  margin-top: 1rem;
+  font-family: "Archivo", sans-serif;
+  font-weight: 400;
+  font-size: 1rem;
+  line-height: 1.6rem;
+  color: #777;
 }/*# sourceMappingURL=styles.css.map */
