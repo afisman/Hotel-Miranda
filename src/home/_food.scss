@@ -1,0 +1,63 @@
+.foodSection {
+
+    &__body {
+        padding: 5rem 10rem;
+
+        h5 {
+            font-family: 'Archivo', sans-serif;
+            font-weight: 700;
+            font-size: 1rem;
+            left: .2rem;
+            line-height: 1.1rem;
+            color: #777;
+        }
+
+        h2 {
+            margin: 1rem 0;
+            font-family: 'Old Standard TT', sans-serif;
+            font-weight: 400;
+            font-size: 5rem;
+            line-height: 6rem;
+            letter-spacing: -0.16rem;
+            color: #222;
+        }
+
+        &__menu {
+            display: grid;
+            grid-template-columns: repeat(2, 1fr);
+            gap: 2rem;
+
+            &__item {
+                display: flex;
+                align-items: center;
+
+                img {
+                    width: 7.5rem;
+                    height: 7.5rem;
+                }
+
+                &__text {
+                    padding: 1rem;
+                    color: #222;
+
+                    h4 {
+                        font-family: 'Old Standard TT', sans-serif;
+                        font-weight: 400;
+                        font-size: 1.5rem;
+                        line-height: 1.5rem;
+                        letter-spacing: -0.08rem;
+                        padding: .5rem;
+                    }
+
+                    p {
+                        font-family: 'Roboto', sans-serif;
+                        font-weight: 400;
+                        font-size: 1rem;
+                        line-height: 1.5rem;
+                        padding: .5rem;
+                    }
+                }
+            }
+        }
+    }
+}
