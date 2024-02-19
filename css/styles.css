@@ -130,6 +130,7 @@ body {
   display: flex;
   flex-direction: column;
   justify-content: center;
+  margin-top: 8rem;
 }
 .footer__sections {
   margin: 0 auto;
@@ -318,6 +319,9 @@ body {
   }
   .bannerSection__buttons {
     flex-direction: row;
+  }
+  .bannerSection__buttons button {
+    margin-right: 1rem;
   }
 }
 .calendarSection {
@@ -719,4 +723,45 @@ input[type=date]::-webkit-calendar-picker-indicator {
   font-size: 1rem;
   line-height: 1.5rem;
   padding: 0.5rem;
+}
+
+.infoSection {
+  background-color: #222;
+  padding: 2rem 4rem;
+}
+.infoSection__item {
+  text-align: center;
+  font-family: "Roboto", sans-serif;
+  font-weight: 700;
+  padding: 2rem;
+}
+.infoSection__item img {
+  width: 6rem;
+  height: 6rem;
+}
+.infoSection__item h3 {
+  color: #fff;
+  font-size: 4rem;
+  line-height: 5rem;
+  margin: 0;
+  padding: 0;
+}
+.infoSection__item h3 span {
+  font-size: 1rem;
+  font-weight: 400;
+}
+.infoSection__item p {
+  color: #999;
+  font-size: 1rem;
+  line-height: 1.4rem;
+}
+
+@media screen and (min-width: 1000px) {
+  .infoSection {
+    width: 60%;
+    margin: 0 auto;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+  }
 }/*# sourceMappingURL=styles.css.map */
