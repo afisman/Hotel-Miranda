@@ -4,12 +4,11 @@
     padding: 2rem;
 
     &__form {
-        display: flex;
-        justify-content: space-around;
 
         &__date {
             display: flex;
             flex-direction: column;
+            margin-bottom: 1.5rem;
 
             label {
                 color: #fff;
@@ -46,5 +45,13 @@
 
 input[type="date"]::-webkit-calendar-picker-indicator {
     filter: brightness(0) saturate(100%) invert(74%) sepia(5%) saturate(2587%) brightness(87%) contrast(90%);
+}
 
+@media screen and (min-width: 1000px) {
+    .calendarSection {
+        &__form {
+            display: flex;
+            justify-content: space-around;
+        }
+    }
 }

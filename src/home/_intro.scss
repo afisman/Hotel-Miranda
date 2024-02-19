@@ -1,11 +1,8 @@
 .introSection {
-    background: linear-gradient(to right,
-            #222 0%,
-            #222 75%,
-            #AD9D82 75%,
-            #AD9D82 100%);
+    background: #222;
     display: flex;
-    padding: 5rem 10rem;
+    flex-direction: column;
+    padding: 5rem;
 
     &__left {
         flex: 1 1 0;
@@ -24,8 +21,8 @@
         h2 {
             font-family: 'Old Standard TT', sans-serif;
             font-weight: 400;
-            font-size: 5rem;
-            line-height: 5.3rem;
+            font-size: 3rem;
+            line-height: 3.3rem;
             letter-spacing: -0.16rem;
             color: #fff;
         }
@@ -34,7 +31,7 @@
             margin-top: 1rem;
             font-family: 'Archivo', sans-serif;
             font-weight: 400;
-            font-size: 1rem;
+            font-size: 0.8rem;
             line-height: 1.6rem;
             color: #C2C2C2;
         }
@@ -53,12 +50,44 @@
 
     &__right {
 
-        flex: 1 1 0;
+        padding-top: 4rem;
 
         iframe {
-            width: 35rem;
-            height: 25rem;
+            width: 100%;
+            height: auto;
             border-radius: .2rem;
+        }
+    }
+}
+
+@media screen and (min-width: 1000px) {
+    .introSection {
+        background: linear-gradient(to right,
+                #222 0%,
+                #222 75%,
+                #AD9D82 75%,
+                #AD9D82 100%);
+        padding: 5rem 10rem;
+        flex-direction: row;
+
+        &__left {
+            h2 {
+                font-size: 5rem;
+                line-height: 5.3rem;
+            }
+
+            p {
+                font-size: 1rem;
+            }
+        }
+
+        &__right {
+            flex: 1 1 0;
+
+            iframe {
+                width: 35rem;
+                height: 25rem;
+            }
         }
     }
 }

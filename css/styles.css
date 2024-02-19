@@ -18,25 +18,23 @@ body {
   margin: 0;
   height: 7rem;
 }
+.header__nav {
+  width: 100%;
+}
 .header__nav p {
-  padding: 0.5rem 5rem;
-  color: #fff;
+  display: none;
 }
 
 .navbar {
   display: flex;
   justify-content: space-around;
   align-items: center;
-  margin: 0 5rem;
   background-color: #fff;
-  transform: translateY(10%);
-  padding: 0.5rem;
 }
 .navbar__burger {
   padding: 0.5rem;
-  margin-right: 1rem;
   background-color: #fff;
-  border: 2px solid rgba(133, 133, 133, 0.3019607843);
+  border: none;
 }
 .navbar__burger:hover {
   cursor: pointer;
@@ -55,11 +53,11 @@ body {
 .navbar__left h1 {
   color: #111111;
   font-weight: 700;
-  font-size: 3rem;
-  line-height: 3.2rem;
-  padding: 1.5rem;
+  font-size: 2.3rem;
+  line-height: 2.5rem;
+  padding: 1rem;
   font-family: "Archivo", sans-serif;
-  box-shadow: 0px 14px 24px 0px rgba(139, 139, 139, 0.2509803922);
+  box-shadow: 0 0.8rem 1.5rem 0 rgba(139, 139, 139, 0.2509803922);
 }
 .navbar__left h2 {
   padding: 2rem;
@@ -68,22 +66,17 @@ body {
   font-weight: 400;
 }
 .navbar__center {
-  display: flex;
-  justify-content: space-between;
+  display: none;
 }
-.navbar__center a {
-  padding: 2rem;
-  color: #111111;
-  font-weight: 600;
-  font-size: 1.2rem;
-  line-height: 1.3rem;
-  font-family: "Archivo", sans-serif;
+.navbar__right {
+  display: flex;
 }
 .navbar__right__button {
   padding: 0.5rem;
   margin-right: 1rem;
   background-color: #fff;
   border: 2px solid rgba(133, 133, 133, 0.3019607843);
+  display: flex;
 }
 .navbar__right__button:hover {
   cursor: pointer;
@@ -93,6 +86,44 @@ body {
   height: 2rem;
 }
 
+@media screen and (min-width: 1000px) {
+  .header {
+    display: block;
+    width: 100%;
+    background-color: #111111;
+    margin: 0;
+    height: 7rem;
+  }
+  .header__nav p {
+    padding: 0.5rem 5rem;
+    color: #fff;
+  }
+  .navbar {
+    margin: 0 5rem;
+    transform: translateY(10%);
+    padding: 0.5rem;
+  }
+  .navbar__burger {
+    display: none;
+  }
+  .navbar__left h1 {
+    padding: 1.5rem;
+    font-size: 3rem;
+    line-height: 3.2rem;
+  }
+  .navbar__center {
+    display: flex;
+    justify-content: space-between;
+  }
+  .navbar__center a {
+    padding: 2rem;
+    color: #111111;
+    font-weight: 600;
+    font-size: 1.2rem;
+    line-height: 1.3rem;
+    font-family: "Archivo", sans-serif;
+  }
+}
 .footer {
   padding-top: 2rem;
   background-color: #F8F8F8;
@@ -102,10 +133,10 @@ body {
 }
 .footer__sections {
   margin: 0 auto;
-  padding: 0 8rem;
+  padding: 2rem;
   display: grid;
-  grid-template-columns: repeat(3, 1fr);
-  gap: 3rem;
+  grid-template-columns: 1fr;
+  gap: 2rem;
 }
 .footer__sections__left {
   padding: 1rem;
@@ -182,6 +213,7 @@ body {
 .footer__sections__center__columns {
   padding-top: 1rem;
   display: flex;
+  justify-content: space-around;
 }
 .footer__sections__center li {
   list-style: none;
@@ -194,10 +226,10 @@ body {
 .footer__bottom {
   background-color: #FFF;
   display: flex;
-  justify-content: space-around;
+  flex-direction: column;
   margin: 0 auto;
   width: 100%;
-  padding: 1.5rem;
+  padding: 1rem 1.5rem;
 }
 .footer__bottom p {
   font-family: "Roboto", sans-serif;
@@ -205,29 +237,45 @@ body {
   font-size: 1rem;
   line-height: 1.2rem;
   color: #222;
+  padding: 0.5rem;
 }
 
+@media screen and (min-width: 1000px) {
+  .footer__sections {
+    grid-template-columns: repeat(3, 1fr);
+    gap: 3rem;
+    padding: 0 8rem;
+  }
+  .footer__bottom {
+    flex-direction: row;
+    justify-content: space-around;
+  }
+}
 .bannerSection {
   background-color: #333;
-  padding: 8rem 12rem;
+  padding: 4rem;
 }
 .bannerSection p {
   color: #fff;
   font-family: "Archivo", sans-serif;
   font-weight: 700;
-  font-size: 1rem;
+  font-size: 0.8rem;
   line-height: 1.2rem;
-  letter-spacing: 0.1rem;
+  letter-spacing: 0.2rem;
   padding: 1rem 0;
 }
 .bannerSection h2 {
   color: #fff;
   font-family: "Old Standard TT", sans-serif;
   font-weight: 400;
-  font-size: 8rem;
-  line-height: 9rem;
+  font-size: 4rem;
+  line-height: 4.5rem;
   letter-spacing: -0.1rem;
   padding: 1rem 0;
+}
+.bannerSection__buttons {
+  display: flex;
+  flex-direction: column;
 }
 .bannerSection__buttons button {
   padding: 1rem 2rem;
@@ -238,6 +286,8 @@ body {
   font-size: 1rem;
   line-height: 1.1rem;
   letter-spacing: 0.1rem;
+  max-width: 14rem;
+  margin-top: 1rem;
 }
 .bannerSection__buttons--tour {
   background-color: #BEAD8E;
@@ -254,18 +304,31 @@ body {
   background-color: #BEAD8E;
 }
 
+@media screen and (min-width: 1000px) {
+  .bannerSection {
+    padding: 8rem 12rem;
+  }
+  .bannerSection p {
+    font-size: 1rem;
+    letter-spacing: 0.1rem;
+  }
+  .bannerSection h2 {
+    font-size: 8rem;
+    line-height: 9rem;
+  }
+  .bannerSection__buttons {
+    flex-direction: row;
+  }
+}
 .calendarSection {
   width: 100%;
   background-color: #222;
   padding: 2rem;
 }
-.calendarSection__form {
-  display: flex;
-  justify-content: space-around;
-}
 .calendarSection__form__date {
   display: flex;
   flex-direction: column;
+  margin-bottom: 1.5rem;
 }
 .calendarSection__form__date label {
   color: #fff;
@@ -298,23 +361,32 @@ input[type=date]::-webkit-calendar-picker-indicator {
   filter: brightness(0) saturate(100%) invert(74%) sepia(5%) saturate(2587%) brightness(87%) contrast(90%);
 }
 
+@media screen and (min-width: 1000px) {
+  .calendarSection__form {
+    display: flex;
+    justify-content: space-around;
+  }
+}
 .aboutUsSection {
   display: flex;
-  padding: 4rem 0 4rem 20rem;
+  flex-direction: column-reverse;
+  padding: 4rem 0;
 }
 .aboutUsSection__left {
   display: flex;
   flex-direction: column;
 }
 .aboutUsSection__left__strong {
+  margin: 0 auto;
   display: flex;
+  flex-direction: column-reverse;
 }
 .aboutUsSection__left__strong__left {
-  width: 16rem;
-  height: 18rem;
-  margin: 0.5rem;
+  width: 20rem;
+  height: 22rem;
   text-align: center;
-  padding: 1rem;
+  margin: 0.5rem;
+  padding: 2.5rem;
 }
 .aboutUsSection__left__strong__left h3 {
   font-family: "Old Standard TT", sans-serif;
@@ -331,24 +403,23 @@ input[type=date]::-webkit-calendar-picker-indicator {
   line-height: 1.4rem;
 }
 .aboutUsSection__left__strong__img {
-  width: 16rem;
-  height: 18rem;
+  width: 20rem;
+  height: 22rem;
   margin: 0.5rem;
 }
 .aboutUsSection__left__luxury {
   display: flex;
+  flex-direction: column;
+  margin: 0 auto;
 }
 .aboutUsSection__left__luxury__img {
-  width: 16rem;
-  height: 18rem;
-  margin: 0.5rem;
+  width: 20rem;
+  height: 22rem;
 }
 .aboutUsSection__left__luxury__right {
-  padding: 1rem;
   text-align: center;
-  width: 16rem;
-  height: 18rem;
-  margin: 0.5rem;
+  width: 20rem;
+  height: 22rem;
   background-color: #222;
   display: flex;
   flex-direction: column;
@@ -383,7 +454,7 @@ input[type=date]::-webkit-calendar-picker-indicator {
   font-family: "Archivo", sans-serif;
   font-weight: 700;
   letter-spacing: 0.2rem;
-  font-size: 1rem;
+  font-size: 0.8rem;
   line-height: 1.1rem;
   color: #777;
   margin: 1rem;
@@ -419,10 +490,48 @@ input[type=date]::-webkit-calendar-picker-indicator {
   cursor: pointer;
 }
 
+@media screen and (min-width: 1000px) {
+  .aboutUsSection {
+    flex-direction: row;
+    padding: 4rem 0 4rem 20rem;
+  }
+  .aboutUsSection__left__strong {
+    flex-direction: row;
+  }
+  .aboutUsSection__left__strong__left {
+    width: 16rem;
+    height: 18rem;
+    padding: 1rem;
+    margin: 0.5rem;
+  }
+  .aboutUsSection__left__strong__img {
+    width: 16rem;
+    height: 18rem;
+    margin: 0.5rem;
+  }
+  .aboutUsSection__left__luxury {
+    flex-direction: row;
+  }
+  .aboutUsSection__left__luxury__right {
+    width: 16rem;
+    height: 18rem;
+    padding: 1rem;
+    margin: 0.5rem;
+  }
+  .aboutUsSection__left__luxury__img {
+    width: 16rem;
+    height: 18rem;
+    margin: 0.5rem;
+  }
+  .aboutUsSection__right h5 {
+    font-size: 1rem;
+  }
+}
 .introSection {
-  background: linear-gradient(to right, #222 0%, #222 75%, #AD9D82 75%, #AD9D82 100%);
+  background: #222;
   display: flex;
-  padding: 5rem 10rem;
+  flex-direction: column;
+  padding: 5rem;
 }
 .introSection__left {
   flex: 1 1 0;
@@ -440,8 +549,8 @@ input[type=date]::-webkit-calendar-picker-indicator {
 .introSection__left h2 {
   font-family: "Old Standard TT", sans-serif;
   font-weight: 400;
-  font-size: 5rem;
-  line-height: 5.3rem;
+  font-size: 3rem;
+  line-height: 3.3rem;
   letter-spacing: -0.16rem;
   color: #fff;
 }
@@ -449,7 +558,7 @@ input[type=date]::-webkit-calendar-picker-indicator {
   margin-top: 1rem;
   font-family: "Archivo", sans-serif;
   font-weight: 400;
-  font-size: 1rem;
+  font-size: 0.8rem;
   line-height: 1.6rem;
   color: #C2C2C2;
 }
@@ -463,14 +572,35 @@ input[type=date]::-webkit-calendar-picker-indicator {
   letter-spacing: 0.2rem;
 }
 .introSection__right {
-  flex: 1 1 0;
+  padding-top: 4rem;
 }
 .introSection__right iframe {
-  width: 35rem;
-  height: 25rem;
+  width: 100%;
+  height: auto;
   border-radius: 0.2rem;
 }
 
+@media screen and (min-width: 1000px) {
+  .introSection {
+    background: linear-gradient(to right, #222 0%, #222 75%, #AD9D82 75%, #AD9D82 100%);
+    padding: 5rem 10rem;
+    flex-direction: row;
+  }
+  .introSection__left h2 {
+    font-size: 5rem;
+    line-height: 5.3rem;
+  }
+  .introSection__left p {
+    font-size: 1rem;
+  }
+  .introSection__right {
+    flex: 1 1 0;
+  }
+  .introSection__right iframe {
+    width: 35rem;
+    height: 25rem;
+  }
+}
 .featuresSection {
   padding: 2rem 4rem;
 }

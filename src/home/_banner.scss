@@ -1,14 +1,14 @@
 .bannerSection {
     background-color: #333;
-    padding: 8rem 12rem;
+    padding: 4rem;
 
     p {
         color: #fff;
         font-family: 'Archivo', sans-serif;
         font-weight: 700;
-        font-size: 1rem;
+        font-size: .8rem;
         line-height: 1.2rem;
-        letter-spacing: 0.1rem;
+        letter-spacing: 0.2rem;
         padding: 1rem 0;
     }
 
@@ -16,13 +16,17 @@
         color: #fff;
         font-family: 'Old Standard TT', sans-serif;
         font-weight: 400;
-        font-size: 8rem;
-        line-height: 9rem;
+        font-size: 4rem;
+        line-height: 4.5rem;
         letter-spacing: -0.1rem;
         padding: 1rem 0;
     }
 
     &__buttons {
+
+
+        display: flex;
+        flex-direction: column;
 
         button {
             padding: 1rem 2rem;
@@ -33,6 +37,8 @@
             font-size: 1rem;
             line-height: 1.1rem;
             letter-spacing: .1rem;
+            max-width: 14rem;
+            margin-top: 1rem;
         }
 
         &--tour {
@@ -51,6 +57,26 @@
             &:hover {
                 background-color: #BEAD8E;
             }
+        }
+    }
+}
+
+@media screen and (min-width: 1000px) {
+    .bannerSection {
+        padding: 8rem 12rem;
+
+        p {
+            font-size: 1rem;
+            letter-spacing: 0.1rem;
+        }
+
+        h2 {
+            font-size: 8rem;
+            line-height: 9rem;
+        }
+
+        &__buttons {
+            flex-direction: row;
         }
     }
 }

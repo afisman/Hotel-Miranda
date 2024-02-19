@@ -1,20 +1,23 @@
 .aboutUsSection {
     display: flex;
-    padding: 4rem 0 4rem 20rem;
+    flex-direction: column-reverse;
+    padding: 4rem 0;
 
     &__left {
         display: flex;
         flex-direction: column;
 
         &__strong {
+            margin: 0 auto;
             display: flex;
+            flex-direction: column-reverse;
 
             &__left {
-                width: 16rem;
-                height: 18rem;
-                margin: .5rem;
+                width: 20rem;
+                height: 22rem;
                 text-align: center;
-                padding: 1rem;
+                margin: .5rem;
+                padding: 2.5rem;
 
                 h3 {
                     font-family: 'Old Standard TT', sans-serif;
@@ -34,27 +37,26 @@
             }
 
             &__img {
-                width: 16rem;
-                height: 18rem;
+                width: 20rem;
+                height: 22rem;
                 margin: .5rem;
             }
         }
 
         &__luxury {
             display: flex;
+            flex-direction: column;
+            margin: 0 auto;
 
             &__img {
-                width: 16rem;
-                height: 18rem;
-                margin: .5rem;
+                width: 20rem;
+                height: 22rem;
             }
 
             &__right {
-                padding: 1rem;
                 text-align: center;
-                width: 16rem;
-                height: 18rem;
-                margin: .5rem;
+                width: 20rem;
+                height: 22rem;
                 background-color: #222;
                 display: flex;
                 flex-direction: column;
@@ -95,7 +97,7 @@
             font-family: 'Archivo', sans-serif;
             font-weight: 700;
             letter-spacing: .2rem;
-            font-size: 1rem;
+            font-size: .8rem;
             line-height: 1.1rem;
             color: #777;
             margin: 1rem;
@@ -132,6 +134,55 @@
             line-height: 1.1rem;
             letter-spacing: .2rem;
             cursor: pointer;
+        }
+    }
+}
+
+@media screen and (min-width: 1000px) {
+    .aboutUsSection {
+        flex-direction: row;
+        padding: 4rem 0 4rem 20rem;
+
+        &__left {
+            &__strong {
+                flex-direction: row;
+
+                &__left {
+                    width: 16rem;
+                    height: 18rem;
+                    padding: 1rem;
+                    margin: .5rem;
+                }
+
+                &__img {
+                    width: 16rem;
+                    height: 18rem;
+                    margin: .5rem;
+                }
+            }
+
+            &__luxury {
+                flex-direction: row;
+
+                &__right {
+                    width: 16rem;
+                    height: 18rem;
+                    padding: 1rem;
+                    margin: .5rem;
+                }
+
+                &__img {
+                    width: 16rem;
+                    height: 18rem;
+                    margin: .5rem;
+                }
+            }
+        }
+
+        &__right {
+            h5 {
+                font-size: 1rem;
+            }
         }
     }
 }
