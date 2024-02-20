@@ -764,4 +764,53 @@ input[type=date]::-webkit-calendar-picker-indicator {
     justify-content: space-around;
     align-items: center;
   }
+}
+.AboutBanner {
+  background-color: #333;
+  padding-top: 4rem;
+}
+.AboutBanner__text {
+  color: #fff;
+  padding: 2rem;
+  margin: 2rem;
+}
+.AboutBanner__text p {
+  font-size: 0.8rem;
+  font-family: "Archivo", sans-serif;
+  font-weight: 700;
+  letter-spacing: 0.2rem;
+}
+.AboutBanner__text h2 {
+  font-family: "Old Standard TT", sans-serif;
+  font-weight: 400;
+  font-size: 4.5rem;
+  line-height: 4.8rem;
+  letter-spacing: -0.08rem;
+  margin: 1.5rem 0;
+}
+.AboutBanner__links {
+  background-color: #fff;
+  display: flex;
+  justify-content: space-around;
+  width: 10rem;
+  padding: 1rem;
+  margin-right: 2rem;
+  margin-left: auto;
+  border: none;
+}
+.AboutBanner__links a {
+  text-decoration: none;
+  padding: 0.5rem 1rem;
+  color: #222;
+  font-family: "Archivo", sans-serif;
+  font-weight: 700;
+  font-size: 1rem;
+  line-height: 1.1rem;
+  letter-spacing: -0.04rem;
+}
+.AboutBanner__links .AboutSelected {
+  color: #BEAD8E;
+}
+.AboutBanner__links .AboutHome {
+  border-right: 0.05rem solid #222;
 }/*# sourceMappingURL=styles.css.map */
