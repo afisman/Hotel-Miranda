@@ -830,4 +830,116 @@ input[type=date]::-webkit-calendar-picker-indicator {
   letter-spacing: -0.1rem;
   color: #222;
   text-align: center;
+}
+
+.AboutAmmenities {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  padding: 3rem 4rem;
+  margin: 0 auto;
+}
+.AboutAmmenities .bbq {
+  display: none;
+}
+.AboutAmmenities__item {
+  text-align: center;
+  padding: 2rem;
+  cursor: pointer;
+}
+.AboutAmmenities__item svg {
+  transform: scale(1.2);
+}
+.AboutAmmenities__item p {
+  color: #222;
+  font-family: "Archivo", sans-serif;
+  font-size: 0.8rem;
+  line-height: 0.9rem;
+  letter-spacing: 0.15rem;
+  font-weight: 700;
+  margin-top: 1rem;
+}
+.AboutAmmenities__item:hover {
+  background-color: #BEAD8E;
+  color: #fff;
+}
+.AboutAmmenities__item:hover svg {
+  fill: #fff;
+}
+.AboutAmmenities__item:hover svg path {
+  fill: #fff;
+}
+
+@media screen and (min-width: 1000px) {
+  .AboutAmmenities {
+    grid-template-columns: repeat(5, 1fr);
+    gap: 1rem;
+    width: 60%;
+    margin: 0 auto;
+  }
+  .AboutAmmenities__item {
+    padding: 3rem;
+  }
+  .AboutAmmenities .bbq {
+    display: block;
+  }
+}
+.AboutRestaurant {
+  padding: 5rem 3rem;
+}
+.AboutRestaurant__img img {
+  width: 100%;
+  height: auto;
+  padding: 1rem;
+}
+.AboutRestaurant__text {
+  margin-top: 2rem;
+}
+.AboutRestaurant__text h5 {
+  margin-bottom: 1rem;
+  font-family: "Archivo", sans-serif;
+  font-weight: 700;
+  color: #777;
+  letter-spacing: 0.2rem;
+  font-size: 0.8rem;
+  line-height: 1rem;
+}
+.AboutRestaurant__text h2 {
+  font-family: "Old Standard TT", sans-serif;
+  font-weight: 400;
+  font-size: 3.5rem;
+  line-height: 4rem;
+  letter-spacing: -0.08rem;
+  color: #222;
+  margin-bottom: 1rem;
+}
+.AboutRestaurant__text p {
+  font-family: "Archivo", sans-serif;
+  font-weight: 400;
+  font-size: 0.8rem;
+  line-height: 1.5rem;
+  color: #777;
+  margin-bottom: 1rem;
+}
+.AboutRestaurant__text button {
+  background-color: #BEAD8E;
+  color: #fff;
+  padding: 1rem 2rem;
+  border: none;
+}
+
+@media screen and (min-width: 1000px) {
+  .AboutRestaurant {
+    margin: 0 auto;
+    width: 60%;
+    display: flex;
+    justify-content: space-between;
+  }
+  .AboutRestaurant__img {
+    flex: 1 1 0;
+    padding: 2rem;
+  }
+  .AboutRestaurant__text {
+    flex: 1 1 0;
+    padding: 2rem;
+  }
 }/*# sourceMappingURL=styles.css.map */

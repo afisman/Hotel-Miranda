@@ -1,0 +1,62 @@
+.AboutAmmenities {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    padding: 3rem 4rem;
+    margin: 0 auto;
+
+    .bbq {
+        display: none;
+    }
+
+    &__item {
+        text-align: center;
+        padding: 2rem;
+        cursor: pointer;
+
+        svg {
+            transform: scale(1.2);
+        }
+
+        p {
+            color: #222;
+            font-family: 'Archivo', sans-serif;
+            font-size: 0.8rem;
+            line-height: 0.9rem;
+            letter-spacing: 0.15rem;
+            font-weight: 700;
+            margin-top: 1rem;
+        }
+
+        &:hover {
+            background-color: #BEAD8E;
+            color: #fff;
+
+            svg {
+                fill: #fff;
+
+                path {
+                    fill: #fff;
+                }
+            }
+        }
+    }
+
+}
+
+@media screen and (min-width: 1000px) {
+    .AboutAmmenities {
+        grid-template-columns: repeat(5, 1fr);
+        gap: 1rem;
+        width: 60%;
+        margin: 0 auto;
+
+        &__item {
+            padding: 3rem;
+        }
+
+
+        .bbq {
+            display: block;
+        }
+    }
+}
