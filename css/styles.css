@@ -767,7 +767,7 @@ input[type=date]::-webkit-calendar-picker-indicator {
 }
 .AboutBanner {
   background-color: #333;
-  padding-top: 4rem;
+  padding-top: 3rem;
 }
 .AboutBanner__text {
   color: #fff;
@@ -813,4 +813,21 @@ input[type=date]::-webkit-calendar-picker-indicator {
 }
 .AboutBanner__links .AboutHome {
   border-right: 0.05rem solid #222;
+}
+
+.AboutVideo {
+  padding: 3rem 2rem;
+}
+.AboutVideo iframe {
+  width: 100%;
+  height: auto;
+}
+.AboutVideo h3 {
+  font-family: "Old Standard TT", sans-serif;
+  font-weight: 400;
+  font-size: 2rem;
+  line-height: 2.4rem;
+  letter-spacing: -0.1rem;
+  color: #222;
+  text-align: center;
 }/*# sourceMappingURL=styles.css.map */
