@@ -5,7 +5,10 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <link rel="stylesheet" href="./css/styles.css">
-    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css" />
+    <link rel="stylesheet" href="https://unpkg.com/swiper/swiper-bundle.min.css" />
+    <script src="https://unpkg.com/swiper/swiper-bundle.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-element-bundle.min.js"></script>
+    <script type="text/javascript" src="./src/scripts/swipers/homeSwiper.js" defer></script>
 
     <title>Hotel Miranda</title>
 
@@ -101,7 +104,23 @@
 
         </section>
         <section class="roomSection">
-
+            <h5>ROOMS</h5>
+            <h2>Hand Picked Rooms</h2>
+            <div class="roomSection__swiper swiper">
+                <div class="swiper-wrapper">
+                    <div class="swiper-slide">
+                        <img src="./Public/Img/rooms/room1-room.jpg" alt="Room 1">
+                    </div>
+                    <div class="swiper-slide">
+                        <img src="./Public/Img/aboutUs-hotel.jpg" alt="Room 1">
+                    </div>
+                    <div class="swiper-slide">
+                        <img src="./Public/Img/rooms/room1-room.jpg" alt="Room 1">
+                    </div>
+                </div>
+                <div class="swiper-button-next"></div>
+                <div class="swiper-button-prev"></div>
+            </div>
         </section>
         <section class="introSection">
             <div class="introSection__left">

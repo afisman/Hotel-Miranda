@@ -765,6 +765,19 @@ input[type=date]::-webkit-calendar-picker-indicator {
     align-items: center;
   }
 }
+.roomSection__swiper {
+  width: 100%;
+  height: 100%;
+}
+.roomSection__swiper .swiper-slide {
+  padding: 3rem;
+}
+.roomSection__swiper .swiper-slide img {
+  margin: 0 auto;
+  width: 50rem;
+  height: auto;
+}
+
 .AboutBanner {
   background-color: #333;
   padding-top: 3rem;
@@ -817,10 +830,10 @@ input[type=date]::-webkit-calendar-picker-indicator {
 
 .AboutVideo {
   padding: 3rem 2rem;
+  text-align: center;
 }
 .AboutVideo iframe {
   width: 100%;
-  height: auto;
 }
 .AboutVideo h3 {
   font-family: "Old Standard TT", sans-serif;
@@ -829,9 +842,14 @@ input[type=date]::-webkit-calendar-picker-indicator {
   line-height: 2.4rem;
   letter-spacing: -0.1rem;
   color: #222;
-  text-align: center;
 }
 
+@media screen and (min-width: 1000px) {
+  .AboutVideo iframe {
+    width: 40rem;
+    height: 30rem;
+  }
+}
 .AboutAmmenities {
   display: grid;
   grid-template-columns: repeat(2, 1fr);
@@ -941,5 +959,100 @@ input[type=date]::-webkit-calendar-picker-indicator {
   .AboutRestaurant__text {
     flex: 1 1 0;
     padding: 2rem;
+  }
+}
+.AboutFacilities {
+  padding: 2rem 4rem;
+  background-color: #222;
+}
+.AboutFacilities__title {
+  text-align: center;
+}
+.AboutFacilities__title h5 {
+  font-family: "Archivo", sans-serif;
+  font-weight: 700;
+  font-size: 1rem;
+  line-height: 1.1rem;
+  letter-spacing: 0.2rem;
+  color: #C2C2C2;
+  padding: 1rem;
+}
+.AboutFacilities__title h2 {
+  padding: 1rem;
+  font-family: "Old Standard TT", sans-serif;
+  font-weight: 400;
+  font-size: 5rem;
+  line-height: 5rem;
+  letter-spacing: -0.2rem;
+  color: #fff;
+}
+.AboutFacilities__grid {
+  padding: 2rem 12rem;
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 3rem;
+}
+.AboutFacilities__grid__item {
+  padding: 2rem;
+  cursor: pointer;
+  border-radius: 0.2rem;
+  background-color: #292929;
+}
+.AboutFacilities__grid__item__title {
+  display: flex;
+  justify-content: space-between;
+}
+.AboutFacilities__grid__item__title h2 {
+  font-size: 7.5rem;
+  font-weight: 700;
+  font-family: "Archivo", sans-serif;
+  color: #222222;
+  transform: translateY(-35%);
+}
+.AboutFacilities__grid__item h4 {
+  font-family: "Old Standard TT", sans-serif;
+  font-size: 2rem;
+  line-height: 2rem;
+  letter-spacing: -0.07rem;
+  color: #fff;
+  font-weight: 400;
+}
+.AboutFacilities__grid__item p {
+  margin-top: 1rem;
+  font-family: "Archivo", sans-serif;
+  font-weight: 400;
+  font-size: 1rem;
+  line-height: 1.6rem;
+  color: #fff;
+}
+.AboutFacilities__grid__item:hover {
+  transform: scale(1.02);
+  box-shadow: 0.1rem 0.1rem 0.3rem rgba(177, 175, 175, 0.7019607843);
+}
+
+@media screen and (min-width: 1000px) {
+  .AboutFacilities__grid {
+    padding: 4rem;
+    width: 60%;
+    margin: 0 auto;
+  }
+}
+.AboutCounter__items {
+  width: 80%;
+  margin: 0 auto;
+}
+.AboutCounter__items__item {
+  margin: 0 auto;
+  width: 80%;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+@media screen and (min-width: 1000px) {
+  .AboutCounter__items {
+    width: 50%;
+    display: flex;
+    justify-content: space-between;
   }
 }/*# sourceMappingURL=styles.css.map */

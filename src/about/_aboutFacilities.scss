@@ -1,0 +1,92 @@
+.AboutFacilities {
+    padding: 2rem 4rem;
+    background-color: #222;
+
+    &__title {
+        text-align: center;
+
+        h5 {
+            font-family: 'Archivo', sans-serif;
+            font-weight: 700;
+            font-size: 1rem;
+            line-height: 1.1rem;
+            letter-spacing: 0.2rem;
+            color: #C2C2C2;
+            padding: 1rem;
+        }
+
+        h2 {
+            padding: 1rem;
+            font-family: 'Old Standard TT', sans-serif;
+            font-weight: 400;
+            font-size: 5rem;
+            line-height: 5rem;
+            letter-spacing: -0.2rem;
+            color: #fff;
+        }
+    }
+
+
+
+
+
+    &__grid {
+        padding: 2rem 12rem;
+        display: grid;
+        grid-template-columns: repeat(3, 1fr);
+        gap: 3rem;
+
+        &__item {
+            padding: 2rem;
+            cursor: pointer;
+            border-radius: .2rem;
+            background-color: #292929;
+
+            &__title {
+                display: flex;
+                justify-content: space-between;
+
+                h2 {
+                    font-size: 7.5rem;
+                    font-weight: 700;
+                    font-family: 'Archivo', sans-serif;
+                    color: #222222;
+                    transform: translateY(-35%);
+                }
+            }
+
+            h4 {
+                font-family: 'Old Standard TT', sans-serif;
+                font-size: 2rem;
+                line-height: 2rem;
+                letter-spacing: -0.07rem;
+                color: #fff;
+                font-weight: 400;
+            }
+
+            p {
+                margin-top: 1rem;
+                font-family: 'Archivo', sans-serif;
+                font-weight: 400;
+                font-size: 1rem;
+                line-height: 1.6rem;
+                color: #fff;
+            }
+
+            &:hover {
+                transform: scale(1.02);
+                box-shadow: .1rem .1rem .3rem #b1afafb3;
+            }
+        }
+    }
+}
+
+@media screen and (min-width: 1000px) {
+    .AboutFacilities {
+        &__grid {
+            padding: 4rem;
+            width: 60%;
+            margin: 0 auto;
+        }
+    }
+}

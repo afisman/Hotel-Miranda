@@ -1,9 +1,9 @@
 .AboutVideo {
     padding: 3rem 2rem;
+    text-align: center;
 
     iframe {
         width: 100%;
-        height: auto;
     }
 
     h3 {
@@ -13,6 +13,14 @@
         line-height: 2.4rem;
         letter-spacing: -0.1rem;
         color: #222;
-        text-align: center;
+    }
+}
+
+@media screen and (min-width: 1000px) {
+    .AboutVideo {
+        iframe {
+            width: 40rem;
+            height: 30rem;
+        }
     }
 }
