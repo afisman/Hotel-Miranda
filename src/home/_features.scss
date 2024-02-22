@@ -25,15 +25,9 @@
         }
     }
 
-
-
-
-
-    &__grid {
+    &__swiper {
         padding: 2rem 12rem;
-        display: grid;
-        grid-template-columns: repeat(3, 1fr);
-        gap: 3rem;
+
 
         &__item {
             padding: 2rem;
@@ -76,5 +70,12 @@
                 box-shadow: .1rem .1rem .3rem #b1afafb3;
             }
         }
+    }
+}
+
+@media screen and (min-width: 1000px) {
+    .featuresSection {
+        width: 60%;
+        margin: 0 auto;
     }
 }

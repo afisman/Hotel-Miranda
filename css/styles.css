@@ -633,29 +633,26 @@ input[type=date]::-webkit-calendar-picker-indicator {
   letter-spacing: -0.2rem;
   color: #222;
 }
-.featuresSection__grid {
+.featuresSection__swiper {
   padding: 2rem 12rem;
-  display: grid;
-  grid-template-columns: repeat(3, 1fr);
-  gap: 3rem;
 }
-.featuresSection__grid__item {
+.featuresSection__swiper__item {
   padding: 2rem;
   cursor: pointer;
   border-radius: 0.2rem;
 }
-.featuresSection__grid__item__title {
+.featuresSection__swiper__item__title {
   display: flex;
   justify-content: space-between;
 }
-.featuresSection__grid__item__title h2 {
+.featuresSection__swiper__item__title h2 {
   font-size: 7.5rem;
   font-weight: 700;
   font-family: "Archivo", sans-serif;
   color: rgba(34, 34, 34, 0.0392156863);
   transform: translateY(-35%);
 }
-.featuresSection__grid__item h4 {
+.featuresSection__swiper__item h4 {
   font-family: "Old Standard TT", sans-serif;
   font-size: 2rem;
   line-height: 2rem;
@@ -663,7 +660,7 @@ input[type=date]::-webkit-calendar-picker-indicator {
   color: #222;
   font-weight: 400;
 }
-.featuresSection__grid__item p {
+.featuresSection__swiper__item p {
   margin-top: 1rem;
   font-family: "Archivo", sans-serif;
   font-weight: 400;
@@ -671,11 +668,17 @@ input[type=date]::-webkit-calendar-picker-indicator {
   line-height: 1.6rem;
   color: #777;
 }
-.featuresSection__grid__item:hover {
+.featuresSection__swiper__item:hover {
   transform: scale(1.02);
   box-shadow: 0.1rem 0.1rem 0.3rem rgba(177, 175, 175, 0.7019607843);
 }
 
+@media screen and (min-width: 1000px) {
+  .featuresSection {
+    width: 60%;
+    margin: 0 auto;
+  }
+}
 .foodSection__body {
   padding: 5rem 10rem;
 }
