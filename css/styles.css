@@ -610,7 +610,7 @@ input[type=date]::-webkit-calendar-picker-indicator {
   }
 }
 .featuresSection {
-  padding: 2rem 4rem;
+  padding: 4rem;
 }
 .featuresSection__title {
   text-align: center;
@@ -634,12 +634,16 @@ input[type=date]::-webkit-calendar-picker-indicator {
   color: #222;
 }
 .featuresSection__swiper {
-  padding: 2rem 12rem;
+  padding: 4rem 12rem;
+  margin-bottom: 2rem;
+  width: 60%;
+  margin: 0 auto;
 }
 .featuresSection__swiper__item {
   padding: 2rem;
   cursor: pointer;
   border-radius: 0.2rem;
+  margin: 4rem 0;
 }
 .featuresSection__swiper__item__title {
   display: flex;
@@ -675,9 +679,23 @@ input[type=date]::-webkit-calendar-picker-indicator {
 
 @media screen and (min-width: 1000px) {
   .featuresSection {
-    width: 60%;
-    margin: 0 auto;
+    width: 70%;
+    margin: 3rem auto;
   }
+  .featuresSection__swiper {
+    width: 100%;
+  }
+}
+@media screen and (min-width: 1600px) {
+  .featuresSection {
+    width: 50%;
+  }
+}
+.foodSection__span {
+  text-align: right;
+}
+.foodSection__span img {
+  transform: translateX(2rem);
 }
 .foodSection__body {
   padding: 5rem 10rem;
@@ -699,24 +717,22 @@ input[type=date]::-webkit-calendar-picker-indicator {
   letter-spacing: -0.16rem;
   color: #222;
 }
-.foodSection__body__menu {
-  display: grid;
-  grid-template-columns: repeat(2, 1fr);
-  gap: 2rem;
+.foodSection__body__swiper .swiper-slide {
+  display: flex;
 }
-.foodSection__body__menu__item {
+.foodSection__body__swiper__item {
   display: flex;
   align-items: center;
 }
-.foodSection__body__menu__item img {
+.foodSection__body__swiper__item img {
   width: 7.5rem;
   height: 7.5rem;
 }
-.foodSection__body__menu__item__text {
+.foodSection__body__swiper__item__text {
   padding: 1rem;
   color: #222;
 }
-.foodSection__body__menu__item__text h4 {
+.foodSection__body__swiper__item__text h4 {
   font-family: "Old Standard TT", sans-serif;
   font-weight: 400;
   font-size: 1.5rem;
@@ -724,14 +740,55 @@ input[type=date]::-webkit-calendar-picker-indicator {
   letter-spacing: -0.08rem;
   padding: 0.5rem;
 }
-.foodSection__body__menu__item__text p {
+.foodSection__body__swiper__item__text p {
   font-family: "Roboto", sans-serif;
   font-weight: 400;
   font-size: 1rem;
   line-height: 1.5rem;
   padding: 0.5rem;
 }
+.foodSection__body .buttons-menu {
+  width: 10rem;
+  display: flex;
+  justify-content: space-between;
+  margin-top: 4rem;
+}
+.foodSection__body .buttons-menu__prev, .foodSection__body .buttons-menu__next {
+  color: #fff;
+  background-color: #BDAC8D;
+  padding: 1.5rem;
+  font-size: 0.08rem;
+}
+.foodSection__body .buttons-menu__prev:hover svg path, .foodSection__body .buttons-menu__next:hover svg path {
+  fill: #fff;
+}
+.foodSection__body .buttons-menu__prev svg, .foodSection__body .buttons-menu__next svg {
+  transform: scale(2);
+}
 
+@media screen and (min-width: 1000px) {
+  .foodSection__span {
+    text-align: left;
+  }
+  .foodSection__span img {
+    transform: translateX(-2rem);
+  }
+  .foodSection__body {
+    position: relative;
+    width: 80%;
+    margin: 0 auto;
+  }
+  .foodSection__body__swiper {
+    width: 90%;
+    margin: 0 auto;
+  }
+  .foodSection__body .buttons-menu {
+    margin-top: 0;
+    position: absolute;
+    top: 10%;
+    right: 10%;
+  }
+}
 .infoSection {
   background-color: #222;
   padding: 2rem 4rem;
@@ -765,11 +822,16 @@ input[type=date]::-webkit-calendar-picker-indicator {
 
 @media screen and (min-width: 1000px) {
   .infoSection {
-    width: 60%;
+    width: 80%;
     margin: 0 auto;
     display: flex;
     justify-content: space-around;
     align-items: center;
+  }
+}
+@media screen and (min-width: 1600px) {
+  .infoSection {
+    width: 60%;
   }
 }
 .roomSection {
@@ -901,6 +963,27 @@ input[type=date]::-webkit-calendar-picker-indicator {
   .roomSection__swiper .swiper-slide img {
     width: 60%;
     height: 50vh;
+  }
+}
+.imagesSection__swiper .swiper-wrapper {
+  margin: 4rem 0;
+}
+.imagesSection__swiper__item {
+  text-align: center;
+}
+.imagesSection__swiper__item img {
+  width: 80%;
+  height: 60vh;
+  object-fit: cover;
+}
+
+@media screen and (min-width: 1000px) {
+  .imagesSection {
+    width: 60%;
+    margin: 0 auto;
+  }
+  .imagesSection__swiper__item img {
+    height: 30vh;
   }
 }
 .AboutBanner {

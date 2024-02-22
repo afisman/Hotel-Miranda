@@ -1,0 +1,33 @@
+.imagesSection {
+    &__swiper {
+
+        .swiper-wrapper {
+            margin: 4rem 0;
+        }
+
+        &__item {
+            text-align: center;
+
+            img {
+                width: 80%;
+                height: 60vh;
+                object-fit: cover;
+            }
+        }
+    }
+}
+
+@media screen and (min-width: 1000px) {
+    .imagesSection {
+        width: 60%;
+        margin: 0 auto;
+
+        &__swiper {
+            &__item {
+                img {
+                    height: 30vh;
+                }
+            }
+        }
+    }
+}

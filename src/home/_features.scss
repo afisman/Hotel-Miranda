@@ -1,5 +1,7 @@
 .featuresSection {
-    padding: 2rem 4rem;
+    padding: 4rem;
+
+
 
     &__title {
         text-align: center;
@@ -26,13 +28,16 @@
     }
 
     &__swiper {
-        padding: 2rem 12rem;
-
+        padding: 4rem 12rem;
+        margin-bottom: 2rem;
+        width: 60%;
+        margin: 0 auto;
 
         &__item {
             padding: 2rem;
             cursor: pointer;
             border-radius: .2rem;
+            margin: 4rem 0;
 
             &__title {
                 display: flex;
@@ -75,7 +80,17 @@
 
 @media screen and (min-width: 1000px) {
     .featuresSection {
-        width: 60%;
-        margin: 0 auto;
+        width: 70%;
+        margin: 3rem auto;
+
+        &__swiper {
+            width: 100%;
+        }
+    }
+}
+
+@media screen and (min-width: 1600px) {
+    .featuresSection {
+        width: 50%;
     }
 }

@@ -1,5 +1,13 @@
 .foodSection {
 
+    &__span {
+        text-align: right;
+
+        img {
+            transform: translateX(2rem);
+        }
+    }
+
     &__body {
         padding: 5rem 10rem;
 
@@ -22,10 +30,11 @@
             color: #222;
         }
 
-        &__menu {
-            display: grid;
-            grid-template-columns: repeat(2, 1fr);
-            gap: 2rem;
+        &__swiper {
+
+            .swiper-slide {
+                display: flex;
+            }
 
             &__item {
                 display: flex;
@@ -57,9 +66,71 @@
                         padding: .5rem;
                     }
                 }
+
+            }
+
+
+        }
+
+        .buttons-menu {
+            width: 10rem;
+            display: flex;
+            justify-content: space-between;
+            margin-top: 4rem;
+
+            &__prev,
+            &__next {
+                color: #fff;
+                background-color: #BDAC8D;
+                padding: 1.5rem;
+                font-size: .08rem;
+
+                &:hover {
+
+                    svg {
+                        path {
+                            fill: #fff;
+                        }
+                    }
+                }
+
+                svg {
+                    transform: scale(2);
+                }
+            }
+        }
+    }
+
+
+}
+
+@media screen and (min-width: 1000px) {
+    .foodSection {
+        &__span {
+            text-align: left;
+
+            img {
+
+                transform: translateX(-2rem);
+            }
+        }
+
+        &__body {
+            position: relative;
+            width: 80%;
+            margin: 0 auto;
+
+            &__swiper {
+                width: 90%;
+                margin: 0 auto;
+            }
+
+            .buttons-menu {
+                margin-top: 0;
+                position: absolute;
+                top: 10%;
+                right: 10%;
             }
         }
     }
 }
-
-@media screen and (min-width: 1000px) {}
