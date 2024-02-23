@@ -95,7 +95,8 @@ body {
     height: 7rem;
   }
   .header__nav p {
-    padding: 0.5rem 5rem;
+    display: block;
+    padding: 0.5rem 5rem 0 5rem;
     color: #fff;
   }
   .navbar {
@@ -138,6 +139,7 @@ body {
   display: grid;
   grid-template-columns: 1fr;
   gap: 2rem;
+  background-image: url("../../Hotel-Miranda/Public/Img/background-img.png");
 }
 .footer__sections__left {
   padding: 1rem;
@@ -1053,9 +1055,18 @@ input[type=date]::-webkit-calendar-picker-indicator {
 }
 
 @media screen and (min-width: 1000px) {
+  .AboutVideo {
+    width: 70%;
+    margin: 0 auto;
+  }
   .AboutVideo iframe {
-    width: 40rem;
-    height: 30rem;
+    width: 80%;
+    height: 50vh;
+  }
+  .AboutVideo h3 {
+    padding-top: 4rem;
+    font-size: 4.5rem;
+    line-height: 5.5rem;
   }
 }
 .AboutAmmenities {
@@ -1262,5 +1273,142 @@ input[type=date]::-webkit-calendar-picker-indicator {
     width: 50%;
     display: flex;
     justify-content: space-between;
+  }
+}
+.RoomsBanner {
+  background-color: #333;
+  padding-top: 3rem;
+}
+.RoomsBanner__text {
+  color: #fff;
+  padding: 2rem;
+  margin: 2rem;
+}
+.RoomsBanner__text p {
+  font-size: 0.8rem;
+  font-family: "Archivo", sans-serif;
+  font-weight: 700;
+  letter-spacing: 0.2rem;
+}
+.RoomsBanner__text h2 {
+  font-family: "Old Standard TT", sans-serif;
+  font-weight: 400;
+  font-size: 4.5rem;
+  line-height: 4.8rem;
+  letter-spacing: -0.08rem;
+  margin: 1.5rem 0;
+}
+.RoomsBanner__links {
+  background-color: #fff;
+  display: flex;
+  justify-content: space-around;
+  width: 10rem;
+  padding: 1rem;
+  margin-right: 2rem;
+  margin-left: auto;
+  border: none;
+}
+.RoomsBanner__links a {
+  text-decoration: none;
+  padding: 0.5rem 1rem;
+  color: #222;
+  font-family: "Archivo", sans-serif;
+  font-weight: 700;
+  font-size: 1rem;
+  line-height: 1.1rem;
+  letter-spacing: -0.04rem;
+}
+.RoomsBanner__links .RoomsSelected {
+  color: #BEAD8E;
+}
+.RoomsBanner__links .RoomstHome {
+  border-right: 0.05rem solid #222;
+}
+
+.RoomsGridSection {
+  padding: 5rem;
+}
+.RoomsGridSection__swiper {
+  width: 60%;
+  margin: 0 auto;
+}
+.RoomsGridSection__swiper .swiper-wrapper {
+  margin-bottom: 4rem;
+}
+.RoomsGridSection__swiper .swiper-pagination-bullet {
+  width: 1.25rem;
+  height: 1.25rem;
+  text-align: center;
+  line-height: 1.25rem;
+  font-size: 0.7rem;
+  color: #000;
+  opacity: 1;
+  background: rgba(0, 0, 0, 0.2);
+  border-radius: 0;
+}
+.RoomsGridSection__swiper .swiper-pagination-bullet-active {
+  color: #fff;
+  background: #007aff;
+}
+.RoomsGridSection__swiper .swiper-slide img {
+  width: 100%;
+  height: auto;
+}
+.RoomsGridSection__swiper__icons {
+  padding: 1.2rem;
+  display: flex;
+  justify-content: space-around;
+  width: 80%;
+  margin: 0 auto;
+  transform: translateY(-2rem);
+  background-color: #fff;
+  z-index: 2;
+  box-shadow: 0 0.5rem 1rem 0 rgba(138, 138, 138, 0.0509803922);
+}
+.RoomsGridSection__swiper__icons svg {
+  transform: scale(1.6);
+}
+.RoomsGridSection__swiper__text {
+  text-align: center;
+}
+.RoomsGridSection__swiper__text h3 {
+  font-family: "Old Standard TT", sans-serif;
+  font-weight: 400;
+  font-size: 1.5rem;
+  line-height: 1.5rem;
+  letter-spacing: -0.02rem;
+  color: #222;
+  margin-bottom: 1rem;
+}
+.RoomsGridSection__swiper__text p {
+  font-family: "Roboto", sans-serif;
+  font-size: 0.9rem;
+  line-height: 1.5rem;
+  font-weight: 400;
+  color: #777;
+  padding: 0 2rem;
+  margin-bottom: 1rem;
+}
+.RoomsGridSection__swiper__text__price {
+  display: flex;
+  font-family: "Archivo", sans-serif;
+  font-weight: 700;
+  font-size: 1rem;
+  line-height: 1.1rem;
+  justify-content: center;
+  margin-bottom: 2rem;
+}
+.RoomsGridSection__swiper__text__price h4 {
+  color: #BEAD8E;
+  padding-right: 1rem;
+}
+.RoomsGridSection__swiper__text__price h5 {
+  color: #BDBDBD;
+  padding-left: 1rem;
+}
+
+@media screen and (min-width: 1000px) and (max-width: 1600px) {
+  .RoomsGridSection__swiper__icons svg {
+    transform: scale(1.2);
   }
 }/*# sourceMappingURL=styles.css.map */

@@ -1,0 +1,123 @@
+.RoomsGridSection {
+    padding: 5rem;
+
+    &__swiper {
+        width: 60%;
+        margin: 0 auto;
+
+        .swiper-wrapper {
+            margin-bottom: 4rem;
+
+        }
+
+        .swiper-pagination-bullet {
+            width: 1.25rem;
+            height: 1.25rem;
+            text-align: center;
+            line-height: 1.25rem;
+            font-size: 0.7rem;
+            color: #000;
+            opacity: 1;
+            background: rgba(0, 0, 0, 0.2);
+            border-radius: 0;
+        }
+
+        .swiper-pagination-bullet-active {
+            color: #fff;
+            background: #007aff;
+        }
+
+        .swiper-slide {
+
+            img {
+                width: 100%;
+                height: auto;
+            }
+
+        }
+
+        &__icons {
+            padding: 1.2rem;
+            display: flex;
+            justify-content: space-around;
+            width: 80%;
+            margin: 0 auto;
+            transform: translateY(-2rem);
+            background-color: #fff;
+            z-index: 2;
+            box-shadow: 0 0.5rem 1rem 0 #8A8A8A0D;
+
+            svg {
+                transform: scale(1.6);
+            }
+        }
+
+        &__text {
+            text-align: center;
+
+            h3 {
+                font-family: 'Old Standard TT', sans-serif;
+                font-weight: 400;
+                font-size: 1.5rem;
+                line-height: 1.5rem;
+                letter-spacing: -0.02rem;
+                color: #222;
+                margin-bottom: 1rem;
+            }
+
+            p {
+                font-family: 'Roboto', sans-serif;
+                font-size: 0.9rem;
+                line-height: 1.5rem;
+                font-weight: 400;
+                color: #777;
+                padding: 0 2rem;
+                margin-bottom: 1rem;
+            }
+
+            &__price {
+                display: flex;
+                font-family: 'Archivo', sans-serif;
+                font-weight: 700;
+                font-size: 1rem;
+                line-height: 1.1rem;
+                justify-content: center;
+                margin-bottom: 2rem;
+
+                h4 {
+                    color: #BEAD8E;
+                    padding-right: 1rem;
+                }
+
+                h5 {
+                    color: #BDBDBD;
+                    padding-left: 1rem;
+                }
+            }
+        }
+    }
+}
+
+@media screen and (min-width: 1000px) and (max-width: 1600px) {
+    .RoomsGridSection {
+        &__swiper {
+            &__icons {
+                svg {
+                    transform: scale(1.2);
+                }
+            }
+        }
+    }
+}
+
+// @media screen and (min-width: 1600px) {
+//     .RoomsGridSection {
+//         &__swiper {
+//             &__icons {
+//                 svg {
+//                     transform: scale(1.6);
+//                 }
+//             }
+//         }
+//     }
+// }

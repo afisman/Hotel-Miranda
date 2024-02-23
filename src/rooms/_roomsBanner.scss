@@ -1,0 +1,59 @@
+.RoomsBanner {
+    background-color: #333;
+    padding-top: 3rem;
+
+    &__text {
+        color: #fff;
+        padding: 2rem;
+        margin: 2rem;
+
+        p {
+            font-size: 0.8rem;
+            font-family: 'Archivo', sans-serif;
+            font-weight: 700;
+            letter-spacing: 0.2rem;
+
+        }
+
+        h2 {
+            font-family: 'Old Standard TT', sans-serif;
+            font-weight: 400;
+            font-size: 4.5rem;
+            line-height: 4.8rem;
+            letter-spacing: -0.08rem;
+            margin: 1.5rem 0;
+        }
+    }
+
+    &__links {
+
+        background-color: #fff;
+        display: flex;
+        justify-content: space-around;
+        width: 10rem;
+        padding: 1rem;
+        margin-right: 2rem;
+        margin-left: auto;
+        border: none;
+
+        a {
+            text-decoration: none;
+            padding: .5rem 1rem;
+            color: #222;
+            font-family: 'Archivo', sans-serif;
+            font-weight: 700;
+            font-size: 1rem;
+            line-height: 1.1rem;
+            letter-spacing: -0.04rem;
+        }
+
+        .RoomsSelected {
+            color: #BEAD8E;
+        }
+
+        .RoomstHome {
+            border-right: .05rem solid #222;
+        }
+
+    }
+}

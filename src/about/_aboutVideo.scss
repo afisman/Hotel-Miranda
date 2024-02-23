@@ -18,9 +18,18 @@
 
 @media screen and (min-width: 1000px) {
     .AboutVideo {
+        width: 70%;
+        margin: 0 auto;
+
         iframe {
-            width: 40rem;
-            height: 30rem;
+            width: 80%;
+            height: 50vh;
+        }
+
+        h3 {
+            padding-top: 4rem;
+            font-size: 4.5rem;
+            line-height: 5.5rem;
         }
     }
 }
