@@ -1,6 +1,7 @@
 const swiper = new Swiper('.roomSection__swiper', {
     slidesPerView: 1,
     spaceBetween: 30,
+    loop: true,
     cssMode: true,
     navigation: {
         prevEl: ".swiper-button-prev",
@@ -14,9 +15,19 @@ const featuresSwiper = new Swiper('.featuresSection__swiper', {
     slidesPerView: 1,
     spaceBetween: 30,
     centeredSlides: true,
+    loop: true,
     pagination: {
         el: '.swiper-pagination',
         clickable: true,
+    },
+    breakpoints: {
+        1000: {
+            slidesPerView: 3,
+            grid: {
+                rows: 2,
+                fill: 'rows'
+            }
+        }
     },
     mousewheel: true,
     keyboard: true,
@@ -35,54 +46,53 @@ const menuSwiper = new Swiper('.foodSection__body__swiper', {
         rows: 3,
         fill: "row",
     },
+    breakpoints: {
+        1000: {
+            slidesPerView: 2,
+            slidesPerGroup: 6,
+            grid: {
+                rows: 3,
+                fill: 'rows'
+            }
+        }
+    },
 });
 
 const imagesSwiper = new Swiper('.imagesSection__swiper', {
     slidesPerView: 1,
+    loop: true,
     pagination: {
         el: '.swiper-pagination',
         clickable: true,
     },
-
+    breakpoints: {
+        1000: {
+            slidesPerView: 3,
+        }
+    },
 });
 
 document.onscroll = () => {
     const width = document.body.offsetWidth;
     if (width > 1000) {
-        featuresSwiper.params.slidesPerView = 3
-        featuresSwiper.params.grid.rows = 2
-        featuresSwiper.params.grid.fill = "row"
+
         featuresSwiper.params.centeredSlides = false
         featuresSwiper.update()
 
-        menuSwiper.params.slidesPerView = 2
-        menuSwiper.params.slidesPerGroup = 6
-        menuSwiper.params.grid.rows = 3
-        menuSwiper.params.grid.fill = "row"
         menuSwiper.params.centeredSlides = false
         menuSwiper.update()
-
-        imagesSwiper.params.slidesPerView = 3
 
         imagesSwiper.params.pagination.clickable = false
         imagesSwiper.update()
     } else {
-        featuresSwiper.params.slidesPerView = 1
-        featuresSwiper.params.grid.rows = 1
-        featuresSwiper.params.grid.fill = "row"
+
         featuresSwiper.params.centeredSlides = true
         featuresSwiper.update()
 
-        menuSwiper.params.slidesPerView = 1
-        menuSwiper.params.slidesPerGroup = 1
-        menuSwiper.params.grid.rows = 3
-        menuSwiper.params.grid.fill = "row"
         menuSwiper.params.centeredSlides = true
         menuSwiper.update()
 
-        imagesSwiper.params.slidesPerView = 1
         imagesSwiper.params.pagination.clickable = true
-
         imagesSwiper.update()
     }
 }

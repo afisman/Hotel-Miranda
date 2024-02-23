@@ -30,16 +30,21 @@
 
 
 
-    &__grid {
-        padding: 2rem 12rem;
-        display: grid;
-        grid-template-columns: repeat(3, 1fr);
-        gap: 3rem;
+    &__swiper {
+        padding: 4rem 12rem;
+        margin-bottom: 2rem;
+        width: 90%;
+        margin: 0 auto;
+
+        .swiper-pagination-bullet {
+            background: #D8D8D8;
+        }
 
         &__item {
             padding: 2rem;
             cursor: pointer;
             border-radius: .2rem;
+            margin: 4rem 0;
             background-color: #292929;
 
             &__title {
@@ -81,12 +86,35 @@
     }
 }
 
+@media screen and (min-width: 580px) {
+    .AboutFacilities {
+        &__swiper {
+            width: 70%;
+        }
+    }
+}
+
+@media screen and (min-width: 760px) {
+    .AboutFacilities {
+        &__swiper {
+            width: 50%;
+        }
+    }
+}
+
 @media screen and (min-width: 1000px) {
     .AboutFacilities {
-        &__grid {
-            padding: 4rem;
-            width: 60%;
-            margin: 0 auto;
+        width: 70%;
+        margin: 3rem auto;
+
+        &__swiper {
+            width: 100%;
         }
+    }
+}
+
+@media screen and (min-width: 1600px) {
+    .AboutFacilities {
+        width: 50%;
     }
 }

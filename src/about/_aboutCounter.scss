@@ -1,7 +1,33 @@
 .AboutCounter {
+
+    &__title {
+        padding: 2rem;
+        margin-top: 2rem;
+
+        h5 {
+            font-family: 'Archivo', sans-serif;
+            font-weight: 700;
+            font-size: 0.9rem;
+            line-height: 1rem;
+            letter-spacing: 0.2rem;
+            color: #777;
+            margin-bottom: 2rem;
+        }
+
+        h2 {
+            font-family: 'Old Standard TT', sans-serif;
+            font-weight: 400;
+            font-size: 3.5rem;
+            line-height: 3.8rem;
+            letter-spacing: -0.08rem;
+            color: #222;
+            margin-bottom: 2rem;
+        }
+    }
+
     &__items {
         width: 80%;
-        margin: 0 auto;
+        margin: 2rem auto;
 
         &__item {
             margin: 0 auto;
@@ -9,6 +35,29 @@
             display: flex;
             align-items: center;
             justify-content: space-between;
+        }
+    }
+
+    &__swiper {
+        width: 90%;
+        margin: 4rem auto;
+
+        &__item {
+            width: 100%;
+
+            img {
+                width: 100%;
+                height: auto;
+            }
+        }
+
+        .swiper-pagination-bullet {
+            opacity: 1;
+            background: rgba(255, 255, 255, 0.9);
+        }
+
+        .swiper-pagination-bullet-active {
+            background: #73c0da;
         }
     }
 }

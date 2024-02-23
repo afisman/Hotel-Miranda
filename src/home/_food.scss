@@ -73,7 +73,7 @@
         }
 
         .buttons-menu {
-            width: 10rem;
+            width: 6rem;
             display: flex;
             justify-content: space-between;
             margin-top: 4rem;
@@ -82,7 +82,7 @@
             &__next {
                 color: #fff;
                 background-color: #BDAC8D;
-                padding: 1.5rem;
+                padding: 1.2rem;
                 font-size: .08rem;
 
                 &:hover {
@@ -117,13 +117,8 @@
 
         &__body {
             position: relative;
-            width: 80%;
+            width: 90%;
             margin: 0 auto;
-
-            &__swiper {
-                width: 90%;
-                margin: 0 auto;
-            }
 
             .buttons-menu {
                 margin-top: 0;
@@ -131,6 +126,20 @@
                 top: 10%;
                 right: 10%;
             }
+        }
+    }
+}
+
+@media screen and (min-width: 1600px) {
+    .foodSection {
+        &__body {
+            width: 80%;
+
+            &__swiper {
+                width: 90%;
+                margin: 0 auto;
+            }
+
         }
     }
 }

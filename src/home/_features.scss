@@ -78,6 +78,22 @@
     }
 }
 
+@media screen and (min-width: 580px) {
+    .featuresSection {
+        &__swiper {
+            width: 70%;
+        }
+    }
+}
+
+@media screen and (min-width: 760px) {
+    .featuresSection {
+        &__swiper {
+            width: 50%;
+        }
+    }
+}
+
 @media screen and (min-width: 1000px) {
     .featuresSection {
         width: 70%;

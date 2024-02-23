@@ -679,6 +679,16 @@ input[type=date]::-webkit-calendar-picker-indicator {
   box-shadow: 0.1rem 0.1rem 0.3rem rgba(177, 175, 175, 0.7019607843);
 }
 
+@media screen and (min-width: 580px) {
+  .featuresSection__swiper {
+    width: 70%;
+  }
+}
+@media screen and (min-width: 760px) {
+  .featuresSection__swiper {
+    width: 50%;
+  }
+}
 @media screen and (min-width: 1000px) {
   .featuresSection {
     width: 70%;
@@ -750,7 +760,7 @@ input[type=date]::-webkit-calendar-picker-indicator {
   padding: 0.5rem;
 }
 .foodSection__body .buttons-menu {
-  width: 10rem;
+  width: 6rem;
   display: flex;
   justify-content: space-between;
   margin-top: 4rem;
@@ -758,7 +768,7 @@ input[type=date]::-webkit-calendar-picker-indicator {
 .foodSection__body .buttons-menu__prev, .foodSection__body .buttons-menu__next {
   color: #fff;
   background-color: #BDAC8D;
-  padding: 1.5rem;
+  padding: 1.2rem;
   font-size: 0.08rem;
 }
 .foodSection__body .buttons-menu__prev:hover svg path, .foodSection__body .buttons-menu__next:hover svg path {
@@ -777,10 +787,6 @@ input[type=date]::-webkit-calendar-picker-indicator {
   }
   .foodSection__body {
     position: relative;
-    width: 80%;
-    margin: 0 auto;
-  }
-  .foodSection__body__swiper {
     width: 90%;
     margin: 0 auto;
   }
@@ -789,6 +795,15 @@ input[type=date]::-webkit-calendar-picker-indicator {
     position: absolute;
     top: 10%;
     right: 10%;
+  }
+}
+@media screen and (min-width: 1600px) {
+  .foodSection__body {
+    width: 80%;
+  }
+  .foodSection__body__swiper {
+    width: 90%;
+    margin: 0 auto;
   }
 }
 .infoSection {
@@ -981,11 +996,16 @@ input[type=date]::-webkit-calendar-picker-indicator {
 
 @media screen and (min-width: 1000px) {
   .imagesSection {
-    width: 60%;
+    width: 80%;
     margin: 0 auto;
   }
   .imagesSection__swiper__item img {
     height: 30vh;
+  }
+}
+@media screen and (min-width: 1600px) {
+  .imagesSection {
+    width: 60%;
   }
 }
 .AboutBanner {
@@ -1205,30 +1225,34 @@ input[type=date]::-webkit-calendar-picker-indicator {
   letter-spacing: -0.2rem;
   color: #fff;
 }
-.AboutFacilities__grid {
-  padding: 2rem 12rem;
-  display: grid;
-  grid-template-columns: repeat(3, 1fr);
-  gap: 3rem;
+.AboutFacilities__swiper {
+  padding: 4rem 12rem;
+  margin-bottom: 2rem;
+  width: 90%;
+  margin: 0 auto;
 }
-.AboutFacilities__grid__item {
+.AboutFacilities__swiper .swiper-pagination-bullet {
+  background: #D8D8D8;
+}
+.AboutFacilities__swiper__item {
   padding: 2rem;
   cursor: pointer;
   border-radius: 0.2rem;
+  margin: 4rem 0;
   background-color: #292929;
 }
-.AboutFacilities__grid__item__title {
+.AboutFacilities__swiper__item__title {
   display: flex;
   justify-content: space-between;
 }
-.AboutFacilities__grid__item__title h2 {
+.AboutFacilities__swiper__item__title h2 {
   font-size: 7.5rem;
   font-weight: 700;
   font-family: "Archivo", sans-serif;
   color: #222222;
   transform: translateY(-35%);
 }
-.AboutFacilities__grid__item h4 {
+.AboutFacilities__swiper__item h4 {
   font-family: "Old Standard TT", sans-serif;
   font-size: 2rem;
   line-height: 2rem;
@@ -1236,7 +1260,7 @@ input[type=date]::-webkit-calendar-picker-indicator {
   color: #fff;
   font-weight: 400;
 }
-.AboutFacilities__grid__item p {
+.AboutFacilities__swiper__item p {
   margin-top: 1rem;
   font-family: "Archivo", sans-serif;
   font-weight: 400;
@@ -1244,21 +1268,60 @@ input[type=date]::-webkit-calendar-picker-indicator {
   line-height: 1.6rem;
   color: #fff;
 }
-.AboutFacilities__grid__item:hover {
+.AboutFacilities__swiper__item:hover {
   transform: scale(1.02);
   box-shadow: 0.1rem 0.1rem 0.3rem rgba(177, 175, 175, 0.7019607843);
 }
 
-@media screen and (min-width: 1000px) {
-  .AboutFacilities__grid {
-    padding: 4rem;
-    width: 60%;
-    margin: 0 auto;
+@media screen and (min-width: 580px) {
+  .AboutFacilities__swiper {
+    width: 70%;
   }
+}
+@media screen and (min-width: 760px) {
+  .AboutFacilities__swiper {
+    width: 50%;
+  }
+}
+@media screen and (min-width: 1000px) {
+  .AboutFacilities {
+    width: 70%;
+    margin: 3rem auto;
+  }
+  .AboutFacilities__swiper {
+    width: 100%;
+  }
+}
+@media screen and (min-width: 1600px) {
+  .AboutFacilities {
+    width: 50%;
+  }
+}
+.AboutCounter__title {
+  padding: 2rem;
+  margin-top: 2rem;
+}
+.AboutCounter__title h5 {
+  font-family: "Archivo", sans-serif;
+  font-weight: 700;
+  font-size: 0.9rem;
+  line-height: 1rem;
+  letter-spacing: 0.2rem;
+  color: #777;
+  margin-bottom: 2rem;
+}
+.AboutCounter__title h2 {
+  font-family: "Old Standard TT", sans-serif;
+  font-weight: 400;
+  font-size: 3.5rem;
+  line-height: 3.8rem;
+  letter-spacing: -0.08rem;
+  color: #222;
+  margin-bottom: 2rem;
 }
 .AboutCounter__items {
   width: 80%;
-  margin: 0 auto;
+  margin: 2rem auto;
 }
 .AboutCounter__items__item {
   margin: 0 auto;
@@ -1266,6 +1329,24 @@ input[type=date]::-webkit-calendar-picker-indicator {
   display: flex;
   align-items: center;
   justify-content: space-between;
+}
+.AboutCounter__swiper {
+  width: 90%;
+  margin: 4rem auto;
+}
+.AboutCounter__swiper__item {
+  width: 100%;
+}
+.AboutCounter__swiper__item img {
+  width: 100%;
+  height: auto;
+}
+.AboutCounter__swiper .swiper-pagination-bullet {
+  opacity: 1;
+  background: rgba(255, 255, 255, 0.9);
+}
+.AboutCounter__swiper .swiper-pagination-bullet-active {
+  background: #73c0da;
 }
 
 @media screen and (min-width: 1000px) {
@@ -1336,19 +1417,19 @@ input[type=date]::-webkit-calendar-picker-indicator {
   margin-bottom: 4rem;
 }
 .RoomsGridSection__swiper .swiper-pagination-bullet {
-  width: 1.25rem;
-  height: 1.25rem;
+  width: 2rem;
+  height: 2rem;
   text-align: center;
-  line-height: 1.25rem;
-  font-size: 0.7rem;
+  line-height: 2rem;
+  font-size: 1rem;
   color: #000;
   opacity: 1;
-  background: rgba(0, 0, 0, 0.2);
+  background: transparent;
   border-radius: 0;
 }
 .RoomsGridSection__swiper .swiper-pagination-bullet-active {
   color: #fff;
-  background: #007aff;
+  background: #BEAD8E;
 }
 .RoomsGridSection__swiper .swiper-slide img {
   width: 100%;

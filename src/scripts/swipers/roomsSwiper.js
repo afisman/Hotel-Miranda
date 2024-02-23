@@ -13,23 +13,25 @@ const roomsSwiper = new Swiper('.RoomsGridSection__swiper', {
         rows: 12,
         fill: "row",
     },
+    breakpoints: {
+        1000: {
+            slidesPerView: 3,
+            grid: {
+                rows: 2,
+                fill: 'row'
+            },
+            centeredSlides: true
+        }
+    }
 
 });
 
 document.onscroll = () => {
     const width = document.body.offsetWidth;
     if (width > 1000) {
-        roomsSwiper.params.slidesPerView = 3
-        roomsSwiper.params.grid.rows = 2
-        roomsSwiper.params.grid.fill = "row"
         roomsSwiper.params.centeredSlides = false
         roomsSwiper.update()
-
-
     } else {
-        roomsSwiper.params.slidesPerView = 1
-        roomsSwiper.params.grid.rows = 12
-        roomsSwiper.params.grid.fill = "row"
         roomsSwiper.params.centeredSlides = true
         roomsSwiper.update()
     }

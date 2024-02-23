@@ -19,7 +19,7 @@
 
 @media screen and (min-width: 1000px) {
     .imagesSection {
-        width: 60%;
+        width: 80%;
         margin: 0 auto;
 
         &__swiper {
@@ -29,5 +29,11 @@
                 }
             }
         }
+    }
+}
+
+@media screen and (min-width: 1600px) {
+    .imagesSection {
+        width: 60%;
     }
 }
