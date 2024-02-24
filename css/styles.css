@@ -1555,40 +1555,56 @@ input[type=date]::-webkit-calendar-picker-indicator {
   width: 100%;
   height: auto;
 }
-.OffersList__item__description {
+.OffersList__item__container__description {
   display: flex;
   justify-content: space-between;
 }
-.OffersList__item__description__price {
+.OffersList__item__container__description__title h4 {
+  font-family: " Archivo", sans-serif;
+  font-weight: 700;
+  font-size: 0.8rem;
+  line-height: 0.9rem;
+  letter-spacing: 0.2rem;
+  color: #777;
+}
+.OffersList__item__container__description__title h2 {
+  font-family: "Old Standard TT", sans-serif;
+  font-weight: 400;
+  font-size: 2.5rem;
+  line-height: 3rem;
+  letter-spacing: -0.1rem;
+  color: #222;
+}
+.OffersList__item__container__description__price {
   font-family: "Archivo", sans-serif;
   text-align: right;
   font-weight: 700;
   transform: translateY(-10rem);
   z-index: 2;
 }
-.OffersList__item__description__price h5 {
+.OffersList__item__container__description__price h5 {
   font-size: 1.9rem;
   line-height: 2rem;
   color: #BEAD8E;
 }
-.OffersList__item__description__price h5 span {
+.OffersList__item__container__description__price h5 span {
   font-size: 0.75rem;
   line-height: 0.8rem;
   text-decoration: none;
 }
-.OffersList__item__description__price h4 {
+.OffersList__item__container__description__price h4 {
   font-size: 2.5rem;
   line-height: 2.625rem;
   color: #DE5777;
 }
-.OffersList__item__description__price h4 span {
+.OffersList__item__container__description__price h4 span {
   font-size: 1rem;
   line-height: 1.1rem;
 }
-.OffersList__item__info {
+.OffersList__item__container__info {
   margin-bottom: 2rem;
 }
-.OffersList__item__info p {
+.OffersList__item__container__info p {
   font-family: "Roboto", sans-serif;
   font-weight: 400;
   font-size: 0.8rem;
@@ -1596,17 +1612,17 @@ input[type=date]::-webkit-calendar-picker-indicator {
   color: #777;
   margin-top: 1rem;
 }
-.OffersList__item__info__features {
+.OffersList__item__container__info__features {
   margin-top: 2rem;
   display: grid;
   grid-template-columns: 1fr 1fr;
   gap: 1rem;
 }
-.OffersList__item__info__features__item {
+.OffersList__item__container__info__features__item {
   display: flex;
   align-items: center;
 }
-.OffersList__item__info__features__item h6 {
+.OffersList__item__container__info__features__item h6 {
   margin-left: 1rem;
   font-family: "Roboto", sans-serif;
   font-weight: 500;
@@ -1614,7 +1630,7 @@ input[type=date]::-webkit-calendar-picker-indicator {
   line-height: 1.1rem;
   color: #777;
 }
-.OffersList__item__btn button {
+.OffersList__item__container__btn button {
   padding: 1.5rem 3rem;
   background-color: #BDAC8D;
   color: #fff;
@@ -1629,27 +1645,36 @@ input[type=date]::-webkit-calendar-picker-indicator {
   .OffersList {
     width: 70%;
   }
-  .OffersList__item__description {
-    padding: 0 4rem;
+  .OffersList__item__container {
+    width: 80%;
+    margin: 0 auto;
+    padding: 3rem;
+    transform: translateY(-4rem);
+    background-color: #fff;
+    border-top: 0.375rem solid #BDAC8D;
   }
-  .OffersList__item__description__price {
+  .OffersList__item__container__description {
+    border-bottom: 0.15rem solid #ECECEC;
+    padding-bottom: 2rem;
+  }
+  .OffersList__item__container__description__title h2 {
+    padding-top: 1rem;
+    font-size: 3rem;
+  }
+  .OffersList__item__container__description__price {
     transform: translateY(0);
   }
-  .OffersList__item__info {
+  .OffersList__item__container__info {
     display: flex;
     justify-content: space-between;
     align-items: center;
-    padding: 0 4rem;
   }
-  .OffersList__item__info p {
+  .OffersList__item__container__info p {
     flex: 1 1 0;
     margin-right: 2rem;
     font-size: 1rem;
   }
-  .OffersList__item__info__features {
+  .OffersList__item__container__info__features {
     flex: 1 1 0;
-  }
-  .OffersList__item__btn {
-    padding: 0 4rem;
   }
 }/*# sourceMappingURL=styles.css.map */
