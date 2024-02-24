@@ -1677,4 +1677,83 @@ input[type=date]::-webkit-calendar-picker-indicator {
   .OffersList__item__container__info__features {
     flex: 1 1 0;
   }
+}
+.OffersPopular {
+  padding: 5rem;
+  background-color: #222;
+}
+.OffersPopular__slider {
+  width: 80%;
+  margin: 0 auto;
+}
+.OffersPopular__slider .swiper-wrapper {
+  margin-bottom: 4rem;
+}
+.OffersPopular__slider .swiper-pagination-bullet {
+  background: #D8D8D8;
+}
+.OffersPopular__slider .swiper-slide {
+  background-color: #fff;
+}
+.OffersPopular__slider .swiper-slide img {
+  width: 100%;
+  height: auto;
+}
+.OffersPopular__slider__icons {
+  padding: 1.2rem;
+  display: flex;
+  justify-content: space-around;
+  width: 80%;
+  margin: 0 auto;
+  transform: translateY(-2rem);
+  background-color: #fff;
+  z-index: 2;
+  box-shadow: 0 0.5rem 1rem 0 rgba(138, 138, 138, 0.0509803922);
+}
+.OffersPopular__slider__icons svg {
+  transform: scale(1.6);
+}
+.OffersPopular__slider__text {
+  text-align: center;
+}
+.OffersPopular__slider__text h3 {
+  font-family: "Old Standard TT", sans-serif;
+  font-weight: 400;
+  font-size: 1.5rem;
+  line-height: 1.5rem;
+  letter-spacing: -0.02rem;
+  color: #222;
+  margin-bottom: 1rem;
+}
+.OffersPopular__slider__text p {
+  font-family: "Roboto", sans-serif;
+  font-size: 0.9rem;
+  line-height: 1.5rem;
+  font-weight: 400;
+  color: #777;
+  padding: 0 2rem;
+  margin-bottom: 1rem;
+}
+.OffersPopular__slider__text__price {
+  display: flex;
+  font-family: "Archivo", sans-serif;
+  font-weight: 700;
+  font-size: 1rem;
+  line-height: 1.1rem;
+  justify-content: center;
+  margin-bottom: 2rem;
+}
+.OffersPopular__slider__text__price h4 {
+  color: #BEAD8E;
+  padding-right: 1rem;
+}
+.OffersPopular__slider__text__price h5 {
+  color: #BDBDBD;
+  padding-left: 1rem;
+}
+
+@media screen and (min-width: 1000px) and (max-width: 1600px) {
+  .OffersPopular__slider__icons svg {
+    transform: scale(1.2);
+  }
 }/*# sourceMappingURL=styles.css.map */
