@@ -1402,7 +1402,7 @@ input[type=date]::-webkit-calendar-picker-indicator {
 .RoomsBanner__links .RoomsSelected {
   color: #BEAD8E;
 }
-.RoomsBanner__links .RoomstHome {
+.RoomsBanner__links .RoomsHome {
   border-right: 0.05rem solid #222;
 }
 
@@ -1491,5 +1491,165 @@ input[type=date]::-webkit-calendar-picker-indicator {
 @media screen and (min-width: 1000px) and (max-width: 1600px) {
   .RoomsGridSection__swiper__icons svg {
     transform: scale(1.2);
+  }
+}
+.OffersBanner {
+  background-color: #333;
+  padding-top: 3rem;
+}
+.OffersBanner__text {
+  color: #fff;
+  padding: 2rem;
+  margin: 2rem;
+}
+.OffersBanner__text p {
+  font-size: 0.8rem;
+  font-family: "Archivo", sans-serif;
+  font-weight: 700;
+  letter-spacing: 0.2rem;
+}
+.OffersBanner__text h2 {
+  font-family: "Old Standard TT", sans-serif;
+  font-weight: 400;
+  font-size: 4.5rem;
+  line-height: 4.8rem;
+  letter-spacing: -0.08rem;
+  margin: 1.5rem 0;
+}
+.OffersBanner__links {
+  background-color: #fff;
+  display: flex;
+  justify-content: space-around;
+  width: 10rem;
+  padding: 1rem;
+  margin-right: 2rem;
+  margin-left: auto;
+  border: none;
+}
+.OffersBanner__links a {
+  text-decoration: none;
+  padding: 0.5rem 1rem;
+  color: #222;
+  font-family: "Archivo", sans-serif;
+  font-weight: 700;
+  font-size: 1rem;
+  line-height: 1.1rem;
+  letter-spacing: -0.04rem;
+}
+.OffersBanner__links .OffersSelected {
+  color: #BEAD8E;
+}
+.OffersBanner__links .OffersHome {
+  border-right: 0.05rem solid #222;
+}
+
+.OffersList {
+  margin: 2rem auto;
+  width: 90%;
+}
+.OffersList__item {
+  padding: 2rem;
+  margin: 0 auto;
+}
+.OffersList__item img {
+  width: 100%;
+  height: auto;
+}
+.OffersList__item__description {
+  display: flex;
+  justify-content: space-between;
+}
+.OffersList__item__description__price {
+  font-family: "Archivo", sans-serif;
+  text-align: right;
+  font-weight: 700;
+  transform: translateY(-10rem);
+  z-index: 2;
+}
+.OffersList__item__description__price h5 {
+  font-size: 1.9rem;
+  line-height: 2rem;
+  color: #BEAD8E;
+}
+.OffersList__item__description__price h5 span {
+  font-size: 0.75rem;
+  line-height: 0.8rem;
+  text-decoration: none;
+}
+.OffersList__item__description__price h4 {
+  font-size: 2.5rem;
+  line-height: 2.625rem;
+  color: #DE5777;
+}
+.OffersList__item__description__price h4 span {
+  font-size: 1rem;
+  line-height: 1.1rem;
+}
+.OffersList__item__info {
+  margin-bottom: 2rem;
+}
+.OffersList__item__info p {
+  font-family: "Roboto", sans-serif;
+  font-weight: 400;
+  font-size: 0.8rem;
+  line-height: 1.5rem;
+  color: #777;
+  margin-top: 1rem;
+}
+.OffersList__item__info__features {
+  margin-top: 2rem;
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 1rem;
+}
+.OffersList__item__info__features__item {
+  display: flex;
+  align-items: center;
+}
+.OffersList__item__info__features__item h6 {
+  margin-left: 1rem;
+  font-family: "Roboto", sans-serif;
+  font-weight: 500;
+  font-size: 0.95rem;
+  line-height: 1.1rem;
+  color: #777;
+}
+.OffersList__item__btn button {
+  padding: 1.5rem 3rem;
+  background-color: #BDAC8D;
+  color: #fff;
+  font-family: "Archivo", sans-serif;
+  font-size: 0.8rem;
+  line-height: 0.9rem;
+  letter-spacing: 0.2rem;
+  border: none;
+}
+
+@media screen and (min-width: 1000px) {
+  .OffersList {
+    width: 70%;
+  }
+  .OffersList__item__description {
+    padding: 0 4rem;
+  }
+  .OffersList__item__description__price {
+    transform: translateY(0);
+  }
+  .OffersList__item__info {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0 4rem;
+  }
+  .OffersList__item__info p {
+    flex: 1 1 0;
+    margin-right: 2rem;
+    font-size: 1rem;
+  }
+  .OffersList__item__info__features {
+    flex: 1 1 0;
+  }
+  .OffersList__item__btn {
+    padding: 0 4rem;
   }
 }/*# sourceMappingURL=styles.css.map */

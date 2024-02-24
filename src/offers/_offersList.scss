@@ -1,0 +1,138 @@
+.OffersList {
+    margin: 2rem auto;
+    width: 90%;
+
+
+
+    &__item {
+        padding: 2rem;
+        margin: 0 auto;
+
+        img {
+            width: 100%;
+            height: auto;
+        }
+
+        &__description {
+            display: flex;
+            justify-content: space-between;
+
+            &__price {
+                font-family: 'Archivo', sans-serif;
+                text-align: right;
+                font-weight: 700;
+                transform: translateY(-10rem);
+                z-index: 2;
+                // -webkit-text-stroke: .02rem #D8D8D8;
+
+                h5 {
+                    font-size: 1.9rem;
+                    line-height: 2rem;
+                    color: #BEAD8E;
+
+                    span {
+                        font-size: 0.75rem;
+                        line-height: 0.8rem;
+                        text-decoration: none;
+                    }
+                }
+
+                h4 {
+                    font-size: 2.5rem;
+                    line-height: 2.625rem;
+                    color: #DE5777;
+
+                    span {
+                        font-size: 1rem;
+                        line-height: 1.1rem;
+                    }
+                }
+            }
+        }
+
+        &__info {
+            margin-bottom: 2rem;
+
+            p {
+                font-family: 'Roboto', sans-serif;
+                font-weight: 400;
+                font-size: 0.8rem;
+                line-height: 1.5rem;
+                color: #777;
+                margin-top: 1rem;
+            }
+
+            &__features {
+                margin-top: 2rem;
+                display: grid;
+                grid-template-columns: 1fr 1fr;
+                gap: 1rem;
+
+                &__item {
+                    display: flex;
+                    align-items: center;
+
+                    h6 {
+                        margin-left: 1rem;
+                        font-family: 'Roboto', sans-serif;
+                        font-weight: 500;
+                        font-size: 0.95rem;
+                        line-height: 1.1rem;
+                        color: #777;
+                    }
+                }
+            }
+        }
+
+        &__btn {
+            button {
+                padding: 1.5rem 3rem;
+                background-color: #BDAC8D;
+                color: #fff;
+                font-family: 'Archivo', sans-serif;
+                font-size: 0.8rem;
+                line-height: 0.9rem;
+                letter-spacing: .2rem;
+                border: none;
+            }
+        }
+    }
+}
+
+@media screen and (min-width:1000px) {
+    .OffersList {
+        width: 70%;
+
+        &__item {
+            &__description {
+                padding: 0 4rem;
+
+                &__price {
+                    transform: translateY(0);
+                }
+            }
+
+            &__info {
+                display: flex;
+                justify-content: space-between;
+                align-items: center;
+                padding: 0 4rem;
+
+                p {
+                    flex: 1 1 0;
+                    margin-right: 2rem;
+                    font-size: 1rem;
+                }
+
+                &__features {
+                    flex: 1 1 0;
+                }
+            }
+
+            &__btn {
+                padding: 0 4rem;
+            }
+        }
+
+    }
+}
