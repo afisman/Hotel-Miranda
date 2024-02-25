@@ -16,8 +16,6 @@ const facilitiesSwiper = new Swiper('.AboutFacilities__swiper', {
             }
         }
     },
-    mousewheel: true,
-    keyboard: true,
 });
 
 const counterSwiper = new Swiper('.AboutCounter__swiper', {

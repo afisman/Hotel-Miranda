@@ -5,15 +5,23 @@
     &__slider {
         width: 80%;
         margin: 0 auto;
+        padding: 3rem;
 
         .swiper-wrapper {
             margin-bottom: 4rem;
-
         }
 
-        .swiper-pagination-bullet {
-            background: #D8D8D8;
+        .swiper-button-prev,
+        .swiper-button-next {
+            color: #fff;
+            background-color: #BDAC8D;
+            padding: 1rem;
+            transform: translateY(-8rem);
+            font-size: .03rem;
+            z-index: 2;
         }
+
+
 
         .swiper-slide {
             background-color: #fff;
@@ -43,7 +51,6 @@
 
         &__text {
             text-align: center;
-            // background-color: #fff;
 
             h3 {
                 font-family: 'Old Standard TT', sans-serif;
@@ -88,12 +95,33 @@
     }
 }
 
-@media screen and (min-width: 1000px) and (max-width: 1600px) {
+@media screen and (min-width: 1000px) {
     .OffersPopular {
         &__slider {
+            width: 100%;
+
+            .swiper-button-prev,
+            .swiper-button-next {
+                display: none;
+            }
+
             &__icons {
                 svg {
                     transform: scale(1.2);
+                }
+            }
+        }
+    }
+}
+
+@media screen and (min-width: 1600px) {
+    .OffersPopular {
+        &__slider {
+            width: 80%;
+
+            &__icons {
+                svg {
+                    transform: scale(1.6);
                 }
             }
         }

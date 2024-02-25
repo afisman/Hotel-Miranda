@@ -7,8 +7,7 @@ const swiper = new Swiper('.roomSection__swiper', {
         prevEl: ".swiper-button-prev",
         nextEl: ".swiper-button-next",
     },
-    mousewheel: true,
-    keyboard: true,
+
 });
 
 const featuresSwiper = new Swiper('.featuresSection__swiper', {
@@ -29,8 +28,7 @@ const featuresSwiper = new Swiper('.featuresSection__swiper', {
             }
         }
     },
-    mousewheel: true,
-    keyboard: true,
+
 });
 
 const menuSwiper = new Swiper('.foodSection__body__swiper', {
@@ -60,7 +58,6 @@ const menuSwiper = new Swiper('.foodSection__body__swiper', {
 
 const imagesSwiper = new Swiper('.imagesSection__swiper', {
     slidesPerView: 1,
-    loop: true,
     pagination: {
         el: '.swiper-pagination',
         clickable: true,
@@ -76,8 +73,8 @@ document.onscroll = () => {
     const width = document.body.offsetWidth;
     if (width > 1000) {
 
-        featuresSwiper.params.centeredSlides = false
-        featuresSwiper.update()
+        // featuresSwiper.params.centeredSlides = false
+        // featuresSwiper.update()
 
         menuSwiper.params.centeredSlides = false
         menuSwiper.update()

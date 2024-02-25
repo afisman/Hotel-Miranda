@@ -1,15 +1,16 @@
 const offersSwiper = new Swiper('.OffersPopular__slider', {
     slidesPerView: 1,
-    spaceBetween: 30,
     centeredSlides: true,
-    pagination: {
-        el: '.swiper-pagination',
-        clickable: true,
+    navigation: {
+        nextEl: ".buttons-menu__next",
+        prevEl: ".buttons-menu__prev",
     },
 
     breakpoints: {
         1000: {
             slidesPerView: 3,
+            spaceBetween: 30,
+
         }
     }
 
