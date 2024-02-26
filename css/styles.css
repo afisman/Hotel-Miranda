@@ -139,7 +139,7 @@ body {
   display: grid;
   grid-template-columns: 1fr;
   gap: 2rem;
-  background-image: url("../../Hotel-Miranda/Public/Img/background-img.png");
+  background-image: url("../../Hotel-Miranda/Img/background-img.png");
 }
 .footer__sections__left {
   padding: 1rem;
@@ -638,7 +638,7 @@ input[type=date]::-webkit-calendar-picker-indicator {
 .featuresSection__swiper {
   padding: 4rem 12rem;
   margin-bottom: 2rem;
-  width: 60%;
+  width: 90%;
   margin: 0 auto;
 }
 .featuresSection__swiper__item {
@@ -1059,11 +1059,16 @@ input[type=date]::-webkit-calendar-picker-indicator {
 }
 
 .AboutVideo {
-  padding: 3rem 2rem;
+  max-width: 73.125rem;
+  margin: 0 auto;
   text-align: center;
+  margin-top: 2rem;
+  padding: 0 4rem;
 }
 .AboutVideo iframe {
   width: 100%;
+  height: 40vh;
+  margin-bottom: 2rem;
 }
 .AboutVideo h3 {
   font-family: "Old Standard TT", sans-serif;
@@ -1076,11 +1081,9 @@ input[type=date]::-webkit-calendar-picker-indicator {
 
 @media screen and (min-width: 1000px) {
   .AboutVideo {
-    width: 70%;
-    margin: 0 auto;
+    padding: 0;
   }
   .AboutVideo iframe {
-    width: 80%;
     height: 50vh;
   }
   .AboutVideo h3 {
@@ -1141,12 +1144,14 @@ input[type=date]::-webkit-calendar-picker-indicator {
   }
 }
 .AboutRestaurant {
-  padding: 5rem 3rem;
+  max-width: 73.125rem;
+  margin: 0 auto;
+  margin-bottom: 4rem;
+  padding: 0 4rem;
 }
 .AboutRestaurant__img img {
   width: 100%;
   height: auto;
-  padding: 1rem;
 }
 .AboutRestaurant__text {
   margin-top: 2rem;
@@ -1186,23 +1191,21 @@ input[type=date]::-webkit-calendar-picker-indicator {
 
 @media screen and (min-width: 1000px) {
   .AboutRestaurant {
-    margin: 0 auto;
-    width: 60%;
+    padding: 0;
     display: flex;
-    justify-content: space-between;
+    gap: 2rem;
   }
   .AboutRestaurant__img {
     flex: 1 1 0;
-    padding: 2rem;
   }
   .AboutRestaurant__text {
     flex: 1 1 0;
-    padding: 2rem;
   }
 }
 .AboutFacilities {
   padding: 2rem 4rem;
   background-color: #222;
+  margin-bottom: 4rem;
 }
 .AboutFacilities__title {
   text-align: center;
@@ -1228,7 +1231,7 @@ input[type=date]::-webkit-calendar-picker-indicator {
 .AboutFacilities__swiper {
   padding: 4rem 12rem;
   margin-bottom: 2rem;
-  width: 90%;
+  max-width: 73.125rem;
   margin: 0 auto;
 }
 .AboutFacilities__swiper .swiper-pagination-bullet {
@@ -1278,27 +1281,12 @@ input[type=date]::-webkit-calendar-picker-indicator {
     width: 70%;
   }
 }
-@media screen and (min-width: 760px) {
-  .AboutFacilities__swiper {
-    width: 50%;
-  }
-}
-@media screen and (min-width: 1000px) {
-  .AboutFacilities {
-    width: 70%;
-    margin: 3rem auto;
-  }
-  .AboutFacilities__swiper {
-    width: 100%;
-  }
-}
-@media screen and (min-width: 1600px) {
-  .AboutFacilities {
-    width: 50%;
-  }
+.AboutCounter {
+  max-width: 73.125rem;
+  margin: 0 auto;
+  padding: 0 4rem;
 }
 .AboutCounter__title {
-  padding: 2rem;
   margin-top: 2rem;
 }
 .AboutCounter__title h5 {
@@ -1320,19 +1308,31 @@ input[type=date]::-webkit-calendar-picker-indicator {
   margin-bottom: 2rem;
 }
 .AboutCounter__items {
-  width: 80%;
-  margin: 2rem auto;
+  margin-bottom: 2rem;
 }
 .AboutCounter__items__item {
-  margin: 0 auto;
-  width: 80%;
+  width: 100%;
   display: flex;
   align-items: center;
+  margin-bottom: 2rem;
   justify-content: space-between;
 }
+.AboutCounter__items__item__text h3 {
+  font-family: "Old Standard TT", sans-serif;
+  font-weight: 400;
+  font-size: 3.8rem;
+  line-height: 3.8rem;
+  letter-spacing: -0.12rem;
+}
+.AboutCounter__items__item__text p {
+  font-family: "Roboto", sans-serif;
+  font-weight: 400;
+  font-size: 1rem;
+  line-height: 1rem;
+}
 .AboutCounter__swiper {
-  width: 90%;
-  margin: 4rem auto;
+  width: 100%;
+  margin: 0 auto;
 }
 .AboutCounter__swiper__item {
   width: 100%;
@@ -1350,8 +1350,10 @@ input[type=date]::-webkit-calendar-picker-indicator {
 }
 
 @media screen and (min-width: 1000px) {
+  .AboutCounter {
+    padding: 0;
+  }
   .AboutCounter__items {
-    width: 50%;
     display: flex;
     justify-content: space-between;
   }

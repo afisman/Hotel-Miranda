@@ -14,7 +14,6 @@ const featuresSwiper = new Swiper('.featuresSection__swiper', {
     slidesPerView: 1,
     spaceBetween: 30,
     centeredSlides: true,
-    loop: true,
     pagination: {
         el: '.swiper-pagination',
         clickable: true,
@@ -28,8 +27,8 @@ const featuresSwiper = new Swiper('.featuresSection__swiper', {
             }
         }
     },
-
 });
+
 
 const menuSwiper = new Swiper('.foodSection__body__swiper', {
     slidesPerView: 1,
@@ -73,8 +72,8 @@ document.onscroll = () => {
     const width = document.body.offsetWidth;
     if (width > 1000) {
 
-        // featuresSwiper.params.centeredSlides = false
-        // featuresSwiper.update()
+        featuresSwiper.params.centeredSlides = false
+        featuresSwiper.update()
 
         menuSwiper.params.centeredSlides = false
         menuSwiper.update()

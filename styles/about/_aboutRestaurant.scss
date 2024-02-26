@@ -1,11 +1,15 @@
 .AboutRestaurant {
-    padding: 5rem 3rem;
+
+    max-width: 73.125rem;
+    margin: 0 auto;
+    margin-bottom: 4rem;
+    padding: 0 4rem;
 
     &__img {
         img {
             width: 100%;
             height: auto;
-            padding: 1rem;
+            // padding: 1rem;
         }
     }
 
@@ -53,19 +57,16 @@
 
 @media screen and (min-width: 1000px) {
     .AboutRestaurant {
-        margin: 0 auto;
-        width: 60%;
+        padding: 0;
         display: flex;
-        justify-content: space-between;
+        gap: 2rem;
 
         &__img {
             flex: 1 1 0;
-            padding: 2rem;
         }
 
         &__text {
             flex: 1 1 0;
-            padding: 2rem;
         }
     }
 }
