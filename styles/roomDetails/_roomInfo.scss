@@ -98,3 +98,38 @@
         }
     }
 }
+
+@media screen and (min-width:1000px) {
+    .RoomSection {
+        max-width: 73.125rem;
+        margin: 0 auto;
+
+        .roomInfo {
+            display: flex;
+
+            &__info {
+                &__text {
+                    display: flex;
+                    justify-content: space-between;
+                    align-items: center;
+                    margin-right: 2rem;
+                    background-color: #fff;
+                    transform: translateY(4rem);
+                    padding: 1rem 2rem;
+
+                    h2 {
+                        font-size: 3rem;
+                    }
+                }
+
+                h3 {
+                    font-size: 2.5rem;
+
+                    p {
+                        font-size: 1rem;
+                    }
+                }
+            }
+        }
+    }
+}

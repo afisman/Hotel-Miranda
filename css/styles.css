@@ -1934,4 +1934,32 @@ input[type=date]::-webkit-calendar-picker-indicator {
   width: 100%;
   padding: 1rem;
   border: none;
+}
+
+@media screen and (min-width: 1000px) {
+  .RoomSection {
+    max-width: 73.125rem;
+    margin: 0 auto;
+  }
+  .RoomSection .roomInfo {
+    display: flex;
+  }
+  .RoomSection .roomInfo__info__text {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-right: 2rem;
+    background-color: #fff;
+    transform: translateY(4rem);
+    padding: 1rem 2rem;
+  }
+  .RoomSection .roomInfo__info__text h2 {
+    font-size: 3rem;
+  }
+  .RoomSection .roomInfo__info h3 {
+    font-size: 2.5rem;
+  }
+  .RoomSection .roomInfo__info h3 p {
+    font-size: 1rem;
+  }
 }/*# sourceMappingURL=styles.css.map */
