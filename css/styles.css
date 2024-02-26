@@ -264,7 +264,7 @@ body {
   font-weight: 700;
   font-size: 0.8rem;
   line-height: 1.2rem;
-  letter-spacing: 0.2rem;
+  letter-spacing: 0.175rem;
   padding: 1rem 0;
 }
 .bannerSection h2 {
@@ -351,6 +351,9 @@ body {
   margin-top: 0.5rem;
   border: none;
   color: #BEAD8E;
+}
+.calendarSection__form__date input[type=date]::-webkit-calendar-picker-indicator {
+  filter: brightness(0) saturate(100%) invert(74%) sepia(5%) saturate(2587%) brightness(87%) contrast(90%);
 }
 .calendarSection__form__button {
   padding: 1rem 1.5rem;
@@ -586,7 +589,7 @@ input[type=date]::-webkit-calendar-picker-indicator {
   padding: 1rem 3rem;
   font-size: 1rem;
   line-height: 1.1rem;
-  letter-spacing: 0.2rem;
+  letter-spacing: 0.175rem;
   border: none;
 }
 
@@ -628,7 +631,7 @@ input[type=date]::-webkit-calendar-picker-indicator {
   font-weight: 700;
   font-size: 1rem;
   line-height: 1.1rem;
-  letter-spacing: 0.2rem;
+  letter-spacing: 0.175rem;
   color: #777;
   padding: 1rem;
 }
@@ -638,7 +641,7 @@ input[type=date]::-webkit-calendar-picker-indicator {
   font-weight: 400;
   font-size: 5rem;
   line-height: 5rem;
-  letter-spacing: -0.2rem;
+  letter-spacing: -0.175rem;
   color: #222;
 }
 .featuresSection__swiper {
@@ -1032,7 +1035,7 @@ input[type=date]::-webkit-calendar-picker-indicator {
   font-size: 0.8rem;
   font-family: "Archivo", sans-serif;
   font-weight: 700;
-  letter-spacing: 0.2rem;
+  letter-spacing: 0.175rem;
 }
 .AboutBanner__text h2 {
   font-family: "Old Standard TT", sans-serif;
@@ -1172,7 +1175,7 @@ input[type=date]::-webkit-calendar-picker-indicator {
   font-family: "Archivo", sans-serif;
   font-weight: 700;
   color: #777;
-  letter-spacing: 0.2rem;
+  letter-spacing: 0.175rem;
   font-size: 0.8rem;
   line-height: 1rem;
 }
@@ -1226,7 +1229,7 @@ input[type=date]::-webkit-calendar-picker-indicator {
   font-weight: 700;
   font-size: 1rem;
   line-height: 1.1rem;
-  letter-spacing: 0.2rem;
+  letter-spacing: 0.175rem;
   color: #C2C2C2;
   padding: 1rem;
 }
@@ -1236,7 +1239,7 @@ input[type=date]::-webkit-calendar-picker-indicator {
   font-weight: 400;
   font-size: 5rem;
   line-height: 5rem;
-  letter-spacing: -0.2rem;
+  letter-spacing: -0.175rem;
   color: #fff;
 }
 .AboutFacilities__swiper {
@@ -1305,7 +1308,7 @@ input[type=date]::-webkit-calendar-picker-indicator {
   font-weight: 700;
   font-size: 0.9rem;
   line-height: 1rem;
-  letter-spacing: 0.2rem;
+  letter-spacing: 0.175rem;
   color: #777;
   margin-bottom: 2rem;
 }
@@ -1372,6 +1375,7 @@ input[type=date]::-webkit-calendar-picker-indicator {
 .RoomsBanner {
   background-color: #333;
   padding-top: 3rem;
+  margin-bottom: 2rem;
 }
 .RoomsBanner__text {
   color: #fff;
@@ -1382,7 +1386,7 @@ input[type=date]::-webkit-calendar-picker-indicator {
   font-size: 0.8rem;
   font-family: "Archivo", sans-serif;
   font-weight: 700;
-  letter-spacing: 0.2rem;
+  letter-spacing: 0.175rem;
 }
 .RoomsBanner__text h2 {
   font-family: "Old Standard TT", sans-serif;
@@ -1396,15 +1400,16 @@ input[type=date]::-webkit-calendar-picker-indicator {
   background-color: #fff;
   display: flex;
   justify-content: space-around;
-  width: 10rem;
-  padding: 1rem;
+  width: 16rem;
+  padding: 1rem 0.5rem;
   margin-right: 2rem;
   margin-left: auto;
   border: none;
+  text-align: center;
 }
 .RoomsBanner__links a {
+  flex: 1 1 0;
   text-decoration: none;
-  padding: 0.5rem 1rem;
   color: #222;
   font-family: "Archivo", sans-serif;
   font-weight: 700;
@@ -1519,7 +1524,7 @@ input[type=date]::-webkit-calendar-picker-indicator {
   font-size: 0.8rem;
   font-family: "Archivo", sans-serif;
   font-weight: 700;
-  letter-spacing: 0.2rem;
+  letter-spacing: 0.175rem;
 }
 .OffersBanner__text h2 {
   font-family: "Old Standard TT", sans-serif;
@@ -1577,7 +1582,7 @@ input[type=date]::-webkit-calendar-picker-indicator {
   font-weight: 700;
   font-size: 0.8rem;
   line-height: 0.9rem;
-  letter-spacing: 0.2rem;
+  letter-spacing: 0.175rem;
   color: #777;
 }
 .OffersList__item__container__description__title h2 {
@@ -1796,4 +1801,137 @@ input[type=date]::-webkit-calendar-picker-indicator {
   .OffersPopular__slider__icons svg {
     transform: scale(1.6);
   }
+}
+.RoomsBanner {
+  background-color: #333;
+  padding-top: 3rem;
+  margin-bottom: 2rem;
+}
+.RoomsBanner__text {
+  color: #fff;
+  padding: 2rem;
+  margin: 2rem;
+}
+.RoomsBanner__text p {
+  font-size: 0.8rem;
+  font-family: "Archivo", sans-serif;
+  font-weight: 700;
+  letter-spacing: 0.175rem;
+}
+.RoomsBanner__text h2 {
+  font-family: "Old Standard TT", sans-serif;
+  font-weight: 400;
+  font-size: 4.5rem;
+  line-height: 4.8rem;
+  letter-spacing: -0.08rem;
+  margin: 1.5rem 0;
+}
+.RoomsBanner__links {
+  background-color: #fff;
+  display: flex;
+  justify-content: space-around;
+  width: 16rem;
+  padding: 1rem 0.5rem;
+  margin-right: 2rem;
+  margin-left: auto;
+  border: none;
+  text-align: center;
+}
+.RoomsBanner__links a {
+  flex: 1 1 0;
+  text-decoration: none;
+  color: #222;
+  font-family: "Archivo", sans-serif;
+  font-weight: 700;
+  font-size: 1rem;
+  line-height: 1.1rem;
+  letter-spacing: -0.04rem;
+}
+.RoomsBanner__links .RoomsSelected {
+  color: #BEAD8E;
+}
+.RoomsBanner__links .RoomsHome {
+  border-right: 0.05rem solid #222;
+}
+
+.RoomSection {
+  padding: 1rem;
+}
+.RoomSection .roomInfo__info__text__title h5 {
+  font-family: "Archivo", sans-serif;
+  font-weight: 700;
+  font-size: 0.8rem;
+  line-height: 0.9rem;
+  letter-spacing: 0.18rem;
+  color: #777;
+  margin-bottom: 1rem;
+}
+.RoomSection .roomInfo__info__text__title h2 {
+  font-family: "Old Standard TT", sans-serif;
+  font-weight: 400;
+  font-size: 2.5rem;
+  line-height: 3rem;
+  letter-spacing: -0.09rem;
+  color: #222;
+  margin-bottom: 1rem;
+}
+.RoomSection .roomInfo__info__text h3 {
+  display: inline-block;
+  font-family: "Archivo", sans-serif;
+  font-weight: 700;
+  font-size: 2rem;
+  line-height: 2.6875rem;
+  color: #BEAD8E;
+  margin-bottom: 1rem;
+}
+.RoomSection .roomInfo__info__text h3 p {
+  display: inline-block;
+  font-size: 0.8125rem;
+}
+.RoomSection .roomInfo__info img {
+  width: 100%;
+  height: auto;
+}
+.RoomSection .roomInfo__form {
+  padding: 2rem;
+}
+.RoomSection .roomInfo__form h4 {
+  text-align: center;
+  font-family: "Archivo", sans-serif;
+  font-size: 1.125rem;
+  line-height: 1.22375rem;
+  font-weight: 700;
+  color: #222;
+  letter-spacing: -0.03375rem;
+  margin-bottom: 2rem;
+}
+.RoomSection .roomInfo__form__item {
+  margin-bottom: 1rem;
+  display: flex;
+  flex-direction: column;
+}
+.RoomSection .roomInfo__form__item label {
+  margin-bottom: 1rem;
+  font-family: "Archivo", sans-serif;
+  font-weight: 700;
+  font-size: 0.875rem;
+  line-height: 0.951875rem;
+  color: #222;
+}
+.RoomSection .roomInfo__form__item input {
+  background-color: #F8F8F8;
+  padding: 1rem;
+  border: none;
+}
+.RoomSection .roomInfo__form__button {
+  background-color: #BEAD8E;
+  color: #fff;
+  font-family: "Archivo", sans-serif;
+  font-weight: 400;
+  font-size: 0.875rem;
+  line-height: 0.951875rem;
+  letter-spacing: 0.175rem;
+  width: 100%;
+  padding: 1rem;
+  border: none;
 }/*# sourceMappingURL=styles.css.map */

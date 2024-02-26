@@ -5,10 +5,6 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <link rel="stylesheet" href="./css/styles.css">
-    <link rel="stylesheet" href="https://unpkg.com/swiper/swiper-bundle.min.css" />
-    <script src="https://unpkg.com/swiper/swiper-bundle.min.js"></script>
-    <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-element-bundle.min.js"></script>
-    <script type="text/javascript" src="./scripts/swipers/roomsSwiper.js" defer></script>
 
     <title>Hotel Miranda</title>
 
@@ -64,13 +60,38 @@
             </div>
         </section>
         <section class="RoomSection">
-            <div class="RoomSection__above">
-                <div class="RoomSection__above__info">
-
+            <div class="roomInfo">
+                <div class="roomInfo__info">
+                    <div class="roomInfo__info__text">
+                        <div class="roomInfo__info__text__title">
+                            <h5>DOUBLE BED</h5>
+                            <h2>Luxury Double Bed</h2>
+                        </div>
+                        <h3>$345<p>/Night</p>
+                        </h3>
+                    </div>
+                    <img src="./Img/rooms/room1-room.jpg" alt="">
                 </div>
-                <div class="RoomSection__above__form">
-
-                </div>
+                <form class="roomInfo__form">
+                    <h4>Check Availability</h4>
+                    <div class="roomInfo__form__item">
+                        <label for="arrival">Check In</label>
+                        <input type="date" id="arrival" name="arrival" value="2018-07-22">
+                    </div>
+                    <div class="roomInfo__form__item">
+                        <label for="departure">Check Out</label>
+                        <input type="date" id="departure" name="departure" value="2018-08-22">
+                    </div>
+                    <div class="roomInfo__form__item">
+                        <label for="rooms">Rooms</label>
+                        <input type="number" id="rooms" name="rooms">
+                    </div>
+                    <div class="roomInfo__form__item">
+                        <label for="guests">Guests</label>
+                        <input type="number" id="guests" name="guests">
+                    </div>
+                    <input type="submit" class="roomInfo__form__button" name="" id="" value="CHECK AVAILABILITY">
+                </form>
             </div>
             <div class="Roomsection__below">
                 <p></p>

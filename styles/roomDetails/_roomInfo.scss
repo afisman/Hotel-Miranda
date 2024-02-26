@@ -1,0 +1,100 @@
+.RoomSection {
+    padding: 1rem;
+
+    .roomInfo {
+        &__info {
+            &__text {
+                &__title {
+                    h5 {
+                        font-family: 'Archivo', sans-serif;
+                        font-weight: 700;
+                        font-size: 0.8rem;
+                        line-height: 0.9rem;
+                        letter-spacing: 0.18rem;
+                        color: #777;
+                        margin-bottom: 1rem;
+                    }
+
+                    h2 {
+                        font-family: 'Old Standard TT', sans-serif;
+                        font-weight: 400;
+                        font-size: 2.5rem;
+                        line-height: 3rem;
+                        letter-spacing: -0.09rem;
+                        color: #222;
+                        margin-bottom: 1rem;
+                    }
+                }
+
+                h3 {
+                    display: inline-block;
+                    font-family: 'Archivo', sans-serif;
+                    font-weight: 700;
+                    font-size: 2rem;
+                    line-height: 2.6875rem;
+                    color: #BEAD8E;
+                    margin-bottom: 1rem;
+
+                    p {
+                        display: inline-block;
+                        font-size: 0.8125rem;
+                    }
+                }
+            }
+
+            img {
+                width: 100%;
+                height: auto;
+            }
+        }
+
+        &__form {
+            padding: 2rem;
+
+            h4 {
+                text-align: center;
+                font-family: 'Archivo', sans-serif;
+                font-size: 1.125rem;
+                line-height: 1.22375rem;
+                font-weight: 700;
+                color: #222;
+                letter-spacing: -0.03375rem;
+                margin-bottom: 2rem;
+            }
+
+            &__item {
+                margin-bottom: 1rem;
+                display: flex;
+                flex-direction: column;
+
+                label {
+                    margin-bottom: 1rem;
+                    font-family: 'Archivo', sans-serif;
+                    font-weight: 700;
+                    font-size: 0.875rem;
+                    line-height: 0.951875rem;
+                    color: #222;
+                }
+
+                input {
+                    background-color: #F8F8F8;
+                    padding: 1rem;
+                    border: none;
+                }
+            }
+
+            &__button {
+                background-color: #BEAD8E;
+                color: #fff;
+                font-family: 'Archivo', sans-serif;
+                font-weight: 400;
+                font-size: 0.875rem;
+                line-height: 0.951875rem;
+                letter-spacing: 0.175rem;
+                width: 100%;
+                padding: 1rem;
+                border: none;
+            }
+        }
+    }
+}
