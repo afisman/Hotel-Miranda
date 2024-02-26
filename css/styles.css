@@ -958,13 +958,18 @@ input[type=date]::-webkit-calendar-picker-indicator {
 }
 
 @media screen and (min-width: 1000px) {
+  .roomSection__swiper {
+    max-width: 48.125rem;
+  }
   .roomSection__swiper__icons {
-    width: 50%;
+    max-width: 24rem;
+  }
+  .roomSection__swiper__icons svg {
+    transform: scale(1.6);
   }
   .roomSection__swiper__text {
     flex-direction: row;
     transform: translateY(-3rem);
-    width: 50%;
     text-align: left;
   }
   .roomSection__swiper__text__description {
@@ -985,7 +990,6 @@ input[type=date]::-webkit-calendar-picker-indicator {
     font-size: 1rem;
   }
   .roomSection__swiper .swiper-slide img {
-    width: 60%;
     height: 50vh;
   }
 }

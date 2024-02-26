@@ -1,8 +1,7 @@
 const swiper = new Swiper('.roomSection__swiper', {
     slidesPerView: 1,
-    spaceBetween: 30,
-    loop: true,
-    cssMode: true,
+    spaceBetween: 0,
+    centeredSlides: false,
     navigation: {
         prevEl: ".swiper-button-prev",
         nextEl: ".swiper-button-next",
@@ -70,7 +69,10 @@ const imagesSwiper = new Swiper('.imagesSection__swiper', {
 
 document.onscroll = () => {
     const width = document.body.offsetWidth;
-    if (width > 1000) {
+    if (width >= 1000) {
+
+        swiper.params.centeredSlides = false;
+        swiper.update()
 
         featuresSwiper.params.centeredSlides = false
         featuresSwiper.update()
@@ -81,6 +83,9 @@ document.onscroll = () => {
         imagesSwiper.params.pagination.clickable = false
         imagesSwiper.update()
     } else {
+
+        swiper.params.centeredSlides = false;
+        swiper.update()
 
         featuresSwiper.params.centeredSlides = true
         featuresSwiper.update()

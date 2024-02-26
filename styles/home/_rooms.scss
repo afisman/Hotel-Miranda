@@ -34,10 +34,6 @@
             transform: translateY(1.5rem);
             background-color: #fff;
             z-index: 2;
-
-            svg {
-                // transform: scale(1.8);
-            }
         }
 
         &__text {
@@ -123,14 +119,19 @@
 @media screen and (min-width: 1000px) {
     .roomSection {
         &__swiper {
+            max-width: 48.125rem;
+
             &__icons {
-                width: 50%;
+                max-width: 24rem;
+
+                svg {
+                    transform: scale(1.6);
+                }
             }
 
             &__text {
                 flex-direction: row;
                 transform: translateY(-3rem);
-                width: 50%;
                 text-align: left;
 
                 &__description {
@@ -160,7 +161,6 @@
 
             .swiper-slide {
                 img {
-                    width: 60%;
                     height: 50vh;
                 }
             }
