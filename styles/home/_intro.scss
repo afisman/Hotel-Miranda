@@ -1,40 +1,59 @@
 .introSection {
     background: #222;
-    display: flex;
-    flex-direction: column;
-    padding: 5rem;
+    padding: 3rem 1rem;
 
-    &__left {
-        flex: 1 1 0;
-        padding-right: 3rem;
+    &__container {
+        max-width: 73.125rem;
+        margin: 0 auto;
 
-        h5 {
-            font-family: 'Archivo', sans-serif;
-            font-weight: 700;
-            font-size: 1rem;
-            line-height: 1.1rem;
-            letter-spacing: 0.2rem;
-            color: #BDAC8D;
-            margin-bottom: 1rem;
+        &__left {
+
+            h5 {
+                font-family: 'Archivo', sans-serif;
+                font-weight: 700;
+                font-size: 0.8rem;
+                line-height: 0.9rem;
+                letter-spacing: 0.16rem;
+                color: #BDAC8D;
+                margin-bottom: 2rem;
+            }
+
+            h2 {
+                font-family: 'Old Standard TT', sans-serif;
+                font-weight: 400;
+                font-size: 3.5rem;
+                line-height: 3.8rem;
+                letter-spacing: -0.08rem;
+                color: #fff;
+            }
+
+            p {
+                margin-top: 1rem;
+                font-family: 'Archivo', sans-serif;
+                font-weight: 400;
+                font-size: 0.8rem;
+                line-height: 1.6rem;
+                color: #C2C2C2;
+            }
+
+
         }
 
-        h2 {
-            font-family: 'Old Standard TT', sans-serif;
-            font-weight: 400;
-            font-size: 3rem;
-            line-height: 3.3rem;
-            letter-spacing: -0.16rem;
-            color: #fff;
-        }
+        &__right {
 
-        p {
-            margin-top: 1rem;
-            font-family: 'Archivo', sans-serif;
-            font-weight: 400;
-            font-size: 0.8rem;
-            line-height: 1.6rem;
-            color: #C2C2C2;
+            padding-top: 4rem;
+
+            iframe {
+                width: 100%;
+                height: 35vh;
+                border-radius: .2rem;
+            }
         }
+    }
+
+    &__button {
+        max-width: 73.125rem;
+        margin: 0 auto;
 
         button {
             margin-top: 1rem;
@@ -44,20 +63,12 @@
             font-size: 1rem;
             line-height: 1.1rem;
             letter-spacing: 0.2rem;
-
+            border: none;
         }
     }
 
-    &__right {
 
-        padding-top: 4rem;
 
-        iframe {
-            width: 100%;
-            height: auto;
-            border-radius: .2rem;
-        }
-    }
 }
 
 @media screen and (min-width: 1000px) {
@@ -68,25 +79,31 @@
                 #AD9D82 75%,
                 #AD9D82 100%);
         padding: 5rem 10rem;
-        flex-direction: row;
 
-        &__left {
-            h2 {
-                font-size: 5rem;
-                line-height: 5.3rem;
+        &__container {
+            display: flex;
+            gap: 2rem;
+
+            &__left {
+                flex: 1 1 0;
+
+                h2 {
+                    font-size: 5rem;
+                    line-height: 5.3rem;
+                }
+
+                p {
+                    font-size: 1rem;
+                }
             }
 
-            p {
-                font-size: 1rem;
-            }
-        }
+            &__right {
+                flex: 1 1 0;
 
-        &__right {
-            flex: 1 1 0;
-
-            iframe {
-                width: 35rem;
-                height: 25rem;
+                iframe {
+                    width: 35rem;
+                    height: 25rem;
+                }
             }
         }
     }

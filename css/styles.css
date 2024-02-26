@@ -453,9 +453,6 @@ input[type=date]::-webkit-calendar-picker-indicator {
   font-weight: 400;
   margin: 0.5rem;
 }
-.aboutUsSection__right {
-  padding: 5rem 3rem;
-}
 .aboutUsSection__right h5 {
   font-family: "Archivo", sans-serif;
   font-weight: 700;
@@ -539,32 +536,30 @@ input[type=date]::-webkit-calendar-picker-indicator {
 }
 .introSection {
   background: #222;
-  display: flex;
-  flex-direction: column;
-  padding: 5rem;
+  padding: 3rem 1rem;
 }
-.introSection__left {
-  flex: 1 1 0;
-  padding-right: 3rem;
+.introSection__container {
+  max-width: 73.125rem;
+  margin: 0 auto;
 }
-.introSection__left h5 {
+.introSection__container__left h5 {
   font-family: "Archivo", sans-serif;
   font-weight: 700;
-  font-size: 1rem;
-  line-height: 1.1rem;
-  letter-spacing: 0.2rem;
+  font-size: 0.8rem;
+  line-height: 0.9rem;
+  letter-spacing: 0.16rem;
   color: #BDAC8D;
-  margin-bottom: 1rem;
+  margin-bottom: 2rem;
 }
-.introSection__left h2 {
+.introSection__container__left h2 {
   font-family: "Old Standard TT", sans-serif;
   font-weight: 400;
-  font-size: 3rem;
-  line-height: 3.3rem;
-  letter-spacing: -0.16rem;
+  font-size: 3.5rem;
+  line-height: 3.8rem;
+  letter-spacing: -0.08rem;
   color: #fff;
 }
-.introSection__left p {
+.introSection__container__left p {
   margin-top: 1rem;
   font-family: "Archivo", sans-serif;
   font-weight: 400;
@@ -572,7 +567,19 @@ input[type=date]::-webkit-calendar-picker-indicator {
   line-height: 1.6rem;
   color: #C2C2C2;
 }
-.introSection__left button {
+.introSection__container__right {
+  padding-top: 4rem;
+}
+.introSection__container__right iframe {
+  width: 100%;
+  height: 35vh;
+  border-radius: 0.2rem;
+}
+.introSection__button {
+  max-width: 73.125rem;
+  margin: 0 auto;
+}
+.introSection__button button {
   margin-top: 1rem;
   color: #fff;
   background-color: #BDAC8D;
@@ -580,33 +587,32 @@ input[type=date]::-webkit-calendar-picker-indicator {
   font-size: 1rem;
   line-height: 1.1rem;
   letter-spacing: 0.2rem;
-}
-.introSection__right {
-  padding-top: 4rem;
-}
-.introSection__right iframe {
-  width: 100%;
-  height: auto;
-  border-radius: 0.2rem;
+  border: none;
 }
 
 @media screen and (min-width: 1000px) {
   .introSection {
     background: linear-gradient(to right, #222 0%, #222 75%, #AD9D82 75%, #AD9D82 100%);
     padding: 5rem 10rem;
-    flex-direction: row;
   }
-  .introSection__left h2 {
+  .introSection__container {
+    display: flex;
+    gap: 2rem;
+  }
+  .introSection__container__left {
+    flex: 1 1 0;
+  }
+  .introSection__container__left h2 {
     font-size: 5rem;
     line-height: 5.3rem;
   }
-  .introSection__left p {
+  .introSection__container__left p {
     font-size: 1rem;
   }
-  .introSection__right {
+  .introSection__container__right {
     flex: 1 1 0;
   }
-  .introSection__right iframe {
+  .introSection__container__right iframe {
     width: 35rem;
     height: 25rem;
   }
@@ -877,23 +883,20 @@ input[type=date]::-webkit-calendar-picker-indicator {
   height: 100%;
 }
 .roomSection__swiper__icons {
-  padding: 2rem;
+  padding: 1rem;
   display: flex;
   justify-content: space-around;
   width: 80%;
   margin: 0 auto;
-  transform: translateY(2rem);
+  transform: translateY(1.5rem);
   background-color: #fff;
   z-index: 2;
-}
-.roomSection__swiper__icons svg {
-  transform: scale(1.8);
 }
 .roomSection__swiper__text {
   display: flex;
   flex-direction: column;
   text-align: center;
-  padding: 2rem;
+  padding: 1rem 1.5rem;
   width: 90%;
   margin: 0 auto;
   z-index: 2;
@@ -902,19 +905,20 @@ input[type=date]::-webkit-calendar-picker-indicator {
 }
 .roomSection__swiper__text__description h4 {
   font-family: "Old Standard TT", sans-serif;
-  font-size: 2rem;
-  line-height: 2.4rem;
+  font-size: 1.6rem;
+  line-height: 2.25rem;
   letter-spacing: -0.08rem;
   font-weight: 400;
   color: #222;
+  margin-bottom: 1rem;
 }
 .roomSection__swiper__text__description p {
-  padding: 1rem;
   font-family: "Roboto", sans-serif;
-  font-size: 1rem;
+  font-size: 0.8rem;
   line-height: 1.5rem;
   color: #777;
   font-weight: 400;
+  margin-bottom: 0.5rem;
 }
 .roomSection__swiper__text h3 {
   font-family: "Archivo", sans-serif;
@@ -928,22 +932,25 @@ input[type=date]::-webkit-calendar-picker-indicator {
   font-size: 0.8rem;
 }
 .roomSection__swiper .swiper-slide {
-  padding: 3rem;
-  width: 80%;
+  padding: 1rem;
 }
 .roomSection__swiper .swiper-slide img {
   display: block;
   margin: 0 auto;
   width: 100%;
-  height: 50vh;
+  height: 40vh;
 }
 .roomSection__swiper .swiper-button-prev,
 .roomSection__swiper .swiper-button-next {
   color: #fff;
   background-color: #BDAC8D;
-  padding: 2rem;
-  transform: translateY(-8rem);
-  font-size: 0.08rem;
+  width: 2rem;
+  height: 2rem;
+  transform: translateY(-5rem);
+}
+.roomSection__swiper .swiper-button-prev::after,
+.roomSection__swiper .swiper-button-next::after {
+  font-size: 0.8rem;
 }
 .roomSection__swiper .swiper-button-disabled {
   color: #111;
