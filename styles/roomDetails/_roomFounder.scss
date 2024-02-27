@@ -1,8 +1,13 @@
 .RoomFounder {
-    max-width: 23.125rem;
-    margin: 0 auto;
-    text-align: center;
-    padding: 2rem;
+    max-width: 73.125rem;
+    margin: 2rem auto;
+
+
+    &__container {
+        max-width: 23.125rem;
+        text-align: center;
+        padding: 2rem;
+    }
 
     &__circle {
         width: 2.875rem;
@@ -48,4 +53,15 @@
         line-height: 1.5rem;
         color: #777;
     }
+}
+
+@media screen and (min-width:1000px) {
+    .RoomFounder {
+        margin-bottom: 4rem;
+
+        &__container {
+            box-shadow: 0px 14px 24px 0px #BEAD8E45;
+        }
+    }
+
 }

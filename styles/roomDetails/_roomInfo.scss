@@ -184,6 +184,7 @@
 
         &__description {
             max-width: 48.125rem;
+            margin-bottom: 2rem;
 
             p {
                 width: 100%;
@@ -193,6 +194,8 @@
 
         &__amenities {
             max-width: 48.125rem;
+            margin-bottom: 2rem;
+            padding: 2rem;
 
             &__grid {
                 grid-template-columns: repeat(3, 1fr);

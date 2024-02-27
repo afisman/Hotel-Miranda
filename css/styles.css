@@ -2005,6 +2005,7 @@ input[type=date]::-webkit-calendar-picker-indicator {
   }
   .RoomSection__description {
     max-width: 48.125rem;
+    margin-bottom: 2rem;
   }
   .RoomSection__description p {
     width: 100%;
@@ -2012,14 +2013,19 @@ input[type=date]::-webkit-calendar-picker-indicator {
   }
   .RoomSection__amenities {
     max-width: 48.125rem;
+    margin-bottom: 2rem;
+    padding: 2rem;
   }
   .RoomSection__amenities__grid {
     grid-template-columns: repeat(3, 1fr);
   }
 }
 .RoomFounder {
+  max-width: 73.125rem;
+  margin: 2rem auto;
+}
+.RoomFounder__container {
   max-width: 23.125rem;
-  margin: 0 auto;
   text-align: center;
   padding: 2rem;
 }
@@ -2064,12 +2070,23 @@ input[type=date]::-webkit-calendar-picker-indicator {
   color: #777;
 }
 
+@media screen and (min-width: 1000px) {
+  .RoomFounder {
+    margin-bottom: 4rem;
+  }
+  .RoomFounder__container {
+    box-shadow: 0px 14px 24px 0px rgba(190, 173, 142, 0.2705882353);
+  }
+}
 .RoomCancellation {
-  max-width: 48.125rem;
-  padding: 1rem;
+  max-width: 73.125rem;
   margin: 0 auto;
 }
-.RoomCancellation h2 {
+.RoomCancellation__text {
+  padding: 2rem;
+  max-width: 48.125rem;
+}
+.RoomCancellation__text h2 {
   font-family: "Old Standard TT", sans-serif;
   font-weight: 400;
   font-size: 1.875rem;
@@ -2079,7 +2096,7 @@ input[type=date]::-webkit-calendar-picker-indicator {
   border-bottom: 0.0625rem solid #F1F1F1;
   margin-bottom: 2rem;
 }
-.RoomCancellation p {
+.RoomCancellation__text p {
   font-family: "Roboto", sans-serif;
   font-weight: 400;
   font-size: 1rem;
