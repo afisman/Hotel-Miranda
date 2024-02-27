@@ -5,6 +5,9 @@
 
     &__form {
 
+        margin: 0 auto;
+        max-width: 73.125rem;
+
         &__date {
             display: flex;
             flex-direction: column;
@@ -42,6 +45,7 @@
             font-size: 1rem;
             line-height: 1.2rem;
             letter-spacing: .2rem;
+            max-width: 20.625rem;
         }
     }
 }
@@ -54,7 +58,12 @@ input[type="date"]::-webkit-calendar-picker-indicator {
     .calendarSection {
         &__form {
             display: flex;
-            justify-content: space-around;
+            justify-content: space-between;
+
+            &__date {
+                max-width: 20.625rem;
+                width: 100%;
+            }
         }
     }
 }

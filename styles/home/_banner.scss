@@ -2,6 +2,7 @@
     background-color: #333;
     padding: 3rem 1rem;
 
+
     p {
         color: #fff;
         font-family: 'Archivo', sans-serif;
@@ -62,9 +63,14 @@
     }
 }
 
+.section {
+    max-width: 73.125rem;
+    margin: 0 auto;
+}
+
 @media screen and (min-width: 1000px) {
     .bannerSection {
-        padding: 8rem 12rem;
+        padding-top: 8rem;
 
         p {
             font-size: 1rem;

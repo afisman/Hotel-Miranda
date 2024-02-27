@@ -321,9 +321,14 @@ body {
   background-color: #BEAD8E;
 }
 
+.section {
+  max-width: 73.125rem;
+  margin: 0 auto;
+}
+
 @media screen and (min-width: 1000px) {
   .bannerSection {
-    padding: 8rem 12rem;
+    padding-top: 8rem;
   }
   .bannerSection p {
     font-size: 1rem;
@@ -344,6 +349,10 @@ body {
   width: 100%;
   background-color: #222;
   padding: 2rem;
+}
+.calendarSection__form {
+  margin: 0 auto;
+  max-width: 73.125rem;
 }
 .calendarSection__form__date {
   display: flex;
@@ -378,6 +387,7 @@ body {
   font-size: 1rem;
   line-height: 1.2rem;
   letter-spacing: 0.2rem;
+  max-width: 20.625rem;
 }
 
 input[type=date]::-webkit-calendar-picker-indicator {
@@ -387,7 +397,11 @@ input[type=date]::-webkit-calendar-picker-indicator {
 @media screen and (min-width: 1000px) {
   .calendarSection__form {
     display: flex;
-    justify-content: space-around;
+    justify-content: space-between;
+  }
+  .calendarSection__form__date {
+    max-width: 20.625rem;
+    width: 100%;
   }
 }
 .aboutUsSection {
