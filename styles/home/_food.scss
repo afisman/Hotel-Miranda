@@ -5,12 +5,14 @@
         text-align: right;
 
         img {
-            transform: translateX(2rem);
+            // transform: translateX(2rem);
+            overflow: hidden;
         }
     }
 
     &__body {
         max-width: 73.125rem;
+        padding: 1rem;
 
         h5 {
             font-family: 'Archivo', sans-serif;
@@ -78,22 +80,36 @@
             display: flex;
             justify-content: space-between;
             margin-top: 4rem;
+            margin-left: 65%;
+
+            .swiper-button-disabled {
+                background-color: #F8F8F8;
+
+
+            }
 
             &__prev,
             &__next {
-                color: #fff;
+                // color: #fff;
                 background-color: #BDAC8D;
                 padding: 1.2rem;
                 font-size: .08rem;
+                cursor: pointer;
 
-                &:hover {
-
-                    svg {
-                        path {
-                            fill: #fff;
-                        }
+                svg {
+                    path {
+                        fill: #111;
                     }
                 }
+
+                // &:hover {
+
+                //     svg {
+                //         path {
+                //             fill: #fff;
+                //         }
+                //     }
+                // }
 
                 svg {
                     transform: scale(2);

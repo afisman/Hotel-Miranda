@@ -25,16 +25,22 @@ body {
   display: none;
 }
 
+.nav-shadow {
+  box-shadow: 0 0.1875rem 0.375rem 0 rgba(0, 0, 0, 0.2901960784);
+}
+
 .navbar {
   display: flex;
   justify-content: space-around;
   align-items: center;
   background-color: #fff;
+  max-width: 88.75rem;
 }
 .navbar__burger {
-  padding: 0.5rem;
+  padding: 0.5rem 1rem;
   background-color: #fff;
   border: none;
+  font-size: 1.8rem;
 }
 .navbar__burger:hover {
   cursor: pointer;
@@ -53,20 +59,47 @@ body {
 .navbar__left h1 {
   color: #111111;
   font-weight: 700;
-  font-size: 2.3rem;
-  line-height: 2.5rem;
-  padding: 1rem;
+  font-size: 1.5rem;
+  line-height: 2rem;
+  width: 2.25rem;
+  height: 2.25rem;
+  text-align: center;
   font-family: "Archivo", sans-serif;
   box-shadow: 0 0.8rem 1.5rem 0 rgba(139, 139, 139, 0.2509803922);
 }
 .navbar__left h2 {
   padding: 2rem;
+  font-size: 1rem;
   color: #111111;
   font-family: "Archivo", sans-serif;
   font-weight: 400;
 }
 .navbar__center {
   display: none;
+}
+.navbar__center {
+  display: none;
+  background-color: white;
+  margin-top: 15rem;
+  position: absolute;
+  background-color: white;
+  width: 100%;
+  left: 0;
+  padding: 0.8rem;
+  box-shadow: 0px 4px 4px 0px rgba(0, 0, 0, 0.2901960784);
+}
+.navbar__center__link {
+  display: block;
+  padding: 0.8rem;
+  color: #111;
+  text-decoration: none;
+  font-size: 1rem;
+  font-family: "Archivo", sans-serif;
+  font-weight: 600;
+  line-height: 1.125rem;
+}
+.navbar__center__link:hover {
+  color: #000;
 }
 .navbar__right {
   display: flex;
@@ -75,15 +108,15 @@ body {
   padding: 0.5rem;
   margin-right: 1rem;
   background-color: #fff;
-  border: 2px solid rgba(133, 133, 133, 0.3019607843);
+  border: 0.125rem solid rgba(133, 133, 133, 0.3019607843);
   display: flex;
 }
 .navbar__right__button:hover {
   cursor: pointer;
 }
 .navbar__right__button img {
-  width: 2rem;
-  height: 2rem;
+  width: 1rem;
+  height: 1rem;
 }
 
 @media screen and (min-width: 1000px) {
@@ -100,7 +133,7 @@ body {
     color: #fff;
   }
   .navbar {
-    margin: 0 5rem;
+    margin: 0 auto;
     transform: translateY(10%);
     padding: 0.5rem;
   }
@@ -108,9 +141,14 @@ body {
     display: none;
   }
   .navbar__left h1 {
-    padding: 1.5rem;
-    font-size: 3rem;
-    line-height: 3.2rem;
+    transform: scale(1.5);
+  }
+  .navbar__left h2 {
+    padding: 2rem;
+    font-size: 2rem;
+    color: #111111;
+    font-family: "Archivo", sans-serif;
+    font-weight: 400;
   }
   .navbar__center {
     display: flex;
@@ -123,6 +161,10 @@ body {
     font-size: 1.2rem;
     line-height: 1.3rem;
     font-family: "Archivo", sans-serif;
+  }
+  .navbar__right img {
+    width: 2rem;
+    height: 2rem;
   }
 }
 .footer {
@@ -426,6 +468,7 @@ input[type=date]::-webkit-calendar-picker-indicator {
   height: 22rem;
   text-align: center;
   padding: 2.5rem;
+  box-shadow: 0px 8px 16px 0px rgba(34, 34, 34, 0.0196078431);
 }
 .aboutUsSection__left__strong__left .strong-imgFront {
   transform: translate(5rem, -2.5rem);
@@ -761,10 +804,11 @@ input[type=date]::-webkit-calendar-picker-indicator {
   text-align: right;
 }
 .foodSection__span img {
-  transform: translateX(2rem);
+  overflow: hidden;
 }
 .foodSection__body {
   max-width: 73.125rem;
+  padding: 1rem;
 }
 .foodSection__body h5 {
   font-family: "Archivo", sans-serif;
@@ -818,15 +862,19 @@ input[type=date]::-webkit-calendar-picker-indicator {
   display: flex;
   justify-content: space-between;
   margin-top: 4rem;
+  margin-left: 65%;
+}
+.foodSection__body .buttons-menu .swiper-button-disabled {
+  background-color: #F8F8F8;
 }
 .foodSection__body .buttons-menu__prev, .foodSection__body .buttons-menu__next {
-  color: #fff;
   background-color: #BDAC8D;
   padding: 1.2rem;
   font-size: 0.08rem;
+  cursor: pointer;
 }
-.foodSection__body .buttons-menu__prev:hover svg path, .foodSection__body .buttons-menu__next:hover svg path {
-  fill: #fff;
+.foodSection__body .buttons-menu__prev svg path, .foodSection__body .buttons-menu__next svg path {
+  fill: #111;
 }
 .foodSection__body .buttons-menu__prev svg, .foodSection__body .buttons-menu__next svg {
   transform: scale(2);
