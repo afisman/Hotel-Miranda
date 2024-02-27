@@ -9,13 +9,10 @@ hamburguer_menu.addEventListener("click", () => {
     if (activate === false) {
         nav_links.style.display = "block";
         hamburger_button.innerText = "X";
-        navbar.classList.add("nav-shadow");
         activate = true;
     } else {
         nav_links.style.display = "none";
         hamburger_button.innerText = "☰";
-        navbar.classList.remove("nav-shadow");
-
         activate = false;
     }
 });

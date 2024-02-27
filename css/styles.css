@@ -25,10 +25,6 @@ body {
   display: none;
 }
 
-.nav-shadow {
-  box-shadow: 0 0.1875rem 0.375rem 0 rgba(0, 0, 0, 0.2901960784);
-}
-
 .navbar {
   display: flex;
   justify-content: space-around;
@@ -37,7 +33,6 @@ body {
   max-width: 88.75rem;
 }
 .navbar__burger {
-  padding: 0.5rem 1rem;
   background-color: #fff;
   border: none;
   font-size: 1.8rem;
@@ -1079,6 +1074,7 @@ input[type=date]::-webkit-calendar-picker-indicator {
   max-width: 73.125rem;
   margin: 0 auto;
   margin-bottom: 2rem;
+  padding: 1rem;
 }
 .imagesSection__swiper .swiper-wrapper {
   margin: 4rem 0;
@@ -1093,6 +1089,9 @@ input[type=date]::-webkit-calendar-picker-indicator {
 }
 
 @media screen and (min-width: 1000px) {
+  .imagesSection {
+    padding: 0;
+  }
   .imagesSection__swiper__item img {
     height: 30vh;
   }

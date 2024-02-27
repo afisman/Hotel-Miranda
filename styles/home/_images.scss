@@ -2,6 +2,7 @@
     max-width: 73.125rem;
     margin: 0 auto;
     margin-bottom: 2rem;
+    padding: 1rem;
 
     &__swiper {
 
@@ -23,7 +24,7 @@
 
 @media screen and (min-width: 1000px) {
     .imagesSection {
-
+        padding: 0;
 
         &__swiper {
             &__item {

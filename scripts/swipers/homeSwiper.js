@@ -56,6 +56,7 @@ const menuSwiper = new Swiper('.foodSection__body__swiper', {
 
 const imagesSwiper = new Swiper('.imagesSection__swiper', {
     slidesPerView: 1,
+    spaceBetween: 30,
     pagination: {
         el: '.swiper-pagination',
         clickable: true,
