@@ -2062,4 +2062,27 @@ input[type=date]::-webkit-calendar-picker-indicator {
   font-size: 1rem;
   line-height: 1.5rem;
   color: #777;
+}
+
+.RoomCancellation {
+  max-width: 48.125rem;
+  padding: 1rem;
+  margin: 0 auto;
+}
+.RoomCancellation h2 {
+  font-family: "Old Standard TT", sans-serif;
+  font-weight: 400;
+  font-size: 1.875rem;
+  line-height: 1.875rem;
+  color: #222;
+  padding-bottom: 1rem;
+  border-bottom: 0.0625rem solid #F1F1F1;
+  margin-bottom: 2rem;
+}
+.RoomCancellation p {
+  font-family: "Roboto", sans-serif;
+  font-weight: 400;
+  font-size: 1rem;
+  line-height: 1.5rem;
+  color: #777;
 }/*# sourceMappingURL=styles.css.map */
