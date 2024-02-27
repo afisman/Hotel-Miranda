@@ -269,25 +269,26 @@ body {
 }
 .bannerSection {
   background-color: #333;
-  padding: 4rem;
+  padding: 3rem 1rem;
 }
 .bannerSection p {
   color: #fff;
   font-family: "Archivo", sans-serif;
   font-weight: 700;
-  font-size: 0.8rem;
-  line-height: 1.2rem;
+  font-size: 0.8125rem;
+  line-height: 1.125rem;
   letter-spacing: 0.175rem;
-  padding: 1rem 0;
+  padding-right: 2rem;
+  margin-bottom: 2rem;
 }
 .bannerSection h2 {
   color: #fff;
   font-family: "Old Standard TT", sans-serif;
   font-weight: 400;
-  font-size: 4rem;
-  line-height: 4.5rem;
-  letter-spacing: -0.1rem;
-  padding: 1rem 0;
+  font-size: 3.5rem;
+  line-height: 3.75rem;
+  letter-spacing: -0.075rem;
+  margin-bottom: 2rem;
 }
 .bannerSection__buttons {
   display: flex;
@@ -299,11 +300,11 @@ body {
   cursor: pointer;
   font-family: "Archivo", sans-serif;
   font-weight: 700;
-  font-size: 1rem;
-  line-height: 1.1rem;
-  letter-spacing: 0.1rem;
-  max-width: 14rem;
-  margin-top: 1rem;
+  font-size: 0.875rem;
+  line-height: 0.951875rem;
+  letter-spacing: 0.175rem;
+  max-width: 13.5rem;
+  margin-bottom: 1rem;
 }
 .bannerSection__buttons--tour {
   background-color: #BEAD8E;
@@ -831,6 +832,9 @@ input[type=date]::-webkit-calendar-picker-indicator {
 .infoSection {
   background-color: #222;
   padding: 2rem 4rem;
+  margin: 0 auto;
+  margin-bottom: 4rem;
+  max-width: 73.125rem;
 }
 .infoSection__item {
   text-align: center;
@@ -861,16 +865,9 @@ input[type=date]::-webkit-calendar-picker-indicator {
 
 @media screen and (min-width: 1000px) {
   .infoSection {
-    width: 80%;
-    margin: 0 auto;
     display: flex;
     justify-content: space-around;
     align-items: center;
-  }
-}
-@media screen and (min-width: 1600px) {
-  .infoSection {
-    width: 60%;
   }
 }
 .roomSection {
@@ -1009,6 +1006,11 @@ input[type=date]::-webkit-calendar-picker-indicator {
     height: 50vh;
   }
 }
+.imagesSection {
+  max-width: 73.125rem;
+  margin: 0 auto;
+  margin-bottom: 2rem;
+}
 .imagesSection__swiper .swiper-wrapper {
   margin: 4rem 0;
 }
@@ -1016,23 +1018,14 @@ input[type=date]::-webkit-calendar-picker-indicator {
   text-align: center;
 }
 .imagesSection__swiper__item img {
-  width: 80%;
+  width: 100%;
   height: 60vh;
   object-fit: cover;
 }
 
 @media screen and (min-width: 1000px) {
-  .imagesSection {
-    width: 80%;
-    margin: 0 auto;
-  }
   .imagesSection__swiper__item img {
     height: 30vh;
-  }
-}
-@media screen and (min-width: 1600px) {
-  .imagesSection {
-    width: 60%;
   }
 }
 .AboutBanner {

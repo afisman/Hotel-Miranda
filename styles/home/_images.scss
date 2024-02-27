@@ -1,4 +1,8 @@
 .imagesSection {
+    max-width: 73.125rem;
+    margin: 0 auto;
+    margin-bottom: 2rem;
+
     &__swiper {
 
         .swiper-wrapper {
@@ -9,7 +13,7 @@
             text-align: center;
 
             img {
-                width: 80%;
+                width: 100%;
                 height: 60vh;
                 object-fit: cover;
             }
@@ -19,8 +23,7 @@
 
 @media screen and (min-width: 1000px) {
     .imagesSection {
-        width: 80%;
-        margin: 0 auto;
+
 
         &__swiper {
             &__item {
@@ -32,8 +35,8 @@
     }
 }
 
-@media screen and (min-width: 1600px) {
-    .imagesSection {
-        width: 60%;
-    }
-}
+// @media screen and (min-width: 1600px) {
+//     .imagesSection {
+//         width: 60%;
+//     }
+// }
