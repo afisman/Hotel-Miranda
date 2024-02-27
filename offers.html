@@ -9,6 +9,8 @@
     <script src="https://unpkg.com/swiper/swiper-bundle.min.js"></script>
     <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-element-bundle.min.js"></script>
     <script type="text/javascript" src="./scripts/swipers/offersSwiper.js" defer></script>
+    <script type="text/javascript" src="./scripts/home.js" defer></script>
+
 
     <title>Hotel Miranda</title>
 
@@ -19,20 +21,20 @@
     <header class="header">
         <div class="header__nav">
             <p>We Make Your Feel Comfortable</p>
-            <nav class="navbar">
-                <button class="navbar__burger">
-                    <img src="./Img/header-burger-menu.svg" alt="">
-                </button>
+            <nav class="navbar" id="navbar">
+                <div class="hamburger-menu" id="hamburguer_menu" onclick="openMenu()">
+                    <button class="navbar__burger" id="hamburger_button"> ☰</button>
+                </div>
                 <a href="./index.html" class="navbar__left">
                     <h1>H</h1>
                     <h2><b>HOTEL</b></br> MIRANDA</h2>
                 </a>
 
-                <navbar class="navbar__center">
-                    <a href="./about.html">About Us</a>
-                    <a href="./rooms.html">Rooms</a>
-                    <a href="#">Offers</a>
-                    <a href="#">Contact</a>
+                <navbar id="nav_links" class="navbar__center">
+                    <a href="./about.html" class="navbar__center__link">About Us</a>
+                    <a href="./rooms.html" class="navbar__center__link">Rooms</a>
+                    <a href="./offers.html" class="navbar__center__link">Offers</a>
+                    <a href="#" class="navbar__center__link">Contact</a>
                 </navbar>
 
                 <div class="navbar__right">

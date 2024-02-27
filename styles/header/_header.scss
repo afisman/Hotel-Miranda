@@ -67,9 +67,7 @@
         }
     }
 
-    &__center {
-        display: none;
-    }
+
 
     &__center {
         display: none;
@@ -80,7 +78,6 @@
         width: 100%;
         left: 0;
         padding: .8rem;
-        box-shadow: 0px 4px 4px 0px #0000004A;
 
         &__link {
             display: block;
@@ -166,6 +163,9 @@
         &__center {
             display: flex;
             justify-content: space-between;
+            margin-top: 0;
+            position: static;
+            width: auto;
 
             a {
                 padding: 2rem;
