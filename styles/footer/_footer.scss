@@ -4,7 +4,6 @@
     display: flex;
     flex-direction: column;
     justify-content: center;
-    margin-top: 8rem;
 
     &__sections {
         margin: 0 auto;
@@ -51,6 +50,24 @@
                 line-height: 1.5rem;
                 font-weight: 400;
                 color: #777;
+            }
+
+            &__media {
+                display: flex;
+                align-items: center;
+
+                a {
+                    text-decoration: none;
+                    padding: .5rem;
+
+                    &:hover {
+                        background-color: #BEAD8E;
+
+                        path {
+                            fill: #FFF
+                        }
+                    }
+                }
             }
         }
 

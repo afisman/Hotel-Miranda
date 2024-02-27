@@ -131,7 +131,6 @@ body {
   display: flex;
   flex-direction: column;
   justify-content: center;
-  margin-top: 8rem;
 }
 .footer__sections {
   margin: 0 auto;
@@ -175,6 +174,20 @@ body {
   line-height: 1.5rem;
   font-weight: 400;
   color: #777;
+}
+.footer__sections__left__media {
+  display: flex;
+  align-items: center;
+}
+.footer__sections__left__media a {
+  text-decoration: none;
+  padding: 0.5rem;
+}
+.footer__sections__left__media a:hover {
+  background-color: #BEAD8E;
+}
+.footer__sections__left__media a:hover path {
+  fill: #FFF;
 }
 .footer__sections__right {
   padding: 1rem;
@@ -1513,25 +1526,25 @@ input[type=date]::-webkit-calendar-picker-indicator {
 }
 .OffersBanner {
   background-color: #333;
-  padding-top: 3rem;
+  padding-top: 2rem;
 }
 .OffersBanner__text {
   color: #fff;
-  padding: 2rem;
   margin: 2rem;
 }
 .OffersBanner__text p {
-  font-size: 0.8rem;
+  font-size: 0.8125rem;
   font-family: "Archivo", sans-serif;
   font-weight: 700;
   letter-spacing: 0.175rem;
+  line-height: 1.125rem;
 }
 .OffersBanner__text h2 {
   font-family: "Old Standard TT", sans-serif;
   font-weight: 400;
-  font-size: 4.5rem;
-  line-height: 4.8rem;
-  letter-spacing: -0.08rem;
+  font-size: 3.5rem;
+  line-height: 3.75rem;
+  letter-spacing: -0.075rem;
   margin: 1.5rem 0;
 }
 .OffersBanner__links {
@@ -1539,20 +1552,20 @@ input[type=date]::-webkit-calendar-picker-indicator {
   display: flex;
   justify-content: space-around;
   width: 10rem;
-  padding: 1rem;
+  padding: 1rem 0;
   margin-right: 2rem;
   margin-left: auto;
   border: none;
 }
 .OffersBanner__links a {
   text-decoration: none;
-  padding: 0.5rem 1rem;
+  padding: 0 1rem;
   color: #222;
   font-family: "Archivo", sans-serif;
   font-weight: 700;
   font-size: 1rem;
-  line-height: 1.1rem;
-  letter-spacing: -0.04rem;
+  line-height: 1.088125rem;
+  letter-spacing: -0.03rem;
 }
 .OffersBanner__links .OffersSelected {
   color: #BEAD8E;
@@ -1563,66 +1576,74 @@ input[type=date]::-webkit-calendar-picker-indicator {
 
 .OffersList {
   margin: 2rem auto;
-  width: 90%;
+  max-width: 73.125rem;
+  padding: 2rem 0.8rem;
 }
 .OffersList__item {
-  padding: 2rem;
   margin: 0 auto;
+  margin-bottom: 2rem;
 }
 .OffersList__item img {
   width: 100%;
   height: auto;
 }
+.OffersList__item__container {
+  padding: 0.5rem;
+}
 .OffersList__item__container__description {
   display: flex;
   justify-content: space-between;
 }
+.OffersList__item__container__description__title {
+  padding-top: 0.5rem;
+}
 .OffersList__item__container__description__title h4 {
   font-family: " Archivo", sans-serif;
   font-weight: 700;
-  font-size: 0.8rem;
+  font-size: 0.875rem;
   line-height: 0.9rem;
   letter-spacing: 0.175rem;
   color: #777;
+  padding-bottom: 0.5rem;
 }
 .OffersList__item__container__description__title h2 {
   font-family: "Old Standard TT", sans-serif;
   font-weight: 400;
   font-size: 2.5rem;
   line-height: 3rem;
-  letter-spacing: -0.1rem;
+  letter-spacing: -0.09rem;
   color: #222;
+  padding-bottom: 1rem;
 }
 .OffersList__item__container__description__price {
   font-family: "Archivo", sans-serif;
   text-align: right;
   font-weight: 700;
-  transform: translateY(-10rem);
+  transform: translateY(-6rem);
   z-index: 2;
 }
 .OffersList__item__container__description__price h5 {
-  font-size: 1.9rem;
-  line-height: 2rem;
+  font-size: 1.4375rem;
+  line-height: 1.56375rem;
   color: #BEAD8E;
   text-decoration: line-through;
   display: flex;
-  align-items: center;
+  align-items: baseline;
 }
 .OffersList__item__container__description__price h5 p {
-  font-size: 0.75rem;
-  line-height: 0.8rem;
-  text-decoration: none;
+  font-size: 0.6875rem;
+  line-height: 0.748125rem;
 }
 .OffersList__item__container__description__price h4 {
-  font-size: 2.5rem;
-  line-height: 2.625rem;
+  font-size: 1.875rem;
+  line-height: 2.04rem;
   color: #DE5777;
   display: flex;
-  align-items: center;
+  align-items: baseline;
 }
 .OffersList__item__container__description__price h4 p {
-  font-size: 1rem;
-  line-height: 1.1rem;
+  font-size: 0.75rem;
+  line-height: 0.81625rem;
 }
 .OffersList__item__container__info {
   margin-bottom: 2rem;
@@ -1630,7 +1651,7 @@ input[type=date]::-webkit-calendar-picker-indicator {
 .OffersList__item__container__info p {
   font-family: "Roboto", sans-serif;
   font-weight: 400;
-  font-size: 0.8rem;
+  font-size: 0.875rem;
   line-height: 1.5rem;
   color: #777;
   margin-top: 1rem;
@@ -1649,8 +1670,8 @@ input[type=date]::-webkit-calendar-picker-indicator {
   margin-left: 1rem;
   font-family: "Roboto", sans-serif;
   font-weight: 500;
-  font-size: 0.95rem;
-  line-height: 1.1rem;
+  font-size: 0.9375rem;
+  line-height: 1.09875rem;
   color: #777;
 }
 .OffersList__item__container__btn button {
@@ -1658,15 +1679,15 @@ input[type=date]::-webkit-calendar-picker-indicator {
   background-color: #BDAC8D;
   color: #fff;
   font-family: "Archivo", sans-serif;
-  font-size: 0.8rem;
-  line-height: 0.9rem;
+  font-size: 0.875rem;
+  line-height: 0.951875rem;
   letter-spacing: 0.2rem;
   border: none;
 }
 
 @media screen and (min-width: 1000px) {
   .OffersList {
-    width: 70%;
+    padding: 0;
   }
   .OffersList__item__container {
     width: 80%;
@@ -1702,13 +1723,34 @@ input[type=date]::-webkit-calendar-picker-indicator {
   }
 }
 .OffersPopular {
-  padding: 5rem;
-  background-color: #222;
+  padding: 2rem 1rem;
+  margin-bottom: 4rem;
+}
+.OffersPopular__title {
+  margin-bottom: 2rem;
+  text-align: center;
+}
+.OffersPopular__title h5 {
+  font-family: "Archivo", sans-serif;
+  font-weight: 500;
+  font-size: 0.875rem;
+  line-height: 0.951875rem;
+  color: #BDAC8D;
+  letter-spacing: 0.175rem;
+  margin-bottom: 1rem;
+}
+.OffersPopular__title h2 {
+  font-family: "Old Standard TT", sans-serif;
+  font-weight: 400;
+  font-size: 2.5rem;
+  line-height: 3rem;
+  letter-spacing: -0.05rem;
+  margin-bottom: 1rem;
+  color: #fff;
 }
 .OffersPopular__slider {
-  width: 80%;
+  max-width: 73.125rem;
   margin: 0 auto;
-  padding: 3rem;
 }
 .OffersPopular__slider .swiper-wrapper {
   margin-bottom: 4rem;
@@ -1717,10 +1759,14 @@ input[type=date]::-webkit-calendar-picker-indicator {
 .OffersPopular__slider .swiper-button-next {
   color: #fff;
   background-color: #BDAC8D;
-  padding: 1rem;
+  height: 2rem;
+  width: 2rem;
   transform: translateY(-8rem);
-  font-size: 0.03rem;
   z-index: 2;
+}
+.OffersPopular__slider .swiper-button-prev::after,
+.OffersPopular__slider .swiper-button-next::after {
+  font-size: 0.8rem;
 }
 .OffersPopular__slider .swiper-slide {
   background-color: #fff;
@@ -1730,7 +1776,7 @@ input[type=date]::-webkit-calendar-picker-indicator {
   height: auto;
 }
 .OffersPopular__slider__icons {
-  padding: 1.2rem;
+  padding: 1rem;
   display: flex;
   justify-content: space-around;
   width: 80%;
@@ -1740,9 +1786,6 @@ input[type=date]::-webkit-calendar-picker-indicator {
   z-index: 2;
   box-shadow: 0 0.5rem 1rem 0 rgba(138, 138, 138, 0.0509803922);
 }
-.OffersPopular__slider__icons svg {
-  transform: scale(1.6);
-}
 .OffersPopular__slider__text {
   text-align: center;
 }
@@ -1751,13 +1794,13 @@ input[type=date]::-webkit-calendar-picker-indicator {
   font-weight: 400;
   font-size: 1.5rem;
   line-height: 1.5rem;
-  letter-spacing: -0.02rem;
+  letter-spacing: -0.045rem;
   color: #222;
   margin-bottom: 1rem;
 }
 .OffersPopular__slider__text p {
   font-family: "Roboto", sans-serif;
-  font-size: 0.9rem;
+  font-size: 0.875rem;
   line-height: 1.5rem;
   font-weight: 400;
   color: #777;
@@ -1769,7 +1812,7 @@ input[type=date]::-webkit-calendar-picker-indicator {
   font-family: "Archivo", sans-serif;
   font-weight: 700;
   font-size: 1rem;
-  line-height: 1.1rem;
+  line-height: 1.088125rem;
   justify-content: center;
   margin-bottom: 2rem;
 }
@@ -1782,6 +1825,10 @@ input[type=date]::-webkit-calendar-picker-indicator {
   padding-left: 1rem;
 }
 
+.popularDark {
+  background-color: #222;
+}
+
 @media screen and (min-width: 1000px) {
   .OffersPopular__slider {
     width: 100%;
@@ -1789,6 +1836,9 @@ input[type=date]::-webkit-calendar-picker-indicator {
   .OffersPopular__slider .swiper-button-prev,
   .OffersPopular__slider .swiper-button-next {
     display: none;
+  }
+  .OffersPopular__slider__icons {
+    padding: 1.2rem;
   }
   .OffersPopular__slider__icons svg {
     transform: scale(1.2);
@@ -2102,4 +2152,135 @@ input[type=date]::-webkit-calendar-picker-indicator {
   font-size: 1rem;
   line-height: 1.5rem;
   color: #777;
+}
+
+.OffersPopular {
+  padding: 2rem 1rem;
+  margin-bottom: 4rem;
+}
+.OffersPopular__title {
+  margin-bottom: 2rem;
+  text-align: center;
+}
+.OffersPopular__title h5 {
+  font-family: "Archivo", sans-serif;
+  font-weight: 500;
+  font-size: 0.875rem;
+  line-height: 0.951875rem;
+  color: #BDAC8D;
+  letter-spacing: 0.175rem;
+  margin-bottom: 1rem;
+}
+.OffersPopular__title h2 {
+  font-family: "Old Standard TT", sans-serif;
+  font-weight: 400;
+  font-size: 2.5rem;
+  line-height: 3rem;
+  letter-spacing: -0.05rem;
+  margin-bottom: 1rem;
+  color: #fff;
+}
+.OffersPopular__slider {
+  max-width: 73.125rem;
+  margin: 0 auto;
+}
+.OffersPopular__slider .swiper-wrapper {
+  margin-bottom: 4rem;
+}
+.OffersPopular__slider .swiper-button-prev,
+.OffersPopular__slider .swiper-button-next {
+  color: #fff;
+  background-color: #BDAC8D;
+  height: 2rem;
+  width: 2rem;
+  transform: translateY(-8rem);
+  z-index: 2;
+}
+.OffersPopular__slider .swiper-button-prev::after,
+.OffersPopular__slider .swiper-button-next::after {
+  font-size: 0.8rem;
+}
+.OffersPopular__slider .swiper-slide {
+  background-color: #fff;
+}
+.OffersPopular__slider .swiper-slide img {
+  width: 100%;
+  height: auto;
+}
+.OffersPopular__slider__icons {
+  padding: 1rem;
+  display: flex;
+  justify-content: space-around;
+  width: 80%;
+  margin: 0 auto;
+  transform: translateY(-2rem);
+  background-color: #fff;
+  z-index: 2;
+  box-shadow: 0 0.5rem 1rem 0 rgba(138, 138, 138, 0.0509803922);
+}
+.OffersPopular__slider__text {
+  text-align: center;
+}
+.OffersPopular__slider__text h3 {
+  font-family: "Old Standard TT", sans-serif;
+  font-weight: 400;
+  font-size: 1.5rem;
+  line-height: 1.5rem;
+  letter-spacing: -0.045rem;
+  color: #222;
+  margin-bottom: 1rem;
+}
+.OffersPopular__slider__text p {
+  font-family: "Roboto", sans-serif;
+  font-size: 0.875rem;
+  line-height: 1.5rem;
+  font-weight: 400;
+  color: #777;
+  padding: 0 2rem;
+  margin-bottom: 1rem;
+}
+.OffersPopular__slider__text__price {
+  display: flex;
+  font-family: "Archivo", sans-serif;
+  font-weight: 700;
+  font-size: 1rem;
+  line-height: 1.088125rem;
+  justify-content: center;
+  margin-bottom: 2rem;
+}
+.OffersPopular__slider__text__price h4 {
+  color: #BEAD8E;
+  padding-right: 1rem;
+}
+.OffersPopular__slider__text__price h5 {
+  color: #BDBDBD;
+  padding-left: 1rem;
+}
+
+.popularDark {
+  background-color: #222;
+}
+
+@media screen and (min-width: 1000px) {
+  .OffersPopular__slider {
+    width: 100%;
+  }
+  .OffersPopular__slider .swiper-button-prev,
+  .OffersPopular__slider .swiper-button-next {
+    display: none;
+  }
+  .OffersPopular__slider__icons {
+    padding: 1.2rem;
+  }
+  .OffersPopular__slider__icons svg {
+    transform: scale(1.2);
+  }
+}
+@media screen and (min-width: 1600px) {
+  .OffersPopular__slider {
+    width: 80%;
+  }
+  .OffersPopular__slider__icons svg {
+    transform: scale(1.6);
+  }
 }/*# sourceMappingURL=styles.css.map */

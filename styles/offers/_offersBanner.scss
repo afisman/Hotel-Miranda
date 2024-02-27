@@ -1,26 +1,25 @@
 .OffersBanner {
     background-color: #333;
-    padding-top: 3rem;
+    padding-top: 2rem;
 
     &__text {
         color: #fff;
-        padding: 2rem;
         margin: 2rem;
 
         p {
-            font-size: 0.8rem;
+            font-size: 0.8125rem;
             font-family: 'Archivo', sans-serif;
             font-weight: 700;
             letter-spacing: 0.175rem;
-
+            line-height: 1.125rem;
         }
 
         h2 {
             font-family: 'Old Standard TT', sans-serif;
             font-weight: 400;
-            font-size: 4.5rem;
-            line-height: 4.8rem;
-            letter-spacing: -0.08rem;
+            font-size: 3.5rem;
+            line-height: 3.75rem;
+            letter-spacing: -0.075rem;
             margin: 1.5rem 0;
         }
     }
@@ -31,20 +30,20 @@
         display: flex;
         justify-content: space-around;
         width: 10rem;
-        padding: 1rem;
+        padding: 1rem 0;
         margin-right: 2rem;
         margin-left: auto;
         border: none;
 
         a {
             text-decoration: none;
-            padding: .5rem 1rem;
+            padding: 0 1rem;
             color: #222;
             font-family: 'Archivo', sans-serif;
             font-weight: 700;
             font-size: 1rem;
-            line-height: 1.1rem;
-            letter-spacing: -0.04rem;
+            line-height: 1.088125rem;
+            letter-spacing: -0.03rem;
         }
 
         .OffersSelected {
