@@ -1,7 +1,9 @@
 .aboutUsSection {
     display: flex;
     flex-direction: column-reverse;
-    padding: 4rem 0;
+    padding: 4rem 1rem;
+    max-width: 73.125rem;
+    margin: 0 auto;
 
     &__left {
         display: flex;
@@ -12,34 +14,47 @@
             display: flex;
             flex-direction: column-reverse;
 
+
+
             &__left {
                 width: 20rem;
                 height: 22rem;
                 text-align: center;
-                margin: .5rem;
+                // margin: .5rem;
                 padding: 2.5rem;
 
-                h3 {
-                    font-family: 'Old Standard TT', sans-serif;
-                    font-weight: 400;
-                    font-size: 2rem;
-                    line-height: 2rem;
-                    letter-spacing: -0.08rem;
-                    color: #111;
+                .strong-imgFront {
+                    transform: translate(5rem, -2.5rem);
+
                 }
 
-                p {
-                    font-family: 'Roboto', sans-serif;
-                    font-weight: 400;
-                    font-size: 1rem;
-                    line-height: 1.4rem;
+                &__text {
+                    transform: translateY(-3rem);
+
+                    h3 {
+                        font-family: 'Old Standard TT', sans-serif;
+                        font-weight: 400;
+                        font-size: 2rem;
+                        line-height: 2rem;
+                        letter-spacing: -0.08rem;
+                        color: #111;
+                        margin: 2rem 0;
+                    }
+
+                    p {
+                        font-family: 'Roboto', sans-serif;
+                        font-weight: 400;
+                        font-size: 1rem;
+                        line-height: 1.4rem;
+                    }
                 }
+
             }
 
             &__img {
                 width: 20rem;
                 height: 22rem;
-                margin: .5rem;
+                // margin: .5rem;
             }
         }
 
@@ -96,30 +111,30 @@
         h5 {
             font-family: 'Archivo', sans-serif;
             font-weight: 700;
-            letter-spacing: .2rem;
-            font-size: .8rem;
-            line-height: 1.1rem;
+            letter-spacing: 0.175rem;
+            font-size: 0.8125rem;
+            line-height: 1.125rem;
             color: #777;
-            margin: 1rem;
+            margin-bottom: 2rem;
         }
 
         h2 {
             font-family: 'Old Standard TT', sans-serif;
             font-weight: 400;
             font-size: 3.5rem;
-            line-height: 3.8rem;
-            letter-spacing: -0.12rem;
+            line-height: 3.75rem;
+            letter-spacing: -0.075rem;
             color: #111;
-            margin: 1rem;
+            margin-bottom: 2rem;
         }
 
         p {
-            font-size: 1rem;
+            font-size: 0.875rem;
             font-family: 'Archivo', sans-serif;
             line-height: 1.5rem;
             font-weight: 400;
             color: #777;
-            margin: 1rem;
+            margin-bottom: 2rem;
         }
 
         button {
@@ -127,12 +142,12 @@
             color: #fff;
             background-color: #BDAC8D;
             border: none;
-            margin: 1rem;
+            margin-bottom: 2rem;
             font-family: 'Archivo', sans-serif;
             font-weight: 700;
-            font-size: 1rem;
-            line-height: 1.1rem;
-            letter-spacing: .2rem;
+            font-size: 0.875rem;
+            line-height: 0.951875rem;
+            letter-spacing: 0.175rem;
             cursor: pointer;
         }
     }
@@ -141,9 +156,13 @@
 @media screen and (min-width: 1000px) {
     .aboutUsSection {
         flex-direction: row;
-        padding: 4rem 0 4rem 20rem;
+        align-items: center;
+        // padding: 4rem 0 4rem 20rem;
 
         &__left {
+            flex: 1 1 0;
+            margin-right: 2rem;
+
             &__strong {
                 flex-direction: row;
 
@@ -151,13 +170,15 @@
                     width: 16rem;
                     height: 18rem;
                     padding: 1rem;
-                    margin: .5rem;
+                    // margin: .5rem;
+                    // border: 1px solid black;
+                    // margin-bottom: 1rem;
                 }
 
                 &__img {
                     width: 16rem;
                     height: 18rem;
-                    margin: .5rem;
+                    // margin: .5rem;
                 }
             }
 
@@ -168,18 +189,22 @@
                     width: 16rem;
                     height: 18rem;
                     padding: 1rem;
-                    margin: .5rem;
+                    margin-top: 1rem;
                 }
 
                 &__img {
                     width: 16rem;
                     height: 18rem;
-                    margin: .5rem;
+                    // margin: .5rem;
+                    padding-bottom: 1rem;
+                    padding-right: 1rem;
                 }
             }
         }
 
         &__right {
+            flex: 1 1 0;
+
             h5 {
                 font-size: 1rem;
             }

@@ -408,7 +408,9 @@ input[type=date]::-webkit-calendar-picker-indicator {
 .aboutUsSection {
   display: flex;
   flex-direction: column-reverse;
-  padding: 4rem 0;
+  padding: 4rem 1rem;
+  max-width: 73.125rem;
+  margin: 0 auto;
 }
 .aboutUsSection__left {
   display: flex;
@@ -423,18 +425,24 @@ input[type=date]::-webkit-calendar-picker-indicator {
   width: 20rem;
   height: 22rem;
   text-align: center;
-  margin: 0.5rem;
   padding: 2.5rem;
 }
-.aboutUsSection__left__strong__left h3 {
+.aboutUsSection__left__strong__left .strong-imgFront {
+  transform: translate(5rem, -2.5rem);
+}
+.aboutUsSection__left__strong__left__text {
+  transform: translateY(-3rem);
+}
+.aboutUsSection__left__strong__left__text h3 {
   font-family: "Old Standard TT", sans-serif;
   font-weight: 400;
   font-size: 2rem;
   line-height: 2rem;
   letter-spacing: -0.08rem;
   color: #111;
+  margin: 2rem 0;
 }
-.aboutUsSection__left__strong__left p {
+.aboutUsSection__left__strong__left__text p {
   font-family: "Roboto", sans-serif;
   font-weight: 400;
   font-size: 1rem;
@@ -443,7 +451,6 @@ input[type=date]::-webkit-calendar-picker-indicator {
 .aboutUsSection__left__strong__img {
   width: 20rem;
   height: 22rem;
-  margin: 0.5rem;
 }
 .aboutUsSection__left__luxury {
   display: flex;
@@ -488,47 +495,51 @@ input[type=date]::-webkit-calendar-picker-indicator {
 .aboutUsSection__right h5 {
   font-family: "Archivo", sans-serif;
   font-weight: 700;
-  letter-spacing: 0.2rem;
-  font-size: 0.8rem;
-  line-height: 1.1rem;
+  letter-spacing: 0.175rem;
+  font-size: 0.8125rem;
+  line-height: 1.125rem;
   color: #777;
-  margin: 1rem;
+  margin-bottom: 2rem;
 }
 .aboutUsSection__right h2 {
   font-family: "Old Standard TT", sans-serif;
   font-weight: 400;
   font-size: 3.5rem;
-  line-height: 3.8rem;
-  letter-spacing: -0.12rem;
+  line-height: 3.75rem;
+  letter-spacing: -0.075rem;
   color: #111;
-  margin: 1rem;
+  margin-bottom: 2rem;
 }
 .aboutUsSection__right p {
-  font-size: 1rem;
+  font-size: 0.875rem;
   font-family: "Archivo", sans-serif;
   line-height: 1.5rem;
   font-weight: 400;
   color: #777;
-  margin: 1rem;
+  margin-bottom: 2rem;
 }
 .aboutUsSection__right button {
   padding: 1rem 3rem;
   color: #fff;
   background-color: #BDAC8D;
   border: none;
-  margin: 1rem;
+  margin-bottom: 2rem;
   font-family: "Archivo", sans-serif;
   font-weight: 700;
-  font-size: 1rem;
-  line-height: 1.1rem;
-  letter-spacing: 0.2rem;
+  font-size: 0.875rem;
+  line-height: 0.951875rem;
+  letter-spacing: 0.175rem;
   cursor: pointer;
 }
 
 @media screen and (min-width: 1000px) {
   .aboutUsSection {
     flex-direction: row;
-    padding: 4rem 0 4rem 20rem;
+    align-items: center;
+  }
+  .aboutUsSection__left {
+    flex: 1 1 0;
+    margin-right: 2rem;
   }
   .aboutUsSection__left__strong {
     flex-direction: row;
@@ -537,12 +548,10 @@ input[type=date]::-webkit-calendar-picker-indicator {
     width: 16rem;
     height: 18rem;
     padding: 1rem;
-    margin: 0.5rem;
   }
   .aboutUsSection__left__strong__img {
     width: 16rem;
     height: 18rem;
-    margin: 0.5rem;
   }
   .aboutUsSection__left__luxury {
     flex-direction: row;
@@ -551,12 +560,16 @@ input[type=date]::-webkit-calendar-picker-indicator {
     width: 16rem;
     height: 18rem;
     padding: 1rem;
-    margin: 0.5rem;
+    margin-top: 1rem;
   }
   .aboutUsSection__left__luxury__img {
     width: 16rem;
     height: 18rem;
-    margin: 0.5rem;
+    padding-bottom: 1rem;
+    padding-right: 1rem;
+  }
+  .aboutUsSection__right {
+    flex: 1 1 0;
   }
   .aboutUsSection__right h5 {
     font-size: 1rem;
@@ -741,6 +754,9 @@ input[type=date]::-webkit-calendar-picker-indicator {
     width: 50%;
   }
 }
+.foodSection {
+  margin-bottom: 2rem;
+}
 .foodSection__span {
   text-align: right;
 }
@@ -748,7 +764,7 @@ input[type=date]::-webkit-calendar-picker-indicator {
   transform: translateX(2rem);
 }
 .foodSection__body {
-  padding: 5rem 10rem;
+  max-width: 73.125rem;
 }
 .foodSection__body h5 {
   font-family: "Archivo", sans-serif;
@@ -825,7 +841,6 @@ input[type=date]::-webkit-calendar-picker-indicator {
   }
   .foodSection__body {
     position: relative;
-    width: 90%;
     margin: 0 auto;
   }
   .foodSection__body .buttons-menu {
@@ -833,15 +848,6 @@ input[type=date]::-webkit-calendar-picker-indicator {
     position: absolute;
     top: 10%;
     right: 10%;
-  }
-}
-@media screen and (min-width: 1600px) {
-  .foodSection__body {
-    width: 80%;
-  }
-  .foodSection__body__swiper {
-    width: 90%;
-    margin: 0 auto;
   }
 }
 .infoSection {
