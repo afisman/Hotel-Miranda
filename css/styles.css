@@ -1480,7 +1480,7 @@ input[type=date]::-webkit-calendar-picker-indicator {
 .RoomsBanner {
   background-color: #333;
   padding-top: 3rem;
-  margin-bottom: 2rem;
+  margin-bottom: 4rem;
 }
 .RoomsBanner__text {
   color: #fff;
@@ -1641,6 +1641,7 @@ input[type=date]::-webkit-calendar-picker-indicator {
 .OffersBanner {
   background-color: #333;
   padding-top: 2rem;
+  margin-bottom: 4rem;
 }
 .OffersBanner__text {
   color: #fff;
@@ -1992,7 +1993,7 @@ input[type=date]::-webkit-calendar-picker-indicator {
 .RoomsBanner {
   background-color: #333;
   padding-top: 3rem;
-  margin-bottom: 2rem;
+  margin-bottom: 4rem;
 }
 .RoomsBanner__text {
   color: #fff;
@@ -2448,6 +2449,7 @@ input[type=date]::-webkit-calendar-picker-indicator {
 .ContactBanner {
   background-color: #333;
   padding-top: 2rem;
+  margin-bottom: 4rem;
 }
 .ContactBanner__text {
   color: #fff;
