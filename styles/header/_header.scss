@@ -14,10 +14,12 @@
 }
 
 .navbar {
+    position: fixed;
     display: flex;
     justify-content: space-around;
     align-items: center;
     background-color: #fff;
+    width: 100%;
     max-width: 88.75rem;
 
 
@@ -141,6 +143,7 @@
         margin: 0 auto;
         transform: translateY(10%);
         padding: .5rem;
+        position: static;
 
         &__burger {
             display: none;

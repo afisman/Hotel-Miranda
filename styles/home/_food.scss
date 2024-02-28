@@ -1,11 +1,12 @@
 .foodSection {
     margin-bottom: 2rem;
+    overflow: hidden;
 
     &__span {
         text-align: right;
 
         img {
-            // transform: translateX(2rem);
+            transform: translateX(2rem);
             overflow: hidden;
         }
     }

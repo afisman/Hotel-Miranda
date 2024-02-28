@@ -26,10 +26,12 @@ body {
 }
 
 .navbar {
+  position: fixed;
   display: flex;
   justify-content: space-around;
   align-items: center;
   background-color: #fff;
+  width: 100%;
   max-width: 88.75rem;
 }
 .navbar__burger {
@@ -127,6 +129,7 @@ body {
     margin: 0 auto;
     transform: translateY(10%);
     padding: 0.5rem;
+    position: static;
   }
   .navbar__burger {
     display: none;
@@ -793,11 +796,13 @@ input[type=date]::-webkit-calendar-picker-indicator {
 }
 .foodSection {
   margin-bottom: 2rem;
+  overflow: hidden;
 }
 .foodSection__span {
   text-align: right;
 }
 .foodSection__span img {
+  transform: translateX(2rem);
   overflow: hidden;
 }
 .foodSection__body {
