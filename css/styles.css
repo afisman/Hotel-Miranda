@@ -1101,16 +1101,17 @@ input[type=date]::-webkit-calendar-picker-indicator {
   padding: 2rem;
 }
 .AboutBanner__text p {
-  font-size: 0.8rem;
+  font-size: 0.8125rem;
   font-family: "Archivo", sans-serif;
+  line-height: 1.125rem;
   font-weight: 700;
   letter-spacing: 0.175rem;
 }
 .AboutBanner__text h2 {
   font-family: "Old Standard TT", sans-serif;
   font-weight: 400;
-  font-size: 4.5rem;
-  line-height: 4.8rem;
+  font-size: 3.5rem;
+  line-height: 3.75rem;
   letter-spacing: -0.08rem;
   margin: 1.5rem 0;
 }
@@ -1155,12 +1156,13 @@ input[type=date]::-webkit-calendar-picker-indicator {
     padding: 0;
   }
   .AboutBanner__text p {
-    font-size: 1rem;
-    letter-spacing: 0.1rem;
+    font-size: 0.875rem;
+    line-height: 0.951875rem;
+    letter-spacing: 0.175rem;
   }
   .AboutBanner__text h2 {
-    font-size: 8rem;
-    line-height: 9rem;
+    font-size: 4.5rem;
+    line-height: 4.5rem;
   }
 }
 .AboutVideo {
@@ -1475,17 +1477,18 @@ input[type=date]::-webkit-calendar-picker-indicator {
   margin: 2rem;
 }
 .RoomsBanner__text p {
-  font-size: 0.8rem;
+  font-size: 0.8125rem;
   font-family: "Archivo", sans-serif;
+  line-height: 1.125rem;
   font-weight: 700;
   letter-spacing: 0.175rem;
 }
 .RoomsBanner__text h2 {
   font-family: "Old Standard TT", sans-serif;
   font-weight: 400;
-  font-size: 4.5rem;
-  line-height: 4.8rem;
-  letter-spacing: -0.08rem;
+  font-size: 3.5rem;
+  line-height: 3.75rem;
+  letter-spacing: -0.075rem;
   margin: 1.5rem 0;
 }
 .RoomsBanner__links {
@@ -1516,6 +1519,29 @@ input[type=date]::-webkit-calendar-picker-indicator {
   border-right: 0.05rem solid #222;
 }
 
+.section {
+  max-width: 73.125rem;
+  margin: 0 auto;
+}
+
+@media screen and (min-width: 1000px) {
+  .RoomsBanner {
+    padding-top: 8rem;
+  }
+  .RoomsBanner__text {
+    margin: 0;
+    padding: 0;
+  }
+  .RoomsBanner__text p {
+    font-size: 0.875rem;
+    line-height: 0.951875rem;
+    letter-spacing: 0.175rem;
+  }
+  .RoomsBanner__text h2 {
+    font-size: 4.5rem;
+    line-height: 4.5rem;
+  }
+}
 .RoomsGridSection {
   padding: 1rem;
   max-width: 73.125rem;
@@ -1940,17 +1966,18 @@ input[type=date]::-webkit-calendar-picker-indicator {
   margin: 2rem;
 }
 .RoomsBanner__text p {
-  font-size: 0.8rem;
+  font-size: 0.8125rem;
   font-family: "Archivo", sans-serif;
+  line-height: 1.125rem;
   font-weight: 700;
   letter-spacing: 0.175rem;
 }
 .RoomsBanner__text h2 {
   font-family: "Old Standard TT", sans-serif;
   font-weight: 400;
-  font-size: 4.5rem;
-  line-height: 4.8rem;
-  letter-spacing: -0.08rem;
+  font-size: 3.5rem;
+  line-height: 3.75rem;
+  letter-spacing: -0.075rem;
   margin: 1.5rem 0;
 }
 .RoomsBanner__links {
@@ -1981,6 +2008,29 @@ input[type=date]::-webkit-calendar-picker-indicator {
   border-right: 0.05rem solid #222;
 }
 
+.section {
+  max-width: 73.125rem;
+  margin: 0 auto;
+}
+
+@media screen and (min-width: 1000px) {
+  .RoomsBanner {
+    padding-top: 8rem;
+  }
+  .RoomsBanner__text {
+    margin: 0;
+    padding: 0;
+  }
+  .RoomsBanner__text p {
+    font-size: 0.875rem;
+    line-height: 0.951875rem;
+    letter-spacing: 0.175rem;
+  }
+  .RoomsBanner__text h2 {
+    font-size: 4.5rem;
+    line-height: 4.5rem;
+  }
+}
 .RoomSection {
   padding: 1rem;
 }
