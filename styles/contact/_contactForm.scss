@@ -1,0 +1,89 @@
+.ContactForm {
+    max-width: 73.125rem;
+    margin: 0 auto;
+    padding: 1rem;
+
+    form {
+        width: 100%;
+        display: flex;
+        justify-content: center;
+        flex-direction: column;
+        align-items: center;
+    }
+
+    &__input {
+        width: 100%;
+        margin-bottom: 2rem;
+
+        input {
+            border: none;
+            width: 100%;
+            background-color: #F8F8F8;
+            padding: 1rem 3rem;
+            font-size: 1rem;
+            font-family: 'Roboto', sans-serif;
+            line-height: 1.171875rem;
+        }
+
+        svg {
+            position: absolute;
+            transform: translate(160%, 130%);
+        }
+    }
+
+    &__textarea {
+        width: 100%;
+
+        textarea {
+            border: none;
+            width: 100%;
+            background-color: #F8F8F8;
+            padding: 1rem 3rem;
+            font-size: 1rem;
+            font-family: 'Roboto', sans-serif;
+            line-height: 1.171875rem;
+        }
+
+        & svg {
+            position: absolute;
+            transform: translate(160%, 140%);
+        }
+    }
+
+    &__button {
+        margin: 0 auto;
+        width: 18.25rem;
+        font-size: 1rem;
+        font-family: "Archivo", sans-serif;
+        font-weight: 700;
+        letter-spacing: 0.2em;
+        color: #fff;
+        background-color: #BEAD8E;
+        margin-top: 1.5rem;
+        line-height: 1.171875rem;
+        padding: 1.5rem 0;
+        border: none;
+        margin-bottom: 2rem;
+        cursor: pointer;
+    }
+}
+
+@media screen and (min-width:1000px) {
+    .ContactForm {
+        form {
+            flex-direction: row;
+            justify-content: center;
+            flex-wrap: wrap;
+            gap: 1rem;
+        }
+
+        &__input {
+            width: 48%;
+        }
+
+        &__textarea {
+            margin: 0 1rem;
+
+        }
+    }
+}
