@@ -730,9 +730,7 @@ input[type=date]::-webkit-calendar-picker-indicator {
   color: #222;
 }
 .featuresSection__swiper {
-  padding: 4rem 12rem;
   margin-bottom: 2rem;
-  width: 90%;
   margin: 0 auto;
 }
 .featuresSection__swiper__item {
@@ -750,7 +748,7 @@ input[type=date]::-webkit-calendar-picker-indicator {
   font-weight: 700;
   font-family: "Archivo", sans-serif;
   color: rgba(34, 34, 34, 0.0392156863);
-  transform: translateY(-35%);
+  transform: translate(25%, -35%);
 }
 .featuresSection__swiper__item h4 {
   font-family: "Old Standard TT", sans-serif;
@@ -773,17 +771,9 @@ input[type=date]::-webkit-calendar-picker-indicator {
   box-shadow: 0.1rem 0.1rem 0.3rem rgba(177, 175, 175, 0.7019607843);
 }
 
-@media screen and (min-width: 580px) {
-  .featuresSection__swiper {
-    width: 70%;
-  }
-}
 @media screen and (min-width: 1000px) {
   .featuresSection {
     margin: 3rem auto;
-  }
-  .featuresSection__swiper {
-    width: 100%;
   }
 }
 .foodSection {
@@ -823,14 +813,19 @@ input[type=date]::-webkit-calendar-picker-indicator {
 .foodSection__body__swiper__item {
   display: flex;
   align-items: center;
+  color: #222;
+  cursor: pointer;
 }
-.foodSection__body__swiper__item img {
+.foodSection__body__swiper__item__img {
   width: 7.5rem;
   height: 7.5rem;
 }
+.foodSection__body__swiper__item__img img {
+  width: 100%;
+  height: auto;
+}
 .foodSection__body__swiper__item__text {
   padding: 1rem;
-  color: #222;
 }
 .foodSection__body__swiper__item__text h4 {
   font-family: "Old Standard TT", sans-serif;
@@ -846,6 +841,10 @@ input[type=date]::-webkit-calendar-picker-indicator {
   font-size: 1rem;
   line-height: 1.5rem;
   padding: 0.5rem;
+}
+.foodSection__body__swiper__item__arrow {
+  display: none;
+  padding: 1rem;
 }
 .foodSection__body .buttons-menu {
   width: 6rem;
@@ -880,6 +879,13 @@ input[type=date]::-webkit-calendar-picker-indicator {
   .foodSection__body {
     position: relative;
     margin: 0 auto;
+  }
+  .foodSection__body__swiper__item:hover {
+    background-color: #111;
+    color: #fff;
+  }
+  .foodSection__body__swiper__item:hover > .foodSection__body__swiper__item__arrow {
+    display: block;
   }
   .foodSection__body .buttons-menu {
     margin-top: 0;

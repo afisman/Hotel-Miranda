@@ -42,15 +42,21 @@
             &__item {
                 display: flex;
                 align-items: center;
+                color: #222;
+                cursor: pointer;
 
-                img {
+                &__img {
                     width: 7.5rem;
                     height: 7.5rem;
+
+                    img {
+                        width: 100%;
+                        height: auto;
+                    }
                 }
 
                 &__text {
                     padding: 1rem;
-                    color: #222;
 
                     h4 {
                         font-family: 'Old Standard TT', sans-serif;
@@ -70,6 +76,10 @@
                     }
                 }
 
+                &__arrow {
+                    display: none;
+                    padding: 1rem;
+                }
             }
 
 
@@ -122,6 +132,20 @@
         &__body {
             position: relative;
             margin: 0 auto;
+
+            &__swiper {
+                &__item {
+
+                    &:hover {
+                        background-color: #111;
+                        color: #fff;
+                    }
+
+                    &:hover>&__arrow {
+                        display: block;
+                    }
+                }
+            }
 
             .buttons-menu {
                 margin-top: 0;
