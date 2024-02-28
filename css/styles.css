@@ -937,6 +937,8 @@ input[type=date]::-webkit-calendar-picker-indicator {
 }
 .roomSection {
   padding: 2rem 0.5rem;
+  max-width: 73.125rem;
+  margin: 0 auto;
 }
 .roomSection h5 {
   font-size: 0.9rem;
@@ -946,6 +948,7 @@ input[type=date]::-webkit-calendar-picker-indicator {
   color: #777;
   letter-spacing: 0.2rem;
   text-align: center;
+  margin-bottom: 2rem;
 }
 .roomSection h2 {
   font-family: "Old Standard TT", sans-serif;
@@ -955,6 +958,7 @@ input[type=date]::-webkit-calendar-picker-indicator {
   letter-spacing: -0.08rem;
   text-align: center;
   color: #222;
+  margin-bottom: 2rem;
 }
 .roomSection__swiper {
   width: 100%;
@@ -1036,9 +1040,6 @@ input[type=date]::-webkit-calendar-picker-indicator {
 }
 
 @media screen and (min-width: 1000px) {
-  .roomSection__swiper {
-    max-width: 48.125rem;
-  }
   .roomSection__swiper__icons {
     max-width: 24rem;
   }
@@ -1683,6 +1684,29 @@ input[type=date]::-webkit-calendar-picker-indicator {
   border-right: 0.05rem solid #222;
 }
 
+.section {
+  max-width: 73.125rem;
+  margin: 0 auto;
+}
+
+@media screen and (min-width: 1000px) {
+  .OffersBanner {
+    padding-top: 8rem;
+  }
+  .OffersBanner__text {
+    margin: 0;
+    padding: 0;
+  }
+  .OffersBanner__text p {
+    font-size: 0.875rem;
+    line-height: 0.951875rem;
+    letter-spacing: 0.175rem;
+  }
+  .OffersBanner__text h2 {
+    font-size: 4.5rem;
+    line-height: 4.5rem;
+  }
+}
 .OffersList {
   margin: 2rem auto;
   max-width: 73.125rem;
@@ -2415,5 +2439,128 @@ input[type=date]::-webkit-calendar-picker-indicator {
   }
   .OffersPopular__slider__icons svg {
     transform: scale(1.6);
+  }
+}
+.ContactBanner {
+  background-color: #333;
+  padding-top: 2rem;
+}
+.ContactBanner__text {
+  color: #fff;
+  margin: 2rem;
+}
+.ContactBanner__text p {
+  font-size: 0.8125rem;
+  font-family: "Archivo", sans-serif;
+  font-weight: 700;
+  letter-spacing: 0.175rem;
+  line-height: 1.125rem;
+}
+.ContactBanner__text h2 {
+  font-family: "Old Standard TT", sans-serif;
+  font-weight: 400;
+  font-size: 3.5rem;
+  line-height: 3.75rem;
+  letter-spacing: -0.075rem;
+  margin: 1.5rem 0;
+}
+.ContactBanner__links {
+  background-color: #fff;
+  display: flex;
+  justify-content: space-around;
+  width: 10rem;
+  padding: 1rem 0;
+  margin-right: 2rem;
+  margin-left: auto;
+  border: none;
+}
+.ContactBanner__links a {
+  text-decoration: none;
+  padding: 0 1rem;
+  color: #222;
+  font-family: "Archivo", sans-serif;
+  font-weight: 700;
+  font-size: 1rem;
+  line-height: 1.088125rem;
+  letter-spacing: -0.03rem;
+}
+.ContactBanner__links .ContactSelected {
+  color: #BEAD8E;
+}
+.ContactBanner__links .ContactHome {
+  border-right: 0.05rem solid #222;
+}
+
+.section {
+  max-width: 73.125rem;
+  margin: 0 auto;
+}
+
+@media screen and (min-width: 1000px) {
+  .ContactBanner {
+    padding-top: 8rem;
+  }
+  .ContactBanner__text {
+    margin: 0;
+    padding: 0;
+  }
+  .ContactBanner__text p {
+    font-size: 0.875rem;
+    line-height: 0.951875rem;
+    letter-spacing: 0.175rem;
+  }
+  .ContactBanner__text h2 {
+    font-size: 4.5rem;
+    line-height: 4.5rem;
+  }
+}
+.ContactInfo {
+  max-width: 73.125rem;
+  padding: 2rem;
+}
+.ContactInfo__item__card {
+  display: flex;
+  position: relative;
+  align-items: center;
+  transform: translateY(7rem);
+  gap: 1rem;
+  z-index: 4;
+}
+.ContactInfo__item__card__text h2 {
+  font-family: "Old Standard TT", sans-serif;
+  font-size: 1.25rem;
+  font-weight: 400;
+  line-height: 1.5rem;
+  color: #222;
+  margin-bottom: 1rem;
+}
+.ContactInfo__item__card__text p {
+  font-family: "Roboto", sans-serif;
+  font-weight: 400;
+  font-size: 0.875rem;
+  line-height: 1.025625rem;
+  color: #777;
+}
+.ContactInfo__item__number {
+  font-size: 12.5rem;
+  line-height: 14.64875rem;
+  font-family: "Roboto", sans-serif;
+  font-weight: 700;
+  color: #F8F8F8;
+  text-align: right;
+  z-index: 1;
+}
+
+@media screen and (min-width: 1000px) {
+  .ContactInfo {
+    display: flex;
+    width: 100%;
+    margin: 0 auto;
+  }
+  .ContactInfo__item {
+    flex: 1 1 0;
+  }
+  .ContactInfo__item__card {
+    gap: 3rem;
   }
 }/*# sourceMappingURL=styles.css.map */

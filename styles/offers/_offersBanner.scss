@@ -56,3 +56,30 @@
 
     }
 }
+
+.section {
+    max-width: 73.125rem;
+    margin: 0 auto;
+}
+
+@media screen and (min-width: 1000px) {
+    .OffersBanner {
+        padding-top: 8rem;
+
+        &__text {
+            margin: 0;
+            padding: 0;
+
+            p {
+                font-size: 0.875rem;
+                line-height: 0.951875rem;
+                letter-spacing: 0.175rem;
+            }
+
+            h2 {
+                font-size: 4.5rem;
+                line-height: 4.5rem;
+            }
+        }
+    }
+}

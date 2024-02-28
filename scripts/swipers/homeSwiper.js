@@ -1,12 +1,18 @@
 const swiper = new Swiper('.roomSection__swiper', {
     slidesPerView: 1,
-    spaceBetween: 0,
-    centeredSlides: false,
+    spaceBetween: 30,
+    centeredSlides: true,
     navigation: {
         prevEl: ".swiper-button-prev",
         nextEl: ".swiper-button-next",
     },
+    // breakpoints: {
+    //     1000: {
+    //         slidesPerView: 2,
+    //         // slidesPerGroup: 3,
 
+    //     }
+    // },
 });
 
 const featuresSwiper = new Swiper('.featuresSection__swiper', {

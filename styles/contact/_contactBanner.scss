@@ -1,0 +1,85 @@
+.ContactBanner {
+    background-color: #333;
+    padding-top: 2rem;
+
+    &__text {
+        color: #fff;
+        margin: 2rem;
+
+        p {
+            font-size: 0.8125rem;
+            font-family: 'Archivo', sans-serif;
+            font-weight: 700;
+            letter-spacing: 0.175rem;
+            line-height: 1.125rem;
+        }
+
+        h2 {
+            font-family: 'Old Standard TT', sans-serif;
+            font-weight: 400;
+            font-size: 3.5rem;
+            line-height: 3.75rem;
+            letter-spacing: -0.075rem;
+            margin: 1.5rem 0;
+        }
+    }
+
+    &__links {
+
+        background-color: #fff;
+        display: flex;
+        justify-content: space-around;
+        width: 10rem;
+        padding: 1rem 0;
+        margin-right: 2rem;
+        margin-left: auto;
+        border: none;
+
+        a {
+            text-decoration: none;
+            padding: 0 1rem;
+            color: #222;
+            font-family: 'Archivo', sans-serif;
+            font-weight: 700;
+            font-size: 1rem;
+            line-height: 1.088125rem;
+            letter-spacing: -0.03rem;
+        }
+
+        .ContactSelected {
+            color: #BEAD8E;
+        }
+
+        .ContactHome {
+            border-right: .05rem solid #222;
+        }
+
+    }
+}
+
+.section {
+    max-width: 73.125rem;
+    margin: 0 auto;
+}
+
+@media screen and (min-width: 1000px) {
+    .ContactBanner {
+        padding-top: 8rem;
+
+        &__text {
+            margin: 0;
+            padding: 0;
+
+            p {
+                font-size: 0.875rem;
+                line-height: 0.951875rem;
+                letter-spacing: 0.175rem;
+            }
+
+            h2 {
+                font-size: 4.5rem;
+                line-height: 4.5rem;
+            }
+        }
+    }
+}
