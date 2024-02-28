@@ -1,11 +1,11 @@
 .AboutBanner {
     background-color: #333;
     padding-top: 3rem;
+    margin-bottom: 4rem;
 
     &__text {
         color: #fff;
         padding: 2rem;
-        margin: 2rem;
 
         p {
             font-size: 0.8rem;
@@ -55,5 +55,31 @@
             border-right: .05rem solid #222;
         }
 
+    }
+}
+
+.section {
+    max-width: 73.125rem;
+    margin: 0 auto;
+}
+
+@media screen and (min-width: 1000px) {
+    .AboutBanner {
+        padding-top: 8rem;
+
+        &__text {
+            margin: 0;
+            padding: 0;
+
+            p {
+                font-size: 1rem;
+                letter-spacing: 0.1rem;
+            }
+
+            h2 {
+                font-size: 8rem;
+                line-height: 9rem;
+            }
+        }
     }
 }

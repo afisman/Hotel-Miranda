@@ -33,8 +33,10 @@ body {
   background-color: #fff;
   width: 100%;
   max-width: 88.75rem;
+  z-index: 2;
 }
 .navbar__burger {
+  padding: 0.5rem;
   background-color: #fff;
   border: none;
   font-size: 1.8rem;
@@ -622,6 +624,7 @@ input[type=date]::-webkit-calendar-picker-indicator {
 .introSection {
   background: #222;
   padding: 3rem 1rem;
+  margin-bottom: 2rem;
 }
 .introSection__container {
   max-width: 73.125rem;
@@ -703,7 +706,8 @@ input[type=date]::-webkit-calendar-picker-indicator {
   }
 }
 .featuresSection {
-  padding: 4rem;
+  max-width: 73.125rem;
+  margin-bottom: 4rem;
 }
 .featuresSection__title {
   text-align: center;
@@ -711,19 +715,18 @@ input[type=date]::-webkit-calendar-picker-indicator {
 .featuresSection__title h5 {
   font-family: "Archivo", sans-serif;
   font-weight: 700;
-  font-size: 1rem;
-  line-height: 1.1rem;
+  font-size: 0.875rem;
+  line-height: 0.951875rem;
   letter-spacing: 0.175rem;
   color: #777;
-  padding: 1rem;
+  margin-bottom: 2rem;
 }
 .featuresSection__title h2 {
-  padding: 1rem;
   font-family: "Old Standard TT", sans-serif;
   font-weight: 400;
-  font-size: 5rem;
-  line-height: 5rem;
-  letter-spacing: -0.175rem;
+  font-size: 3.5rem;
+  line-height: 3.75rem;
+  letter-spacing: -0.075rem;
   color: #222;
 }
 .featuresSection__swiper {
@@ -775,23 +778,12 @@ input[type=date]::-webkit-calendar-picker-indicator {
     width: 70%;
   }
 }
-@media screen and (min-width: 760px) {
-  .featuresSection__swiper {
-    width: 50%;
-  }
-}
 @media screen and (min-width: 1000px) {
   .featuresSection {
-    width: 70%;
     margin: 3rem auto;
   }
   .featuresSection__swiper {
     width: 100%;
-  }
-}
-@media screen and (min-width: 1600px) {
-  .featuresSection {
-    width: 50%;
   }
 }
 .foodSection {
@@ -803,7 +795,6 @@ input[type=date]::-webkit-calendar-picker-indicator {
 }
 .foodSection__span img {
   transform: translateX(2rem);
-  overflow: hidden;
 }
 .foodSection__body {
   max-width: 73.125rem;
@@ -1103,11 +1094,11 @@ input[type=date]::-webkit-calendar-picker-indicator {
 .AboutBanner {
   background-color: #333;
   padding-top: 3rem;
+  margin-bottom: 4rem;
 }
 .AboutBanner__text {
   color: #fff;
   padding: 2rem;
-  margin: 2rem;
 }
 .AboutBanner__text p {
   font-size: 0.8rem;
@@ -1150,12 +1141,34 @@ input[type=date]::-webkit-calendar-picker-indicator {
   border-right: 0.05rem solid #222;
 }
 
+.section {
+  max-width: 73.125rem;
+  margin: 0 auto;
+}
+
+@media screen and (min-width: 1000px) {
+  .AboutBanner {
+    padding-top: 8rem;
+  }
+  .AboutBanner__text {
+    margin: 0;
+    padding: 0;
+  }
+  .AboutBanner__text p {
+    font-size: 1rem;
+    letter-spacing: 0.1rem;
+  }
+  .AboutBanner__text h2 {
+    font-size: 8rem;
+    line-height: 9rem;
+  }
+}
 .AboutVideo {
   max-width: 73.125rem;
   margin: 0 auto;
   text-align: center;
   margin-top: 2rem;
-  padding: 0 4rem;
+  padding: 0 2rem;
 }
 .AboutVideo iframe {
   width: 100%;
@@ -1187,8 +1200,9 @@ input[type=date]::-webkit-calendar-picker-indicator {
 .AboutAmmenities {
   display: grid;
   grid-template-columns: repeat(2, 1fr);
-  padding: 3rem 4rem;
+  padding: 3rem 2rem;
   margin: 0 auto;
+  max-width: 73.125rem;
 }
 .AboutAmmenities .bbq {
   display: none;
@@ -1239,7 +1253,7 @@ input[type=date]::-webkit-calendar-picker-indicator {
   max-width: 73.125rem;
   margin: 0 auto;
   margin-bottom: 4rem;
-  padding: 0 4rem;
+  padding: 0 2rem;
 }
 .AboutRestaurant__img img {
   width: 100%;
@@ -1295,7 +1309,7 @@ input[type=date]::-webkit-calendar-picker-indicator {
   }
 }
 .AboutFacilities {
-  padding: 2rem 4rem;
+  padding: 2rem;
   background-color: #222;
   margin-bottom: 4rem;
 }
@@ -1305,26 +1319,25 @@ input[type=date]::-webkit-calendar-picker-indicator {
 .AboutFacilities__title h5 {
   font-family: "Archivo", sans-serif;
   font-weight: 700;
-  font-size: 1rem;
-  line-height: 1.1rem;
+  font-size: 0.857rem;
+  line-height: 0.951875rem;
   letter-spacing: 0.175rem;
   color: #C2C2C2;
-  padding: 1rem;
+  margin-bottom: 2rem;
 }
 .AboutFacilities__title h2 {
-  padding: 1rem;
+  margin-bottom: 2rem;
   font-family: "Old Standard TT", sans-serif;
   font-weight: 400;
-  font-size: 5rem;
-  line-height: 5rem;
-  letter-spacing: -0.175rem;
+  font-size: 3.5rem;
+  line-height: 3.75rem;
+  letter-spacing: -0.075rem;
   color: #fff;
 }
 .AboutFacilities__swiper {
-  padding: 4rem 12rem;
-  margin-bottom: 2rem;
   max-width: 73.125rem;
   margin: 0 auto;
+  margin-bottom: 2rem;
 }
 .AboutFacilities__swiper .swiper-pagination-bullet {
   background: #D8D8D8;
@@ -1376,7 +1389,8 @@ input[type=date]::-webkit-calendar-picker-indicator {
 .AboutCounter {
   max-width: 73.125rem;
   margin: 0 auto;
-  padding: 0 4rem;
+  padding: 0 2rem;
+  margin-bottom: 4rem;
 }
 .AboutCounter__title {
   margin-top: 2rem;
@@ -1503,10 +1517,8 @@ input[type=date]::-webkit-calendar-picker-indicator {
 }
 
 .RoomsGridSection {
-  padding: 5rem;
-}
-.RoomsGridSection__swiper {
-  width: 60%;
+  padding: 1rem;
+  max-width: 73.125rem;
   margin: 0 auto;
 }
 .RoomsGridSection__swiper .swiper-wrapper {
@@ -1543,7 +1555,7 @@ input[type=date]::-webkit-calendar-picker-indicator {
   box-shadow: 0 0.5rem 1rem 0 rgba(138, 138, 138, 0.0509803922);
 }
 .RoomsGridSection__swiper__icons svg {
-  transform: scale(1.6);
+  transform: scale(1.2);
 }
 .RoomsGridSection__swiper__text {
   text-align: center;
@@ -1584,9 +1596,9 @@ input[type=date]::-webkit-calendar-picker-indicator {
   padding-left: 1rem;
 }
 
-@media screen and (min-width: 1000px) and (max-width: 1600px) {
+@media screen and (min-width: 1600px) {
   .RoomsGridSection__swiper__icons svg {
-    transform: scale(1.2);
+    transform: scale(1.6);
   }
 }
 .OffersBanner {

@@ -1,8 +1,9 @@
 .AboutAmmenities {
     display: grid;
     grid-template-columns: repeat(2, 1fr);
-    padding: 3rem 4rem;
+    padding: 3rem 2rem;
     margin: 0 auto;
+    max-width: 73.125rem;
 
     .bbq {
         display: none;

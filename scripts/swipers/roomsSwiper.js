@@ -17,7 +17,7 @@ const roomsSwiper = new Swiper('.RoomsGridSection__swiper', {
         1000: {
             slidesPerView: 3,
             grid: {
-                rows: 2,
+                rows: 4,
                 fill: 'row'
             },
             centeredSlides: true
@@ -26,9 +26,9 @@ const roomsSwiper = new Swiper('.RoomsGridSection__swiper', {
 
 });
 
-document.onscroll = () => {
+window.onload = function () {
     const width = document.body.offsetWidth;
-    if (width > 1000) {
+    if (width >= 1000) {
         roomsSwiper.params.centeredSlides = false
         roomsSwiper.update()
     } else {

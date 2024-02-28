@@ -7,7 +7,6 @@
 
         img {
             transform: translateX(2rem);
-            overflow: hidden;
         }
     }
 
@@ -85,13 +84,10 @@
 
             .swiper-button-disabled {
                 background-color: #F8F8F8;
-
-
             }
 
             &__prev,
             &__next {
-                // color: #fff;
                 background-color: #BDAC8D;
                 padding: 1.2rem;
                 font-size: .08rem;
@@ -102,15 +98,6 @@
                         fill: #111;
                     }
                 }
-
-                // &:hover {
-
-                //     svg {
-                //         path {
-                //             fill: #fff;
-                //         }
-                //     }
-                // }
 
                 svg {
                     transform: scale(2);
@@ -128,7 +115,6 @@
             text-align: left;
 
             img {
-
                 transform: translateX(-2rem);
             }
         }

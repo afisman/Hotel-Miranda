@@ -12,7 +12,6 @@ const swiper = new Swiper('.roomSection__swiper', {
 const featuresSwiper = new Swiper('.featuresSection__swiper', {
     slidesPerView: 1,
     spaceBetween: 30,
-    centeredSlides: true,
     pagination: {
         el: '.swiper-pagination',
         clickable: true,
@@ -75,9 +74,6 @@ document.onscroll = () => {
         swiper.params.centeredSlides = false;
         swiper.update()
 
-        featuresSwiper.params.centeredSlides = false
-        featuresSwiper.update()
-
         menuSwiper.params.centeredSlides = false
         menuSwiper.update()
 
@@ -87,9 +83,6 @@ document.onscroll = () => {
 
         swiper.params.centeredSlides = false;
         swiper.update()
-
-        featuresSwiper.params.centeredSlides = true
-        featuresSwiper.update()
 
         menuSwiper.params.centeredSlides = true
         menuSwiper.update()

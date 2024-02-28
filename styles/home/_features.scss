@@ -1,5 +1,6 @@
 .featuresSection {
-    padding: 4rem;
+    max-width: 73.125rem;
+    margin-bottom: 4rem;
 
     &__title {
         text-align: center;
@@ -7,20 +8,19 @@
         h5 {
             font-family: 'Archivo', sans-serif;
             font-weight: 700;
-            font-size: 1rem;
-            line-height: 1.1rem;
+            font-size: 0.875rem;
+            line-height: 0.951875rem;
             letter-spacing: 0.175rem;
             color: #777;
-            padding: 1rem;
+            margin-bottom: 2rem;
         }
 
         h2 {
-            padding: 1rem;
             font-family: 'Old Standard TT', sans-serif;
             font-weight: 400;
-            font-size: 5rem;
-            line-height: 5rem;
-            letter-spacing: - 0.175rem;
+            font-size: 3.5rem;
+            line-height: 3.75rem;
+            letter-spacing: - 0.075rem;
             color: #222;
         }
     }
@@ -84,17 +84,17 @@
     }
 }
 
-@media screen and (min-width: 760px) {
-    .featuresSection {
-        &__swiper {
-            width: 50%;
-        }
-    }
-}
+// @media screen and (min-width: 760px) {
+//     .featuresSection {
+//         &__swiper {
+//             width: 50%;
+//         }
+//     }
+// }
 
 @media screen and (min-width: 1000px) {
     .featuresSection {
-        width: 70%;
+        // width: 70%;
         margin: 3rem auto;
 
         &__swiper {
@@ -103,8 +103,8 @@
     }
 }
 
-@media screen and (min-width: 1600px) {
-    .featuresSection {
-        width: 50%;
-    }
-}
+// @media screen and (min-width: 1600px) {
+//     .featuresSection {
+//         width: 50%;
+//     }
+// }
