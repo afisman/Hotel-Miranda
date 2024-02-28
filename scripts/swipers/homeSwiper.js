@@ -67,7 +67,7 @@ const imagesSwiper = new Swiper('.imagesSection__swiper', {
     },
 });
 
-document.onscroll = () => {
+window.onload = function () {
     const width = document.body.offsetWidth;
     if (width >= 1000) {
 

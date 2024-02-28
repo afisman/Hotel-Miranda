@@ -16,7 +16,7 @@ const offersSwiper = new Swiper('.OffersPopular__slider', {
 
 });
 
-document.onscroll = () => {
+window.onload = function () {
     const width = document.body.offsetWidth;
     if (width > 1000) {
         offersSwiper.params.centeredSlides = false
