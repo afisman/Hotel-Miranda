@@ -2676,7 +2676,7 @@ input[type=date]::-webkit-calendar-picker-indicator {
   width: 100%;
   height: auto;
 }
-.RoomsListSection__swiper__icons {
+.RoomsListSection__swiper__center__icons {
   padding: 1.2rem;
   display: flex;
   justify-content: space-around;
@@ -2687,13 +2687,13 @@ input[type=date]::-webkit-calendar-picker-indicator {
   z-index: 2;
   box-shadow: 0 0.5rem 1rem 0 rgba(138, 138, 138, 0.0509803922);
 }
-.RoomsListSection__swiper__icons svg {
+.RoomsListSection__swiper__center__icons svg {
   transform: scale(1.2);
 }
-.RoomsListSection__swiper__text {
+.RoomsListSection__swiper__center__text {
   text-align: center;
 }
-.RoomsListSection__swiper__text h3 {
+.RoomsListSection__swiper__center__text h3 {
   font-family: "Old Standard TT", sans-serif;
   font-weight: 400;
   font-size: 1.5rem;
@@ -2702,35 +2702,84 @@ input[type=date]::-webkit-calendar-picker-indicator {
   color: #222;
   margin-bottom: 1rem;
 }
-.RoomsListSection__swiper__text p {
+.RoomsListSection__swiper__center__text p {
   font-family: "Roboto", sans-serif;
   font-size: 0.9rem;
   line-height: 1.5rem;
   font-weight: 400;
   color: #777;
-  padding: 0 2rem;
   margin-bottom: 1rem;
 }
-.RoomsListSection__swiper__text__price {
-  display: flex;
+.RoomsListSection__swiper__price {
   font-family: "Archivo", sans-serif;
   font-weight: 700;
-  font-size: 1rem;
-  line-height: 1.1rem;
-  justify-content: center;
   margin-bottom: 2rem;
 }
-.RoomsListSection__swiper__text__price h4 {
+.RoomsListSection__swiper__price h4 {
   color: #BEAD8E;
-  padding-right: 1rem;
+  font-size: 2.5rem;
+  line-height: 2.72rem;
+  border-bottom: 0.125rem solid #F1F1F1;
+  padding-bottom: 1rem;
+  display: flex;
+  align-items: baseline;
+  margin-bottom: 1rem;
 }
-.RoomsListSection__swiper__text__price h5 {
+.RoomsListSection__swiper__price h4 p {
+  font-size: 1rem;
+  line-height: 1.088125rem;
+}
+.RoomsListSection__swiper__price h5 {
   color: #BDBDBD;
-  padding-left: 1rem;
+  font-size: 1rem;
+  line-height: 1.088125rem;
 }
 
 @media screen and (min-width: 1600px) {
-  .RoomsListSection__swiper__icons svg {
+  .RoomsListSection__swiper .swiper-slide {
+    width: 100%;
+    display: flex;
+    gap: 2rem;
+  }
+  .RoomsListSection__swiper .swiper-slide img {
+    flex: 2 1 0;
+    width: 30%;
+    height: auto;
+  }
+  .RoomsListSection__swiper__center {
+    flex: 2 1 0;
+  }
+  .RoomsListSection__swiper__center__icons {
+    margin-left: 0;
+    width: 60%;
+    transform: translateY(0);
+    background-color: #fff;
+    margin-bottom: 1rem;
+  }
+  .RoomsListSection__swiper__center__icons svg {
     transform: scale(1.6);
+  }
+  .RoomsListSection__swiper__center__text {
+    text-align: left;
+  }
+  .RoomsListSection__swiper__center__text h3 {
+    font-family: "Old Standard TT", sans-serif;
+    font-weight: 400;
+    font-size: 1.5rem;
+    line-height: 1.5rem;
+    letter-spacing: -0.045rem;
+    color: #222;
+    margin-bottom: 1rem;
+  }
+  .RoomsListSection__swiper__center__text p {
+    font-family: "Roboto", sans-serif;
+    font-size: 0.875rem;
+    line-height: 1.5rem;
+    font-weight: 400;
+    color: #777;
+    margin-bottom: 1rem;
+  }
+  .RoomsListSection__swiper__price {
+    flex: 1 1 0;
   }
 }/*# sourceMappingURL=styles.css.map */
