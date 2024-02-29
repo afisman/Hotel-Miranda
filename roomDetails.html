@@ -52,17 +52,19 @@
     </header>
     <main>
         <section class="RoomsBanner">
-            <div class="RoomsBanner__text">
-                <p>THE ULTIMATE LUXURY</p>
-                <h2>Ultimate Room</h2>
-            </div>
-            <div class="RoomsBanner__links">
-                <a href="./index.html" class="RoomsHome">
-                    Home
-                </a>
-                <a href="#" class="RoomsSelected">
-                    Room Details
-                </a>
+            <div class="section">
+                <div class="RoomsBanner__text">
+                    <p>THE ULTIMATE LUXURY</p>
+                    <h2>Ultimate Room</h2>
+                </div>
+                <div class="RoomsBanner__links">
+                    <a href="./index.html" class="RoomsHome">
+                        Home
+                    </a>
+                    <a href="#" class="RoomsSelected">
+                        Room Details
+                    </a>
+                </div>
             </div>
         </section>
         <section class="RoomSection">
@@ -89,12 +91,16 @@
                         <input type="date" id="departure" name="departure" value="2018-08-22">
                     </div>
                     <div class="roomInfo__form__item">
-                        <label for="rooms">Rooms</label>
-                        <input type="number" id="rooms" name="rooms">
+                        <label for="name">Name</label>
+                        <input type="text" id="name" name="name" placeholder="Enter full name">
                     </div>
                     <div class="roomInfo__form__item">
-                        <label for="guests">Guests</label>
-                        <input type="number" id="guests" name="guests">
+                        <label for="email">Email</label>
+                        <input type="email" id="email" name="email" placeholder="Enter email">
+                    </div>
+                    <div class="roomInfo__form__item">
+                        <label for="phone">Phone Number</label>
+                        <input type="number" id="phone" name="phone" placeholder="Enter phone number">
                     </div>
                     <input type="submit" class="roomInfo__form__button" name="" id="" value="CHECK AVAILABILITY">
                 </form>

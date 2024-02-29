@@ -429,14 +429,17 @@ body {
 .calendarSection__form__button {
   padding: 1.5rem;
   background-color: #BEAD8E;
-  color: #fff;
-  font-family: "Archivo", sans-serif;
-  font-weight: 700;
+  max-width: 20.625rem;
+  border: none;
+}
+.calendarSection__form__button a {
   font-size: 0.875rem;
   line-height: 0.951875rem;
   letter-spacing: 0.2rem;
-  max-width: 20.625rem;
-  border: none;
+  text-decoration: none;
+  color: #fff;
+  font-family: "Archivo", sans-serif;
+  font-weight: 700;
 }
 
 input[type=date]::-webkit-calendar-picker-indicator {
@@ -2152,6 +2155,7 @@ input[type=date]::-webkit-calendar-picker-indicator {
   width: 100%;
   padding: 1rem;
   border: none;
+  cursor: pointer;
 }
 .RoomSection__description {
   margin-bottom: 2rem;
