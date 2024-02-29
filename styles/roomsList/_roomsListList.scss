@@ -79,30 +79,30 @@
         }
 
         &__price {
+            display: flex;
             font-family: 'Archivo', sans-serif;
             font-weight: 700;
+
+            justify-content: center;
             margin-bottom: 2rem;
 
             h4 {
                 color: #BEAD8E;
-                font-size: 2.5rem;
-                line-height: 2.72rem;
-                border-bottom: 0.125rem solid #F1F1F1;
-                padding-bottom: 1rem;
+                padding-right: 1rem;
+                font-size: 1rem;
+                line-height: 1.1rem;
                 display: flex;
-                align-items: baseline;
-                margin-bottom: 1rem;
-
-                p {
-                    font-size: 1rem;
-                    line-height: 1.088125rem;
-                }
             }
 
             h5 {
-                color: #BDBDBD;
+                padding-left: 1rem;
                 font-size: 1rem;
-                line-height: 1.088125rem;
+                line-height: 1.1rem;
+
+                a {
+                    text-decoration: none;
+                    color: #BDBDBD;
+                }
             }
         }
     }
@@ -166,6 +166,30 @@
 
             &__price {
                 flex: 1 1 0;
+                display: block;
+
+                h4 {
+                    font-size: 2.5rem;
+                    line-height: 2.72rem;
+                    border-bottom: 0.125rem solid #F1F1F1;
+                    padding-bottom: 1rem;
+                    margin-bottom: 1rem;
+
+                    p {
+                        font-size: 1rem;
+                        line-height: 1.088125rem;
+                    }
+                }
+
+                h5 {
+                    font-size: 1rem;
+                    line-height: 1.088125rem;
+                    cursor: pointer;
+
+                    &:hover {
+                        transform: scale(1.2);
+                    }
+                }
             }
         }
     }
