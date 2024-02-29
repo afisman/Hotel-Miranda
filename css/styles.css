@@ -754,6 +754,9 @@ input[type=date]::-webkit-calendar-picker-indicator {
   display: flex;
   justify-content: space-between;
 }
+.featuresSection__swiper__item__title img:hover {
+  transform: scale(1.02);
+}
 .featuresSection__swiper__item__title h2 {
   font-size: 7.5rem;
   font-weight: 700;
@@ -777,7 +780,7 @@ input[type=date]::-webkit-calendar-picker-indicator {
   line-height: 1.6rem;
   color: #777;
 }
-.featuresSection__swiper__item:hover {
+.featuresSection__swiper__item img:hover {
   transform: scale(1.02);
   box-shadow: 0.1rem 0.1rem 0.3rem rgba(177, 175, 175, 0.7019607843);
 }

@@ -39,6 +39,12 @@
                 display: flex;
                 justify-content: space-between;
 
+                img {
+                    &:hover {
+                        transform: scale(1.02);
+                    }
+                }
+
                 h2 {
                     font-size: 7.5rem;
                     font-weight: 700;
@@ -69,28 +75,19 @@
             }
 
 
-
-            &:hover {
-                transform: scale(1.02);
-                box-shadow: .1rem .1rem .3rem #b1afafb3;
+            img {
+                &:hover {
+                    transform: scale(1.02);
+                    box-shadow: .1rem .1rem .3rem #b1afafb3;
+                }
             }
+
         }
     }
 }
 
-// @media screen and (min-width: 580px) {
-//     .featuresSection {
-//         &__swiper {
-//             width: 70%;
-//         }
-//     }
-// }
-
-
 @media screen and (min-width: 1000px) {
     .featuresSection {
         margin: 3rem auto;
-
-
     }
 }
