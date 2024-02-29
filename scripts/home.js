@@ -16,3 +16,20 @@ const openMenu = () => {
     }
 };
 
+// window.addEventListener('mousemove', (event) => {
+
+//     const {
+//         clientX: x,
+//         clientY: y
+//     } = event
+//     const elementMouseIsOver = document.elementFromPoint(x, y);
+//     console.log(y)
+//     const navBar = document.getElementById("navbar");
+
+//     if (y <= 180 && window.innerWidth >= 1000) {
+//         console.log('I am here')
+//         navBar.style.position = 'fixed';
+
+//     }
+// })
+

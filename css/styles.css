@@ -165,6 +165,9 @@ body {
     width: 2rem;
     height: 2rem;
   }
+  .fixed {
+    position: fixed;
+  }
 }
 .footer {
   padding-top: 2rem;
@@ -680,6 +683,7 @@ input[type=date]::-webkit-calendar-picker-indicator {
   line-height: 1.1rem;
   letter-spacing: 0.175rem;
   border: none;
+  cursor: pointer;
 }
 
 @media screen and (min-width: 1000px) {
@@ -813,20 +817,18 @@ input[type=date]::-webkit-calendar-picker-indicator {
 }
 .foodSection__body__swiper .swiper-slide {
   display: flex;
+  padding: 0;
 }
 .foodSection__body__swiper__item {
   display: flex;
   align-items: center;
   color: #222;
   cursor: pointer;
+  padding: 0;
 }
-.foodSection__body__swiper__item__img {
+.foodSection__body__swiper__item img {
   width: 7.5rem;
   height: 7.5rem;
-}
-.foodSection__body__swiper__item__img img {
-  width: 100%;
-  height: auto;
 }
 .foodSection__body__swiper__item__text {
   padding: 1rem;
@@ -847,7 +849,7 @@ input[type=date]::-webkit-calendar-picker-indicator {
   padding: 0.5rem;
 }
 .foodSection__body__swiper__item__arrow {
-  display: none;
+  opacity: 0;
   padding: 1rem;
 }
 .foodSection__body .buttons-menu {
@@ -889,7 +891,7 @@ input[type=date]::-webkit-calendar-picker-indicator {
     color: #fff;
   }
   .foodSection__body__swiper__item:hover > .foodSection__body__swiper__item__arrow {
-    display: block;
+    opacity: 1;
   }
   .foodSection__body .buttons-menu {
     margin-top: 0;
@@ -1474,6 +1476,7 @@ input[type=date]::-webkit-calendar-picker-indicator {
   }
   .AboutCounter__items {
     display: flex;
+    gap: 3rem;
     justify-content: space-between;
   }
 }

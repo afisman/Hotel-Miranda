@@ -37,6 +37,7 @@
 
             .swiper-slide {
                 display: flex;
+                padding: 0;
             }
 
             &__item {
@@ -44,16 +45,14 @@
                 align-items: center;
                 color: #222;
                 cursor: pointer;
+                padding: 0;
 
-                &__img {
+
+                & img {
                     width: 7.5rem;
                     height: 7.5rem;
-
-                    img {
-                        width: 100%;
-                        height: auto;
-                    }
                 }
+
 
                 &__text {
                     padding: 1rem;
@@ -77,7 +76,7 @@
                 }
 
                 &__arrow {
-                    display: none;
+                    opacity: 0;
                     padding: 1rem;
                 }
             }
@@ -142,7 +141,7 @@
                     }
 
                     &:hover>&__arrow {
-                        display: block;
+                        opacity: 1;
                     }
                 }
             }
