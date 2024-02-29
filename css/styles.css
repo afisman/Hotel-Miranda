@@ -781,8 +781,7 @@ input[type=date]::-webkit-calendar-picker-indicator {
   color: #777;
 }
 .featuresSection__swiper__item img:hover {
-  transform: scale(1.02);
-  box-shadow: 0.1rem 0.1rem 0.3rem rgba(177, 175, 175, 0.7019607843);
+  transform: scale(1.05);
 }
 
 @media screen and (min-width: 1000px) {
@@ -1567,6 +1566,9 @@ input[type=date]::-webkit-calendar-picker-indicator {
   max-width: 73.125rem;
   margin: 0 auto;
 }
+.RoomsGridSection .swiper {
+  position: relative;
+}
 .RoomsGridSection__swiper .swiper-wrapper {
   margin-bottom: 4rem;
 }
@@ -1584,6 +1586,20 @@ input[type=date]::-webkit-calendar-picker-indicator {
 .RoomsGridSection__swiper .swiper-pagination-bullet-active {
   color: #fff;
   background: #BEAD8E;
+}
+.RoomsGridSection__swiper .swiper-button-next,
+.RoomsGridSection__swiper .swiper-button-prev {
+  position: absolute;
+  bottom: 0.25%;
+  top: auto;
+  margin-top: 0;
+  height: auto;
+}
+.RoomsGridSection__swiper .swiper-button-next:after,
+.RoomsGridSection__swiper .swiper-button-prev:after {
+  color: #000;
+  font-size: 1rem;
+  line-height: 2rem;
 }
 .RoomsGridSection__swiper .swiper-slide img {
   width: 100%;
@@ -1650,6 +1666,14 @@ input[type=date]::-webkit-calendar-picker-indicator {
 @media screen and (min-width: 1600px) {
   .RoomsGridSection__swiper__icons svg {
     transform: scale(1.6);
+  }
+  .RoomsGridSection__swiper .swiper-button-next {
+    right: 40%;
+    bottom: 0.75%;
+  }
+  .RoomsGridSection__swiper .swiper-button-prev {
+    left: 40%;
+    bottom: 0.75%;
   }
   .RoomsGridSection__swiper__text__price h5:hover {
     transform: scale(1.2);

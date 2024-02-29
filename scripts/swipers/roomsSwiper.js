@@ -9,15 +9,19 @@ const roomsSwiper = new Swiper('.RoomsGridSection__swiper', {
             return '<span class="' + className + '">' + (index + 1) + '</span>';
         }
     },
+    navigation: {
+        prevEl: ".swiper-button-prev",
+        nextEl: ".swiper-button-next",
+    },
     grid: {
-        rows: 12,
+        rows: 6,
         fill: "row",
     },
     breakpoints: {
         1000: {
             slidesPerView: 3,
             grid: {
-                rows: 4,
+                rows: 2,
                 fill: 'row'
             },
             centeredSlides: true

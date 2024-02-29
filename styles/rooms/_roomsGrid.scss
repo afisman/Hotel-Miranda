@@ -3,6 +3,10 @@
     max-width: 73.125rem;
     margin: 0 auto;
 
+    .swiper {
+        position: relative;
+    }
+
     &__swiper {
         .swiper-wrapper {
             margin-bottom: 4rem;
@@ -25,13 +29,27 @@
             background: #BEAD8E;
         }
 
+        .swiper-button-next,
+        .swiper-button-prev {
+            position: absolute;
+            bottom: 0.25%;
+            top: auto;
+            margin-top: 0;
+            height: auto;
+
+            &:after {
+                color: #000;
+                font-size: 1rem;
+                line-height: 2rem;
+            }
+        }
+
         .swiper-slide {
 
             img {
                 width: 100%;
                 height: auto;
             }
-
         }
 
         &__icons {
@@ -109,6 +127,16 @@
                 svg {
                     transform: scale(1.6);
                 }
+            }
+
+            .swiper-button-next {
+                right: 40%;
+                bottom: 0.75%;
+            }
+
+            .swiper-button-prev {
+                left: 40%;
+                bottom: 0.75%;
             }
 
             &__text {

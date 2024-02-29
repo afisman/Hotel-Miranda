@@ -9,6 +9,10 @@ const roomsListSwiper = new Swiper('.RoomsListSection__swiper', {
             return '<span class="' + className + '">' + (index + 1) + '</span>';
         }
     },
+    navigation: {
+        prevEl: ".swiper-button-prev",
+        nextEl: ".swiper-button-next",
+    },
     grid: {
         rows: 6,
         fill: "row",
