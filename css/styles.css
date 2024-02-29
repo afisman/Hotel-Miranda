@@ -1635,13 +1635,21 @@ input[type=date]::-webkit-calendar-picker-indicator {
   padding-right: 1rem;
 }
 .RoomsGridSection__swiper__text__price h5 {
-  color: #BDBDBD;
   padding-left: 1rem;
+  font-size: 1rem;
+  line-height: 1.1rem;
+}
+.RoomsGridSection__swiper__text__price h5 a {
+  text-decoration: none;
+  color: #BDBDBD;
 }
 
 @media screen and (min-width: 1600px) {
   .RoomsGridSection__swiper__icons svg {
     transform: scale(1.6);
+  }
+  .RoomsGridSection__swiper__text__price h5:hover {
+    transform: scale(1.2);
   }
 }
 .OffersBanner {

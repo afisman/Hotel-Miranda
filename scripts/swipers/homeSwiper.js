@@ -6,13 +6,6 @@ const swiper = new Swiper('.roomSection__swiper', {
         prevEl: ".swiper-button-prev",
         nextEl: ".swiper-button-next",
     },
-    // breakpoints: {
-    //     1000: {
-    //         slidesPerView: 2,
-    //         // slidesPerGroup: 3,
-
-    //     }
-    // },
 });
 
 const featuresSwiper = new Swiper('.featuresSection__swiper', {

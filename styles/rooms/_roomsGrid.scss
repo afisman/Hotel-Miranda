@@ -88,8 +88,14 @@
                 }
 
                 h5 {
-                    color: #BDBDBD;
                     padding-left: 1rem;
+                    font-size: 1rem;
+                    line-height: 1.1rem;
+
+                    a {
+                        text-decoration: none;
+                        color: #BDBDBD;
+                    }
                 }
             }
         }
@@ -102,6 +108,16 @@
             &__icons {
                 svg {
                     transform: scale(1.6);
+                }
+            }
+
+            &__text {
+                &__price {
+                    h5 {
+                        &:hover {
+                            transform: scale(1.2);
+                        }
+                    }
                 }
             }
         }
