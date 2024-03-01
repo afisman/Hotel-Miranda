@@ -799,10 +799,10 @@ input[type=date]::-webkit-calendar-picker-indicator {
   margin-bottom: 2rem;
   overflow: hidden;
 }
-.foodSection__span {
+.foodSection__donut {
   text-align: right;
 }
-.foodSection__span img {
+.foodSection__donut img {
   transform: translateX(2rem);
 }
 .foodSection__body {
@@ -887,11 +887,13 @@ input[type=date]::-webkit-calendar-picker-indicator {
 }
 
 @media screen and (min-width: 1000px) {
-  .foodSection__span {
+  .foodSection__donut {
     text-align: left;
+    max-width: 1170px;
+    margin: 0 auto 2rem auto;
   }
-  .foodSection__span img {
-    transform: translateX(-2rem);
+  .foodSection__donut img {
+    transform: translateX(-15rem);
   }
   .foodSection__body {
     position: relative;

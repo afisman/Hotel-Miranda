@@ -2,7 +2,7 @@
     margin-bottom: 2rem;
     overflow: hidden;
 
-    &__span {
+    &__donut {
         text-align: right;
 
         img {
@@ -120,11 +120,13 @@
 
 @media screen and (min-width: 1000px) {
     .foodSection {
-        &__span {
+        &__donut {
             text-align: left;
+            max-width: 1170px;
+            margin: 0 auto 2rem auto;
 
             img {
-                transform: translateX(-2rem);
+                transform: translateX(-15rem);
             }
         }
 
