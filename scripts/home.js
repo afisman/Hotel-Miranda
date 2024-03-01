@@ -20,20 +20,5 @@ const sendAlert = () => {
     alert("¡Thank you for your request! We have received it correctly. Someone from our Team will get back to you very soon.The Miranda Hotel")
 }
 
-// window.addEventListener('mousemove', (event) => {
 
-//     const {
-//         clientX: x,
-//         clientY: y
-//     } = event
-//     const elementMouseIsOver = document.elementFromPoint(x, y);
-//     console.log(y)
-//     const navBar = document.getElementById("navbar");
-
-//     if (y <= 180 && window.innerWidth >= 1000) {
-//         console.log('I am here')
-//         navBar.style.position = 'fixed';
-
-//     }
-// })
 
