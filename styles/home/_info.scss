@@ -42,16 +42,8 @@
 
 @media screen and (min-width: 1000px) {
     .infoSection {
-        // width: 80%;
-        // margin: 0 auto;
         display: flex;
         justify-content: space-around;
         align-items: center;
-    }
-}
-
-@media screen and (min-width: 1600px) {
-    .infoSection {
-        // width: 60%;
     }
 }

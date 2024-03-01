@@ -7,7 +7,7 @@
     background-image: url("../../Hotel-Miranda/Img/background-img.png");
 
     &__sections {
-        max-width: 120rem;
+        max-width: 1170px;
         margin: 0 auto;
         padding: 2rem;
         display: grid;
@@ -138,8 +138,7 @@
 
     &__bottom {
         background-color: #FFF;
-        display: flex;
-        flex-direction: column;
+
         margin: 0 auto;
         width: 100%;
         padding: 1rem 1.5rem;
@@ -153,14 +152,21 @@
             padding: .5rem;
         }
     }
+
+    .section-footer {
+        max-width: 1170px;
+        display: flex;
+        flex-direction: column;
+        margin: 0 auto;
+    }
 }
+
 
 @media screen and (min-width: 1000px) {
     .footer {
         &__sections {
             grid-template-columns: repeat(3, 1fr);
             gap: 3rem;
-            // padding: 0 8rem;
         }
 
         &__center,
@@ -169,9 +175,9 @@
             padding: 2rem;
         }
 
-        &__bottom {
+        .section-footer {
             flex-direction: row;
-            justify-content: space-around;
+            justify-content: space-between;
         }
     }
 }

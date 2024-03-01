@@ -167,6 +167,7 @@ body {
   }
   .fixed {
     position: fixed;
+    transition: all 0.5s ease-in;
   }
 }
 .footer {
@@ -178,7 +179,7 @@ body {
   background-image: url("../../Hotel-Miranda/Img/background-img.png");
 }
 .footer__sections {
-  max-width: 120rem;
+  max-width: 1170px;
   margin: 0 auto;
   padding: 2rem;
   display: grid;
@@ -287,8 +288,6 @@ body {
 }
 .footer__bottom {
   background-color: #FFF;
-  display: flex;
-  flex-direction: column;
   margin: 0 auto;
   width: 100%;
   padding: 1rem 1.5rem;
@@ -301,6 +300,12 @@ body {
   color: #222;
   padding: 0.5rem;
 }
+.footer .section-footer {
+  max-width: 1170px;
+  display: flex;
+  flex-direction: column;
+  margin: 0 auto;
+}
 
 @media screen and (min-width: 1000px) {
   .footer__sections {
@@ -310,9 +315,9 @@ body {
   .footer__center, .footer__left, .footer__right {
     padding: 2rem;
   }
-  .footer__bottom {
+  .footer .section-footer {
     flex-direction: row;
-    justify-content: space-around;
+    justify-content: space-between;
   }
 }
 .bannerSection {
@@ -422,6 +427,7 @@ body {
   margin-top: 0.5rem;
   border: none;
   color: #BEAD8E;
+  padding: 0.5rem;
 }
 .calendarSection__form__date input[type=date]::-webkit-calendar-picker-indicator {
   filter: brightness(0) saturate(100%) invert(74%) sepia(5%) saturate(2587%) brightness(87%) contrast(90%);
@@ -807,7 +813,7 @@ input[type=date]::-webkit-calendar-picker-indicator {
   font-family: "Archivo", sans-serif;
   font-weight: 700;
   font-size: 1rem;
-  left: 0.2rem;
+  letter-spacing: 0.2rem;
   line-height: 1.1rem;
   color: #777;
 }

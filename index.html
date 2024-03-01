@@ -64,12 +64,13 @@
             <form action="" class="calendarSection__form">
                 <div class="calendarSection__form__date">
                     <label for="arrival">Arrival Date
-                        <input type="date" id="arrival" name="arrival" placeholder="24th march 2020">
+                        <input type="date" id="arrival" name="arrival" placeholder="24th march 2020"
+                            onfocus="this.showPicker()">
                     </label>
                 </div>
                 <div class="calendarSection__form__date">
                     <label for="departure">LeDeparture Date
-                        <input type="date" id="departure" name="departure">
+                        <input type="date" id="departure" name="departure" onfocus="this.showPicker()">
                     </label>
                 </div>
                 <button type="submit" class="calendarSection__form__button">
@@ -781,8 +782,10 @@
             </div>
         </div>
         <div class="footer__bottom">
-            <p>Copyright By@Example - 2020</p>
-            <p>Terms of use | Privacy Environmental Policy</p>
+            <div class="section-footer">
+                <p>Copyright By@Example - 2020</p>
+                <p>Terms of use | Privacy Environmental Policy</p>
+            </div>
         </div>
     </footer>
 </body>

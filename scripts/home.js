@@ -20,5 +20,20 @@ const sendAlert = () => {
     alert("¡Thank you for your request! We have received it correctly. Someone from our Team will get back to you very soon.The Miranda Hotel")
 }
 
+let inArea = false;
 
+document.addEventListener('mousemove', (event) => {
+    const navBar = document.getElementById("navbar");
 
+    let height = event.clientY
+    if (height <= 180 && window.innerWidth >= 1000) {
+        // navBar.classList.remove('header-normal')
+        navBar.classList.add('fixed')
+        inArea = true
+    } else if (y >= 200) {
+        navBar.classList.remove('fixed')
+        // navBar.classList.add('header-normal')
+        inArea = false
+
+    }
+})
