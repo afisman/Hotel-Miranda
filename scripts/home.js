@@ -23,16 +23,16 @@ const sendAlert = () => {
 let inArea = false;
 
 document.addEventListener('mousemove', (event) => {
-    const navBar = document.getElementById("navbar");
+    const navBar = document.getElementById("header");
 
     let height = event.clientY
-    if (height <= 180 && window.innerWidth >= 1000) {
-        // navBar.classList.remove('header-normal')
+    if (height <= 180) {
+        navBar.classList.remove('normal')
         navBar.classList.add('fixed')
         inArea = true
-    } else if (y >= 200) {
+    } else if (height >= 180) {
         navBar.classList.remove('fixed')
-        // navBar.classList.add('header-normal')
+        navBar.classList.add('normal')
         inArea = false
 
     }

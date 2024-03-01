@@ -19,7 +19,8 @@ body {
   height: 7rem;
 }
 .header__nav {
-  width: 100%;
+  max-width: 1420px;
+  margin: 0 auto;
 }
 .header__nav p {
   display: none;
@@ -32,7 +33,7 @@ body {
   align-items: center;
   background-color: #fff;
   width: 100%;
-  max-width: 88.75rem;
+  max-width: 1420px;
   z-index: 9;
 }
 .navbar__burger {
@@ -124,7 +125,7 @@ body {
   }
   .header__nav p {
     display: block;
-    padding: 0.5rem 5rem 0 5rem;
+    padding: 1rem 0 0;
     color: #fff;
   }
   .navbar {
@@ -167,7 +168,12 @@ body {
   }
   .fixed {
     position: fixed;
-    transition: all 0.5s ease-in;
+    transition: all 3s ease-out;
+    z-index: 10;
+  }
+  .normal {
+    position: static;
+    transition: all 3s ease-out;
   }
 }
 .footer {
@@ -860,6 +866,7 @@ input[type=date]::-webkit-calendar-picker-indicator {
   padding: 0.5rem;
 }
 .foodSection__body__swiper__item__arrow {
+  display: none;
   opacity: 0;
   padding: 1rem;
 }
@@ -898,6 +905,9 @@ input[type=date]::-webkit-calendar-picker-indicator {
   .foodSection__body {
     position: relative;
     margin: 0 auto;
+  }
+  .foodSection__body__swiper__item__arrow {
+    display: block;
   }
   .foodSection__body__swiper__item:hover {
     background-color: #111;

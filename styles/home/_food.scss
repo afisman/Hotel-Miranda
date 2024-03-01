@@ -76,6 +76,7 @@
                 }
 
                 &__arrow {
+                    display: none;
                     opacity: 0;
                     padding: 1rem;
                 }
@@ -136,6 +137,10 @@
 
             &__swiper {
                 &__item {
+
+                    &__arrow {
+                        display: block;
+                    }
 
                     &:hover {
                         background-color: #111;
