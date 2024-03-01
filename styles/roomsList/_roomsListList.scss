@@ -4,6 +4,11 @@
     margin: 0 auto;
 
     &__swiper {
+
+        .swiper {
+            position: relative;
+        }
+
         .swiper-wrapper {
             margin-bottom: 4rem;
         }
@@ -23,6 +28,21 @@
         .swiper-pagination-bullet-active {
             color: #fff;
             background: #BEAD8E;
+        }
+
+        .swiper-button-next,
+        .swiper-button-prev {
+            position: absolute;
+            bottom: 0.25%;
+            top: auto;
+            margin-top: 0;
+            height: auto;
+
+            &:after {
+                color: #000;
+                font-size: 1rem;
+                line-height: 2rem;
+            }
         }
 
         .swiper-slide {
@@ -70,7 +90,6 @@
                     line-height: 1.5rem;
                     font-weight: 400;
                     color: #777;
-                    // padding: 0 2rem;
                     margin-bottom: 1rem;
                 }
 
@@ -92,6 +111,7 @@
                 font-size: 1rem;
                 line-height: 1.1rem;
                 display: flex;
+                align-items: baseline;
             }
 
             h5 {
@@ -121,6 +141,14 @@
                     width: 30%;
                     height: auto;
                 }
+            }
+
+            .swiper-button-next {
+                right: 40%;
+            }
+
+            .swiper-button-prev {
+                left: 40%;
             }
 
             &__center {

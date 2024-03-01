@@ -2693,6 +2693,9 @@ input[type=date]::-webkit-calendar-picker-indicator {
   max-width: 73.125rem;
   margin: 0 auto;
 }
+.RoomsListSection__swiper .swiper {
+  position: relative;
+}
 .RoomsListSection__swiper .swiper-wrapper {
   margin-bottom: 4rem;
 }
@@ -2710,6 +2713,20 @@ input[type=date]::-webkit-calendar-picker-indicator {
 .RoomsListSection__swiper .swiper-pagination-bullet-active {
   color: #fff;
   background: #BEAD8E;
+}
+.RoomsListSection__swiper .swiper-button-next,
+.RoomsListSection__swiper .swiper-button-prev {
+  position: absolute;
+  bottom: 0.25%;
+  top: auto;
+  margin-top: 0;
+  height: auto;
+}
+.RoomsListSection__swiper .swiper-button-next:after,
+.RoomsListSection__swiper .swiper-button-prev:after {
+  color: #000;
+  font-size: 1rem;
+  line-height: 2rem;
 }
 .RoomsListSection__swiper .swiper-slide img {
   width: 100%;
@@ -2762,6 +2779,7 @@ input[type=date]::-webkit-calendar-picker-indicator {
   font-size: 1rem;
   line-height: 1.1rem;
   display: flex;
+  align-items: baseline;
 }
 .RoomsListSection__swiper__price h5 {
   padding-left: 1rem;
@@ -2783,6 +2801,12 @@ input[type=date]::-webkit-calendar-picker-indicator {
     flex: 2 1 0;
     width: 30%;
     height: auto;
+  }
+  .RoomsListSection__swiper .swiper-button-next {
+    right: 40%;
+  }
+  .RoomsListSection__swiper .swiper-button-prev {
+    left: 40%;
   }
   .RoomsListSection__swiper__center {
     flex: 2 1 0;
