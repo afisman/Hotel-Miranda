@@ -130,7 +130,6 @@ body {
   }
   .navbar {
     margin: 0 auto;
-    transform: translateY(10%);
     padding: 0.5rem;
     position: static;
   }
@@ -168,12 +167,14 @@ body {
   }
   .fixed {
     position: fixed;
-    transition: all 3s ease-out;
+    transition: all 800ms ease-out;
     z-index: 10;
+    border: 1px solid black;
   }
   .normal {
     position: static;
-    transition: all 3s ease-out;
+    transition: all 800ms ease-out;
+    transform: translateY(10%);
   }
 }
 .footer {
@@ -2706,6 +2707,24 @@ input[type=date]::-webkit-calendar-picker-indicator {
     gap: 3rem;
   }
 }
+.ContactMap {
+  max-width: 73.125rem;
+  margin: 0 auto;
+  padding: 1rem;
+}
+.ContactMap__map {
+  padding-bottom: 50%;
+  position: relative;
+  width: 100%;
+}
+.ContactMap__map iframe {
+  height: 100%;
+  width: 100%;
+  left: 0;
+  top: 0;
+  position: absolute;
+}
+
 .RoomsListSection {
   padding: 1rem;
   max-width: 73.125rem;

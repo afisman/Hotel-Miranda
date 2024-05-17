@@ -20,20 +20,27 @@ const sendAlert = () => {
     alert("¡Thank you for your request! We have received it correctly. Someone from our Team will get back to you very soon.The Miranda Hotel")
 }
 
-let inArea = false;
 
-document.addEventListener('mousemove', (event) => {
-    const navBar = document.getElementById("header");
+window.addEventListener('scroll', function () {
 
-    let height = event.clientY
-    if (height <= 180) {
-        navBar.classList.remove('normal')
-        navBar.classList.add('fixed')
-        inArea = true
-    } else if (height >= 180) {
-        navBar.classList.remove('fixed')
-        navBar.classList.add('normal')
-        inArea = false
+    let scrollTop = document.body.scrollTop;
 
-    }
+
+    let inArea = false;
+
+    document.addEventListener('mousemove', (event) => {
+        const navBar = document.getElementById("navbar");
+
+        let height = event.clientY
+        if (height >= 180) {
+            navBar.classList.remove('fixed')
+            navBar.classList.add('normal')
+            inArea = false
+        } else if (scrollTop < 180) {
+            navBar.classList.remove('normal')
+            navBar.classList.add('fixed')
+            inArea = true
+        }
+    })
+
 })
